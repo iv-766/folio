@@ -123,12 +123,12 @@
               <span style="display:{{ dMarq }};padding-right:{{ marqGap }}">{{ trackName }}</span>
             </span>
           </span>
-          <span style="display:flex;gap:5px;align-items:center">
+          <span style="display:{{ dWide }};gap:5px;align-items:center">
             <span style="opacity:.7">VOL</span>
             <input type="range" class="om-vol" min="0" max="100" step="1" value="{{ volume }}" onInput="{{ setVolume }}" aria-label="volume" style="width:52px;height:11px;cursor:pointer" />
             <span style="min-width:24px;text-align:right;opacity:.7">{{ volLabel }}</span>
           </span>
-          <span style="display:flex;gap:2px;align-items:flex-end;height:11px">
+          <span style="display:{{ dWide }};gap:2px;align-items:flex-end;height:11px">
             <sc-for list="{{ meter }}" as="m" hint-placeholder-count="7">
               <span style="width:2px;height:{{ m.h }};background:currentColor;opacity:{{ m.o }}"></span>
             </sc-for>
@@ -159,7 +159,7 @@
     </header>
 
     <div id="sec-home">
-          <section style="padding:12px 14px 14px;max-width:1100px;margin:0 auto;display:grid;gap:8px">
+          <section style="padding:12px 14px 14px;max-width:1100px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr);gap:8px">
             <div style="border:1px solid var(--line,#4b45a6);padding:10px">
               <div style="display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line,#4b45a6);padding:9px 12px;font:400 15px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.1em">
                 <span data-om-label="C:\IV" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">C:\Design\Subjects\IV\Summary.txt</span>
@@ -266,7 +266,7 @@
 
       <section style="padding:0">
         <div style="display:grid;grid-template-columns:{{ worksCols }};align-items:stretch">
-          <div style="border-right:1px solid var(--line,#4b45a6);min-width:0;max-height:{{ paneCap }};overflow-y:auto;position:{{ panePos }};top:{{ paneTop }}">
+          <div style="border-right:1px solid var(--line,#4b45a6);min-width:0;max-height:{{ paneCap }};overflow-y:{{ paneOv }};position:{{ panePos }};top:{{ paneTop }}">
             <div style="padding:10px 12px;font:400 10px/1.5 var(--disp,'JetBrains Mono'),monospace;color:var(--dim,#7c76c8);border-bottom:1px solid var(--line,#4b45a6);overflow-wrap:anywhere">{{ pathLabel }}</div>
             <sc-for list="{{ files }}" as="f" hint-placeholder-count="4">
               <button type="button" onClick="{{ f.open }}" style="display:flex;gap:8px;align-items:center;width:100%;min-height:46px;padding:9px 12px;background:{{ f.bg }};border:0;border-bottom:1px solid var(--line,#4b45a6);color:{{ f.fg }};font:400 12px/1.35 'JetBrains Mono',monospace;text-align:left;cursor:pointer;opacity:{{ f.op }};white-space:nowrap" style-hover="background:var(--fg,#cfcbff);color:var(--bg,#05040c)">
@@ -277,7 +277,7 @@
             </sc-for>
           </div>
 
-          <div style="display:flex;flex-direction:column;min-width:0;height:{{ paneCap }};max-height:{{ paneCap }};position:{{ panePos }};top:{{ paneTop }};z-index:70">
+          <div style="display:flex;flex-direction:column;min-width:0;height:{{ paneH }};max-height:{{ paneCap }};position:{{ panePos }};top:{{ paneTop }};z-index:70">
             <div class="om-lines" style="position:absolute;inset:0;z-index:5;pointer-events:none;mix-blend-mode:multiply"></div>
             <div style="padding:12px 14px;border-bottom:1px solid var(--line,#4b45a6);background:var(--bg,#000f0f)">
               <div style="display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between;align-items:baseline;font:400 9px/1.4 'JetBrains Mono',monospace;letter-spacing:.14em;color:var(--dim,#3f9c93)">
@@ -294,7 +294,7 @@
                 </span>
               </div>
             </div>
-            <div data-works-scroll style="flex:1;min-height:0;overflow-y:{{ paneOv }};overscroll-behavior:contain;padding:14px;background:repeating-linear-gradient(0deg,var(--grid,rgba(140,130,255,.16)) 0 1px,transparent 1px 32px),repeating-linear-gradient(90deg,var(--grid,rgba(140,130,255,.16)) 0 1px,transparent 1px 32px)">
+            <div data-works-scroll style="flex:{{ paneFlex }};min-height:0;overflow-y:{{ paneOv }};overscroll-behavior:contain;padding:14px;background:repeating-linear-gradient(0deg,var(--grid,rgba(140,130,255,.16)) 0 1px,transparent 1px 32px),repeating-linear-gradient(90deg,var(--grid,rgba(140,130,255,.16)) 0 1px,transparent 1px 32px)">
               <div style="display:{{ dEmpty }};padding:40px 0;text-align:center;font:400 10px/1.9 var(--disp,'JetBrains Mono'),monospace;color:var(--dim,#7c76c8)">
                 <span style="display:{{ dRu }}">ВЫБЕРИ ФАЙЛ СЛЕВА</span>
                 <span style="display:{{ dEn }}">PICK A FILE ON THE LEFT</span>
@@ -1517,6 +1517,9 @@ class Component extends DCLogic {
       dSel: sel ? 'block' : 'none',
       worksCols: s.narrow ? '1fr' : 'minmax(240px, 320px) 1fr',
       paneCap: s.narrow ? 'none' : 'calc(100vh - ' + (parseFloat(s.hdrH) || 84) + 'px - 45px)',
+      paneH: s.narrow ? 'auto' : 'calc(100vh - ' + (parseFloat(s.hdrH) || 84) + 'px - 45px)',
+      paneFlex: s.narrow ? '0 0 auto' : '1',
+      dWide: s.narrow ? 'none' : 'flex',
       paneTop: (parseFloat(s.hdrH) || 84) + 'px',
       panePos: s.narrow ? 'static' : 'sticky',
       paneOv: s.narrow ? 'visible' : 'auto',
