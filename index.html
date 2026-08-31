@@ -3,6 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Igor Veshutkin — Game UI/UX Portfolio</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="build-version" content="20260831b">
 <meta name="ext-resource-dependency" content="assets/portrait.jpg" data-resource-id="portrait">
 <meta name="ext-resource-dependency" content="assets/other-posters.png" data-resource-id="otherPosters">
 <meta name="ext-resource-dependency" content="assets/other-icons.png" data-resource-id="otherIcons">
@@ -38,7 +43,7 @@
 <meta name="ext-resource-dependency" content="assets/min/got-hud.jpg" data-resource-id="got_hud">
 <meta name="ext-resource-dependency" content="assets/min/got-sprites-01.jpg" data-resource-id="got_sprites_01">
 <meta name="ext-resource-dependency" content="assets/min/got-sprites-02.jpg" data-resource-id="got_sprites_02">
-<script src="./support.js"></script>
+<script src="./support.js?v=20260831b"></script>
 <template id="__bundler_thumbnail" data-bg-color="#000f0f">
   <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
     <rect width="1200" height="800" fill="#000f0f"/>
@@ -59,6 +64,11 @@
 <x-dc>
 <helmet>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Igor Veshutkin — Game UI/UX Portfolio</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="build-version" content="20260831b">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
@@ -226,22 +236,22 @@
                     </div>
                     <div style="border:1px solid var(--line,#4b45a6);padding:11px 14px;display:grid;gap:8px;align-content:space-between">
                       <div style="font:400 10px/1.3 var(--disp,'JetBrains Mono'),monospace;color:var(--dim,#7c76c8);letter-spacing:.1em"><span style="display:{{ dRu }}">ОПЫТ</span><span style="display:{{ dEn }}">EXPERIENCE</span></div>
-                      <div style="font:700 clamp(16px,2.2vw,22px)/1.15 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.01em;white-space:nowrap;text-shadow:0 0 18px var(--glow,rgba(140,130,255,.5))"><span style="display:{{ dRu }}">3 ГОДА</span><span style="display:{{ dEn }}">3 YEARS</span></div>
+                      <div style="font:700 clamp(16px,2.2vw,22px)/1.15 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.01em;white-space:nowrap;text-shadow:0 0 18px var(--glow,rgba(140,130,255,.5))"><span style="display:{{ dRu }}">2 ГОДА 2 МЕС</span><span style="display:{{ dEn }}">2 YRS 2 MOS</span></div>
                     </div>
                     <div style="grid-column:1/-1;border:1px solid var(--line,#4b45a6);padding:11px 14px;display:flex;flex-wrap:wrap;gap:12px;align-items:center">
                       <span style="flex:0 0 auto;width:14px;height:14px;border-radius:50%;background:#4ade80;box-shadow:0 0 10px rgba(74,222,128,.8);animation:om-glow 2.6s ease-in-out infinite"></span>
                       <span style="font:400 17px/1.2 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.05em"><span style="display:{{ dRu }}">ОТКРЫТ К РАБОТЕ</span><span style="display:{{ dEn }}">OPEN TO WORK</span></span>
                     </div>
-                    <button type="button" onClick="{{ openCv }}" style="border:1px solid var(--fg,#cfcbff);background:var(--fg,#cfcbff);color:var(--bg,#05040c);padding:12px 14px;min-height:48px;width:100%;display:flex;gap:12px;align-items:center;justify-content:space-between;font:700 13px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.12em;text-align:left;cursor:pointer;box-shadow:0 0 18px var(--glow,rgba(140,130,255,.35));transition:background .15s,color .15s" style-hover="background:transparent;color:var(--fg,#cfcbff);box-shadow:0 0 26px var(--glow,rgba(140,130,255,.5))">
-                      <span>CV</span><span style="font-size:22px;line-height:1">↗</span>
-                    </button>
+                    <a href="{{ cvHref }}" download onClick="{{ cvClick }}" style="border:1px solid var(--fg,#cfcbff);background:var(--fg,#cfcbff);color:var(--bg,#05040c);padding:12px 14px;min-height:48px;width:100%;display:flex;gap:12px;align-items:center;justify-content:space-between;font:700 13px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.12em;text-align:left;text-decoration:none;cursor:pointer;box-shadow:0 0 18px var(--glow,rgba(140,130,255,.35));transition:background .15s,color .15s" style-hover="background:transparent;color:var(--fg,#cfcbff);box-shadow:0 0 26px var(--glow,rgba(140,130,255,.5))">
+                      <span>CV · PDF</span><span style="font-size:20px;line-height:1">↓</span>
+                    </a>
                     <a href="https://t.me/IVV766" target="_blank" rel="noopener" style="border:1px solid var(--fg,#cfcbff);background:var(--fg,#cfcbff);color:var(--bg,#05040c);padding:12px 14px;min-height:48px;display:flex;gap:12px;align-items:center;justify-content:space-between;font:700 13px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.12em;text-decoration:none;box-shadow:0 0 18px var(--glow,rgba(140,130,255,.35));transition:background .15s,color .15s" style-hover="background:transparent;color:var(--fg,#cfcbff);box-shadow:0 0 26px var(--glow,rgba(140,130,255,.5))">
                       <span style="min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap"><span style="display:{{ dRu }}">НАПИСАТЬ МНЕ</span><span style="display:{{ dEn }}">GET IN TOUCH</span></span><span style="font-size:22px;line-height:1">↗</span>
                     </a>
                     <div style="grid-column:1/-1;border:1px solid var(--line,#4b45a6);padding:12px 14px;display:grid;gap:7px">
                       <div style="font:400 10px/1.3 var(--disp,'JetBrains Mono'),monospace;color:var(--dim,#7c76c8);letter-spacing:.14em">// STATEMENT</div>
-                      <p style="margin:0;font-size:13px;line-height:1.7;text-wrap:pretty;display:{{ dRu }}">3 года создаю удобные и красивые интерфейсы. Стараюсь рассмотреть каждый кейс с разных сторон, сочетая продуманность и визуал. Люблю создавать и играть в игры.</p>
-                      <p style="margin:0;font-size:13px;line-height:1.7;text-wrap:pretty;display:{{ dEn }}">For 3 years I have been building usable and good-looking interfaces. I try to look at every case from different angles, combining thoughtfulness and visuals. I love making games and playing them.</p>
+                      <p style="margin:0;font-size:13px;line-height:1.7;text-wrap:pretty;display:{{ dRu }}">UI/UX дизайнер игровых интерфейсов уровня Middle. Работал над многопользовательским соревновательным шутером от третьего лица с элементами roguelike на Unreal Engine в команде более 20 человек. Самостоятельно проектировал ключевые сценарии игрока и значительную часть игрового интерфейса, участвовал в обновлении визуального стиля после реструктуризации проекта. Приношу пользу команде за счёт системного анализа конкурентов, проработки интерфейсов с нуля и контроля их реализации в движке.</p>
+                      <p style="margin:0;font-size:13px;line-height:1.7;text-wrap:pretty;display:{{ dEn }}">Middle UI/UX designer working on game interfaces. I worked on a multiplayer competitive third-person shooter with roguelike elements built in Unreal Engine, in a team of more than 20 people. I designed the key player scenarios and a large part of the game interface on my own, and took part in updating the visual style after the project was restructured. I bring value to the team through systematic competitor analysis, building interfaces from scratch and overseeing their implementation in the engine.</p>
                     </div>
                   </div>
                 </div>
@@ -316,6 +326,11 @@
                   </sc-for>
                 </span>
               </div>
+              <div style="display:{{ dTabs }};margin-top:10px;flex-wrap:wrap;border:1px solid var(--line,#1f7a72)">
+                <sc-for list="{{ caseTabs }}" as="tb" hint-placeholder-count="3">
+                  <button type="button" onClick="{{ tb.go }}" style="flex:1 1 auto;min-height:34px;padding:8px 14px;background:{{ tb.bg }};color:{{ tb.fg }};border:0;border-right:1px solid var(--line,#1f7a72);font:400 10px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.14em;cursor:pointer;white-space:nowrap;transition:background .18s,color .18s" style-hover="background:var(--fg,#9ff5e8);color:var(--bg,#000f0f)">{{ tb.label }}</button>
+                </sc-for>
+              </div>
             </div>
             <div data-works-scroll style="flex:{{ paneFlex }};min-height:0;overflow-y:{{ paneOv }};overscroll-behavior:contain;padding:14px;background:repeating-linear-gradient(0deg,var(--grid,rgba(140,130,255,.16)) 0 1px,transparent 1px 32px),repeating-linear-gradient(90deg,var(--grid,rgba(140,130,255,.16)) 0 1px,transparent 1px 32px)">
               <div style="display:{{ dEmpty }};padding:40px 0;text-align:center;font:400 10px/1.9 var(--disp,'JetBrains Mono'),monospace;color:var(--dim,#7c76c8)">
@@ -327,9 +342,19 @@
                   <div style="font:400 9px/1.3 'JetBrains Mono',monospace;letter-spacing:.12em;color:var(--dim,#3f9c93)">{{ aboutLabel }}</div>
                   <p style="margin:0;font-size:13px;line-height:1.85;text-wrap:pretty">{{ selIntro }}</p>
                 </div>
-                <div style="margin-top:12px;display:grid;gap:14px">
+                <div style="display:{{ dTabSoon }};margin-top:12px;border:1px solid var(--line,#4b45a6);padding:34px 16px;place-items:center;text-align:center;gap:8px;background:repeating-linear-gradient(45deg,rgba(255,255,255,.04) 0 6px,transparent 6px 12px)">
+                  <div style="font:400 12px/1.4 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.24em;color:var(--fg,#9ff5e8)">{{ tabSoonTitle }}</div>
+                  <div style="font:400 10px/1.7 'JetBrains Mono',monospace;letter-spacing:.1em;color:var(--dim,#3f9c93)">{{ tabSoonSub }}</div>
+                </div>
+                <p style="display:{{ dTabIntro }};margin:12px 0 0;max-width:80ch;font-size:13px;line-height:1.85;text-wrap:pretty">{{ tabIntro }}</p>
+                <div style="margin-top:12px;display:{{ dShots }};gap:14px">
                   <sc-for list="{{ shots }}" as="sh" hint-placeholder-count="3">
                     <div data-reveal data-shot="{{ sh.no }}" style="opacity:0;transform:translateY(14px)">
+                      <div style="display:{{ sh.dNote }};margin-bottom:8px;padding-bottom:7px;border-bottom:1px solid var(--line,#1f7a72)">
+                        <span style="font:400 9px/1.4 'JetBrains Mono',monospace;letter-spacing:.14em;color:var(--dim,#3f9c93)">{{ sh.no }}</span>
+                        <span style="margin-left:10px;font:400 14px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.1em;color:var(--fg,#9ff5e8)">{{ sh.label }}</span>
+                      </div>
+                      <p style="display:{{ sh.dNote }};margin:0 0 10px;max-width:80ch;font-size:12px;line-height:1.8;color:var(--dim,#3f9c93);text-wrap:pretty">{{ sh.note }}</p>
                       <div onClick="{{ sh.zoom }}" onTouchStart="{{ sh.tStart }}" onTouchEnd="{{ sh.tEnd }}" data-zoom style="display:{{ sh.dImg }};position:relative;z-index:6;width:100%;aspect-ratio:{{ sh.ratio }};border:1px solid var(--line,#4b45a6);cursor:pointer;touch-action:pan-y">
                         <div style="position:absolute;inset:0;overflow:hidden">
                           <div style="position:absolute;top:0;bottom:0;left:0;width:{{ sh.trackW }};display:flex;transform:{{ sh.trackX }};transition:transform .5s cubic-bezier(.22,.61,.36,1)">
@@ -362,7 +387,7 @@
                           <button type="button" onClick="{{ sh.next }}" aria-label="next" style="min-width:26px;height:24px;padding:0;background:transparent;border:0;border-left:1px solid var(--line,#1f7a72);color:inherit;font:400 9px/1.3 'JetBrains Mono',monospace;cursor:pointer" style-hover="background:var(--fg,#9ff5e8);color:var(--bg,#000f0f)">▶</button>
                         </div>
                       </div>
-                      <div style="margin-top:5px;display:inline-flex;gap:8px;align-items:baseline;padding:4px 9px;border:1px solid var(--line,#1f7a72);font:400 9px/1.4 'JetBrains Mono',monospace;letter-spacing:.08em;color:var(--dim,#3f9c93)">
+                      <div style="margin-top:5px;display:{{ sh.dCap }};gap:8px;align-items:baseline;padding:4px 9px;border:1px solid var(--line,#1f7a72);font:400 9px/1.4 'JetBrains Mono',monospace;letter-spacing:.08em;color:var(--dim,#3f9c93)">
                         <span style="color:var(--fg,#9ff5e8)">{{ sh.no }}</span>
                         <span>{{ sh.label }}</span>
                       </div>
@@ -531,8 +556,83 @@ const TOOL_COLORS = {
   As: { fg:'#7d929e', bg:'rgba(18,26,31,.9)' }
 };
 
+const R = 'assets/research/';
+const RESEARCH = {
+  p01: {
+    frames: [
+      [R+'rf-01-boards-fortnite-apex.png', R+'rf-02-boards-ow-finals.png', R+'rf-03-boards-finals-deadlock-arc.png'],
+      [R+'rf-04-screens-detail.png', R+'rf-05-screens-overview.png'],
+      [R+'rf-06-table-full.png', R+'rf-07-table-zoom.png'],
+      [R+'rf-08-maps-finals-ow.png', R+'rf-09-maps-fortnite-deadlock.png', R+'rf-10-maps-arc-apex.png'],
+      [R+'rf-11-feature-cards.png'],
+      [R+'rf-12-pages-references.png']
+    ],
+    carousel: [true, true, true, true, false, false],
+    ratios: ['1920/980','1920/980','1920/980','1920/980','1920/980','1920/980'],
+    ratioSets: [[],[],[],[],[],[]],
+    ru: {
+      intro: 'Провёл анализ 6 конкурентных игр и более 500 экранов в процессе работы, выделил эффективные подходы к структуре базовых экранов и использовал выводы при проектировании интерфейса, что положительно сказалось на скорости выполнения сценариев и общем удобстве интерфейса.',
+      names: ['РЕФЕРЕНС-БОРДЫ','РАЗБОР ЭКРАНОВ','СВОДНАЯ ТАБЛИЦА ФИЧ','UX-КАРТЫ КОНКУРЕНТОВ','ПРЕДЛОЖЕНИЯ К ВНЕДРЕНИЮ','РЕФЕРЕНСЫ ПО ЭКРАНАМ'],
+      notes: [
+        'Экраны шести шутеров — Fortnite, Apex Legends, Overwatch, The Finals, Deadlock, Arc Raiders — разложены по разделам: главный экран, кастомизация, магазин, БП, настройки, профиль. База для всех дальнейших сравнений.',
+        'По каждому экрану — как решение работает, недостатки и что можно взять в работу.',
+        'Матрица фич по всем шести играм: есть, нет, есть с оговоркой. Показывает пробелы, которые можно закрыть.',
+        'Полные карты навигации конкурентов: хоткеи, действия, ветки разделов. Видно глубину переходов и дублирующийся функционал.',
+        'Итог исследования — карточки фич с описанием механики, пользы для игрока и потенциала.',
+        'Референсы, собранные под конкретные экраны проекта, рядом со списком фич раздела.'
+      ]
+    },
+    en: {
+      intro: 'I analysed 6 competitor games and over 500 screens, identified the effective approaches to the structure of the core screens and applied those findings while designing the interface, which improved task completion speed and the overall usability of the interface.',
+      names: ['REFERENCE BOARDS','SCREEN BREAKDOWN','FEATURE MATRIX','COMPETITOR UX MAPS','PROPOSED FEATURES','PER-SCREEN REFERENCES'],
+      notes: [
+        'Screens from six shooters — Fortnite, Apex Legends, Overwatch, The Finals, Deadlock, Arc Raiders — sorted by section: main screen, customization, shop, battle pass, settings, profile. The base for every comparison that follows.',
+        'For each screen: how the solution works, where it fails, and what is worth taking into our own product.',
+        'A feature matrix across all six games: present, missing, present with caveats. It exposes the gaps we can close.',
+        'Full competitor navigation maps: hotkeys, actions, section branches. They show navigation depth and duplicated functionality.',
+        'The output of the research — feature cards describing the mechanic, the player benefit and the potential.',
+        'References collected for specific screens of the project, next to the feature list for that section.'
+      ]
+    }
+  }
+};
+
+const MAPS = {
+  p01: {
+    frames: [
+      [R+'mp-02-lobby-flow.png'],
+      [R+'mp-01-heroes-weapons-flow.png'],
+      [R+'mp-03-ability-progress-flow.png'],
+      [R+'mp-04-vitality-tracker.png']
+    ],
+    carousel: [false, false, false, false],
+    ratios: ['1920/980','1920/980','1920/980','1920/980'],
+    ratioSets: [[],[],[],[]],
+    ru: {
+      intro: 'UX-карты собирались после вайрфреймов — как документация для команды разработки. Полный путь игрока по разделу со всеми состояниями, ветками и условиями переходов, чтобы разработчики понимали, как логика экранов работает целиком, а не по отдельным макетам.',
+      names: ['ЛОББИ','ГЕРОИ И ОРУЖИЕ','ПРОГРЕССИЯ АБИЛОК','ЖИЗНЕННЫЕ ПОКАЗАТЕЛИ'],
+      notes: [
+        'Два параллельных потока — лидера группы и участника: сбор пати, готовность, смена режима и запуск матча. Показывает, что видит каждая роль на одном и том же экране.',
+        'Переходы между выбором героя, абилками и оружием, включая кастомизацию и примерку скинов. Комментарии поясняют каждый элемент на экране и условия переходов.',
+        'Получение и распределение абилок: состояния слотов (пусто, пассив, актив), доступные скилл-поинты, анимации хоткеев и пропуск получения абилки.',
+        'Реакция HUD на урон и лечение: рейндж и мили урон, урон по щиту, пороги половины и четверти запаса. Схема на вайрфреймах — без визуала, только логика состояний.'
+      ]
+    },
+    en: {
+      intro: 'The UX maps were built after the wireframes, as documentation for the development team. They lay out the full player path through a section with every state, branch and transition condition, so developers can see how the screen logic works as a whole rather than layout by layout.',
+      names: ['LOBBY','HEROES & WEAPONS','ABILITY PROGRESSION','VITALITY & TRACKER'],
+      notes: [
+        'Two parallel flows — party leader and party member: assembling the group, readiness, mode change and match start. It shows what each role sees on the very same screen.',
+        'Transitions between hero selection, abilities and weapons, including customization and trying skins on. The notes explain every element on the screen and the transition conditions.',
+        'Unlocking and assigning abilities: slot states (empty, passive, active), available skill points, hotkey animations and skipping an ability unlock.',
+        'How the HUD reacts to damage and healing: ranged and melee damage, shield damage, the half and quarter thresholds. Wireframes only — pure state logic, no visuals.'
+      ]
+    }
+  }
+};
+
 const PROJECTS = [
-  { id:'p01', code:'01', kind:'GAME UI', file:'FARCANA.UI', tools:['Ps','Ai','Fg'],
+  { id:'p01', code:'01', kind:'GAME UI', file:'FARCANA.UI', tools:['Ps','Ai','Fg'], tabs:true,
     shots:['ГЛАВНАЯ','ЛОББИ','ПЕРСОНАЖИ','КАСТОМИЗАЦИЯ ПЕРСОНАЖА','КАСТОМИЗАЦИЯ ОРУЖИЯ','HUD','VFX'],
     shotsEn:['HOME','LOBBY','HEROES','HERO CUSTOMIZATION','WEAPON CUSTOMIZATION','HUD','VFX'],
     frames:[['assets/farcana-01-home.jpg'], ['assets/farcana-02-lobby.png'], ['assets/farcana-03-heroes.jpg'], ['assets/farcana-04-customize.jpg'], ['assets/farcana-05-weapons.jpg'], ['assets/farcana-05-hud.jpg'], ['assets/farcana-vfx-01-silence.png','assets/farcana-vfx-02-stun.png','assets/farcana-vfx-03-slow.png','assets/farcana-vfx-04-root.png','assets/farcana-vfx-05-breakdown.png']],
@@ -567,44 +667,30 @@ const PROJECTS = [
 ];
 
 const JOBS_RU = [
-  { place: 'Dizzaract', url: 'https://www.dizzaract.com/', dates: '1,5 ГОДА · ФЕВ 2025 — ИЮН 2026', role: 'Game Interface Designer',
-    desc: 'Работал UI/UX дизайнером над интерфейсом игры Farcana в период, когда он переживал полную переработку. Legacy-версия постепенно заменялась новой, и в финальный вид вошли в том числе мои решения.',
+  { place: 'Dizzaract', url: 'https://www.dizzaract.com/', dates: '2 ГОДА 2 МЕС · ИЮЛ 2024 — Н.В.', role: 'UI/UX Дизайнер · Middle',
+    desc: 'UI/UX дизайн многопользовательского соревновательного шутера от третьего лица с элементами roguelike на Unreal Engine. Работа над интерфейсами с нуля и обновлением визуального стиля в команде из 4-х дизайнеров.',
     duties: [
-      'Исследования конкурентов: разбирал удачные и неудачные решения, полезные фичи, собирал UX-карты для выявления позитивных и негативных паттернов, изучал отзывы игроков.',
-      'Пользовательский опыт: составлял масштабные UX-карты для экранов проекта, участвовал в обсуждениях игровых механик, анализируя игру и как игрок, и как разработчик.',
-      'Интерфейсы: проектировал и отрисовывал экраны игрового интерфейса, создавал с нуля новый стиль совместно с Head of Design.',
-      'Анимации: создавал интерактивные и анимированные экраны — прелоадеры, анимации главного меню, включая работу с VFX.',
-      'Собрал часть дизайн-системы проекта.'
-    ] },
-  { place: 'Фриланс', dates: '2023 — Н.В.', role: 'UI/UX Designer',
-    desc: 'На фрилансе работал с разными продуктами — от лендингов до полноценных редизайнов. Собирал прототипы, UI-киты и дизайн-системы под конкретные проекты, проводил исследования и проверял гипотезы вместе с заказчиками.',
-    duties: [
-      'Редизайн интерфейсов: от аудита текущей версии до готовых макетов.',
-      'Прототипы, UI-киты и дизайн-системы под задачи заказчика.',
-      'Исследования и проверка гипотез.',
-      'Key visuals и рекламные креативы.',
-      'Лендинги.'
+      'Самостоятельно переработал экраны ключевых сценариев игрока: вход в матч — повторный запуск сокращён с 3 кликов до 1, возврат после матча в лобби с сохранённым режимом; герои и арсенал — спроектировал раздел на 17 экранов и состояний в 3 подразделах, задокументировал флоу для передачи в разработку; лобби и социальные функции — приглашение в группу сокращено с 3 кликов до 1.',
+      'Разработал значительную часть игрового интерфейса после реструктуризации проекта.',
+      'Совместно с Head of Design разработал новый визуальный стиль и применил его к интерфейсам и игровым экранам.',
+      'Провёл анализ 6 конкурентных игр и более 500 экранов в процессе работы, выделил эффективные подходы к структуре базовых экранов и использовал выводы при проектировании интерфейса, что положительно сказалось на скорости выполнения сценариев и общем удобстве интерфейса.',
+      'Создал часть визуальных эффектов для интерфейса и игровых экранов в рамках согласованного визуального стиля.',
+      'Передавал макеты игровых экранов разработчикам через Figma, проверял реализацию после внедрения и вносил мелкие правки в Unreal Engine.',
+      'Генерировал концепты изображений и иконок для игровых экранов с помощью Midjourney, Stable Diffusion и Nano Banana, использовал результаты для проверки визуальных гипотез.'
     ] }
 ];
 
 const JOBS_EN = [
-  { place: 'Dizzaract', url: 'https://www.dizzaract.com/', dates: '1.5 YEARS · FEB 2025 — JUN 2026', role: 'Game Interface Designer',
-    desc: 'Worked as a UI/UX designer on the interface of Farcana while it went through a full overhaul. The legacy version was replaced step by step, and my solutions made it into the final look.',
+  { place: 'Dizzaract', url: 'https://www.dizzaract.com/', dates: '2 YRS 2 MOS · JUL 2024 — PRESENT', role: 'UI/UX Designer · Middle',
+    desc: 'UI/UX design for a multiplayer competitive third-person shooter with roguelike elements built in Unreal Engine. Interfaces from scratch and a visual style update, in a team of four designers.',
     duties: [
-      'Competitor research: broke down what worked and what did not, mapped useful features, built UX maps to spot positive and negative patterns, read player feedback.',
-      'User experience: built large UX maps for the project screens and took part in game-mechanic discussions, analysing the game both as a player and as a developer.',
-      'Interfaces: designed and drew in-game screens, and built a new visual style from scratch together with the Head of Design.',
-      'Animation: created interactive and animated screens — preloaders, main-menu motion, including VFX work.',
-      'Built part of the project design system.'
-    ] },
-  { place: 'Freelance', dates: '2023 — PRESENT', role: 'UI/UX Designer',
-    desc: 'On freelance I worked across very different products — from landing pages to full redesigns. I built prototypes, UI kits and design systems for specific projects, ran research and tested hypotheses together with clients.',
-    duties: [
-      'Interface redesign: from auditing the current version to finished layouts.',
-      'Prototypes, UI kits and design systems shaped around client needs.',
-      'Research and hypothesis testing.',
-      'Key visuals and ad creatives.',
-      'Landing pages.'
+      'Reworked the screens of the key player scenarios on my own: match entry — a repeat launch cut from 3 clicks to 1, returning to the lobby after a match with the mode preserved; heroes and arsenal — designed a section of 17 screens and states across 3 subsections and documented the flow for handoff to development; lobby and social features — party invites cut from 3 clicks to 1.',
+      'Designed a large part of the game interface after the project was restructured.',
+      'Developed a new visual style together with the Head of Design and applied it to the interfaces and in-game screens.',
+      'Analysed 6 competitor games and over 500 screens, identified the effective approaches to the structure of the core screens and applied those findings while designing the interface, which improved task completion speed and the overall usability of the interface.',
+      'Created part of the visual effects for the interface and in-game screens within the agreed visual style.',
+      'Handed game screens over to developers through Figma, checked the implementation after integration and made small fixes in Unreal Engine.',
+      'Generated image and icon concepts for in-game screens with Midjourney, Stable Diffusion and Nano Banana, using the results to test visual hypotheses.'
     ] }
 ];
 
@@ -642,7 +728,7 @@ const BOOT = [
   'INDEXING HUD / MENUS / KEY ART .. OK',
   'LOADING SUBJECT IV-766 .......... DONE',
   'FUNCTION: GAME UI/UX DESIGNER',
-  'LOCATION: MOSCOW  EXPERIENCE: 3Y',
+  'LOCATION: MOSCOW  EXPERIENCE: 2Y 2M',
   'STATUS  : OPEN TO WORK',
   '',
   'ALL SYSTEMS NOMINAL.'
@@ -653,7 +739,7 @@ class Component extends DCLogic {
     booting: true, bootStep: 0, bootDone: false, closing: false,
     screen: 'home', lang: 'ru', theme: 'cyan',
     filter: 'all', sound: true,
-    playing: false, track: 0, volume: 50, marquee: false, marqDur: 12, meter: [2,2,2,2,2,2,2], selected: null, openSec: { task: true, proc: false, res: false }, openJobs: {}, frameIdx: {}, narrow: false,
+    playing: false, track: 0, volume: 50, marquee: false, marqDur: 12, meter: [2,2,2,2,2,2,2], selected: null, caseTab: 'visual', openSec: { task: true, proc: false, res: false }, openJobs: {}, frameIdx: {}, narrow: false,
     cursor: { x: -100, y: -100, on: false, hot: false, zoom: false }, lb: null, cv: false,
     tick: 0, spin: 0, clock: '--:--:--', pvTick: 0,
     hasShot: false
@@ -1187,7 +1273,7 @@ class Component extends DCLogic {
 
   openProject(id) {
     this.blip(740);
-    this.setState({ selected: id, openSec: { task: true, proc: false, res: false } });
+    this.setState({ selected: id, caseTab: 'visual', openSec: { task: true, proc: false, res: false } });
     requestAnimationFrame(() => {
       const pane = document.querySelector('[data-works-scroll]');
       if (pane) pane.scrollTop = 0;
@@ -1309,23 +1395,40 @@ class Component extends DCLogic {
     const d = new Date();
     const pad = n => String(n).padStart(2, '0');
 
-    const shotNames = sel ? (ru ? sel.shots : sel.shotsEn) : [];
+    const TABDEFS = [
+      { key: 'visual', ru: 'ВИЗУАЛ', en: 'VISUALS' },
+      { key: 'research', ru: 'ИССЛЕДОВАНИЯ', en: 'RESEARCH' },
+      { key: 'maps', ru: 'UX-КАРТЫ', en: 'UX MAPS' }
+    ];
+    const hasTabs = !!(sel && sel.tabs);
+    const curTab = hasTabs ? (s.caseTab || 'visual') : 'visual';
+
+    const TABSETS = { research: RESEARCH, maps: MAPS };
+    const rdat = (sel && TABSETS[curTab] && TABSETS[curTab][sel.id]) || null;
+    const dat = rdat ? Object.assign({}, sel, {
+      shots: rdat.ru.names, shotsEn: rdat.en.names,
+      frames: rdat.frames, carousel: rdat.carousel, ratios: rdat.ratios, ratioSets: rdat.ratioSets
+    }) : sel;
+    const notes = rdat ? (ru ? rdat.ru.notes : rdat.en.notes) : [];
+
+    const shotNames = dat ? (ru ? dat.shots : dat.shotsEn) : [];
     const flatAll = [];
     const shots = shotNames.map((n, i) => {
       const RESMAP = { 'assets/farcana-01-home.jpg':'a_farcana_01_home_jpg', 'assets/farcana-02-lobby.png':'a_farcana_02_lobby_png', 'assets/farcana-03-heroes.jpg':'a_farcana_03_heroes_jpg', 'assets/farcana-04-customize.jpg':'a_farcana_04_customize_jpg', 'assets/farcana-05-weapons.jpg':'a_farcana_05_weapons_jpg', 'assets/farcana-05-hud.jpg':'a_farcana_05_hud_jpg', 'assets/farcana-vfx-01-silence.png':'a_farcana_vfx_01_silence_png', 'assets/farcana-vfx-02-stun.png':'a_farcana_vfx_02_stun_png', 'assets/farcana-vfx-03-slow.png':'a_farcana_vfx_03_slow_png', 'assets/farcana-vfx-04-root.png':'a_farcana_vfx_04_root_png', 'assets/farcana-vfx-05-breakdown.png':'a_farcana_vfx_05_breakdown_png', 'assets/other-posters.png':'otherPosters', 'assets/other-icons.png':'otherIcons', 'assets/web-01-hero.png':'web01', 'assets/web-02-content.png':'web02', 'assets/web-03-hero.png':'web03', 'assets/web-04-profile.png':'web04', 'assets/min/nda-concept.jpg':'nda_concept', 'assets/min/nda-awakening.jpg':'nda_awakening', 'assets/min/nda-resonance.jpg':'nda_resonance', 'assets/min/nda-synchronization.jpg':'nda_synchronization', 'assets/min/nda-loop.jpg':'nda_loop', 'assets/min/nda-echo-minigames.jpg':'nda_echo_minigames', 'assets/min/nda-echo-types.jpg':'nda_echo_types', 'assets/min/nda-lens.jpg':'nda_lens', 'assets/min/nda-artist-world.jpg':'nda_artist_world', 'assets/min/nda-creation-kit.jpg':'nda_creation_kit', 'assets/min/got-hud.jpg':'got_hud', 'assets/min/got-sprites-01.jpg':'got_sprites_01', 'assets/min/got-sprites-02.jpg':'got_sprites_02' };
-      const frames = ((sel.frames && sel.frames[i]) || []).map(p => RESMAP[p] ? res(RESMAP[p], p) : p);
-      const isCarousel = !!(sel.carousel && sel.carousel[i]);
+      const frames = ((dat.frames && dat.frames[i]) || []).map(p => RESMAP[p] ? res(RESMAP[p], p) : p);
+      const isCarousel = !!(dat.carousel && dat.carousel[i]);
       const total = Math.max(frames.length, 1);
-      const idx = ((s.frameIdx[sel.id + ':' + i] || 0) % total + total) % total;
+      const IK = sel.id + (rdat ? ':' + curTab : '') + ':' + i;
+      const idx = ((s.frameIdx[IK] || 0) % total + total) % total;
       const src = frames[idx] || '';
       const step = d => e => {
         if (e && e.stopPropagation) e.stopPropagation();
         this.blip(700);
-        this.setState(st => ({ frameIdx: Object.assign({}, st.frameIdx, { [sel.id + ':' + i]: idx + d }) }));
+        this.setState(st => ({ frameIdx: Object.assign({}, st.frameIdx, { [IK]: idx + d }) }));
       };
       const ready = this.imgReady(src);
-      const rset0 = (sel.ratioSets && sel.ratioSets[i]) || [];
-      frames.forEach((u, fi) => flatAll.push({ si: i, fi, src: u, label: n, ratio: rset0[fi] || (sel.ratios && sel.ratios[i]) || '16/9' }));
+      const rset0 = (dat.ratioSets && dat.ratioSets[i]) || [];
+      frames.forEach((u, fi) => flatAll.push({ si: i, fi, src: u, label: n, ratio: rset0[fi] || (dat.ratios && dat.ratios[i]) || '16/9' }));
       const fw = (100 / total) + '%';
       const frameVals = frames.map(u => ({ bg: u ? 'url("' + u + '")' : 'none', op: this.imgReady(u) ? '1' : '0', w: fw }));
       return {
@@ -1338,9 +1441,12 @@ class Component extends DCLogic {
         dSpin: ready ? 'none' : 'grid',
         bg: src ? 'url("' + src + '")' : 'none',
         src: src,
+        note: notes[i] || '',
+        dNote: notes[i] ? 'block' : 'none',
+        dCap: notes[i] ? 'none' : 'inline-flex',
         ratio: (() => {
-          const set = (sel.ratioSets && sel.ratioSets[i]) || [];
-          if (!set.length) return (sel.ratios && sel.ratios[i]) || '16/9';
+          const set = (dat.ratioSets && dat.ratioSets[i]) || [];
+          if (!set.length) return (dat.ratios && dat.ratios[i]) || '16/9';
           let tallest = set[0], min = Infinity;
           set.forEach(r => {
             const p = String(r).split('/');
@@ -1355,7 +1461,7 @@ class Component extends DCLogic {
         dots: frames.map((u, fi) => ({
           n: pad(fi + 1),
           bg: fi === idx ? 'var(--fg,#9ff5e8)' : 'var(--bg,#000f0f)',
-          go: e => { if (e && e.stopPropagation) e.stopPropagation(); this.blip(700); this.setState(st => ({ frameIdx: Object.assign({}, st.frameIdx, { [sel.id + ':' + i]: fi }) })); }
+          go: e => { if (e && e.stopPropagation) e.stopPropagation(); this.blip(700); this.setState(st => ({ frameIdx: Object.assign({}, st.frameIdx, { [IK]: fi }) })); }
         })),
         counter: pad(idx + 1) + ' / ' + pad(total),
         prev: step(-1),
@@ -1530,7 +1636,30 @@ class Component extends DCLogic {
       tWfg: 20000 + Math.round(Math.abs(Math.sin(T * 0.11)) * 9999),
       tPeak: (0.6 + Math.abs(Math.sin(T * 0.4)) * 0.39).toFixed(2),
       files, shots, sections,
-      dWip: (sel && sel.wip) ? 'grid' : 'none',
+      dTabs: hasTabs ? 'flex' : 'none',
+      caseTabs: TABDEFS.map(t => ({
+        label: ru ? t.ru : t.en,
+        bg: t.key === curTab ? 'var(--fg,#9ff5e8)' : 'transparent',
+        fg: t.key === curTab ? 'var(--bg,#000f0f)' : 'inherit',
+        go: () => {
+          this.blip(760);
+          this.setState({ caseTab: t.key }, () => requestAnimationFrame(() => {
+            const pane = document.querySelector('[data-works-scroll]');
+            if (pane) pane.scrollTop = 0;
+          }));
+        }
+      })),
+      dTabIntro: 'none',
+      tabIntro: '',
+      dShots: (!hasTabs || curTab === 'visual' || !!rdat) ? 'grid' : 'none',
+      dTabSoon: (hasTabs && curTab !== 'visual' && !rdat) ? 'grid' : 'none',
+      tabSoonTitle: ru ? 'РАЗДЕЛ В РАБОТЕ' : 'SECTION IN PROGRESS',
+      tabSoonSub: (() => {
+        const t = TABDEFS.find(x => x.key === curTab);
+        const nm = t ? (ru ? t.ru : t.en) : '';
+        return ru ? nm + ' — материалы готовятся' : nm + ' — materials coming soon';
+      })(),
+      dWip: (sel && sel.wip && (!hasTabs || curTab === 'visual')) ? 'grid' : 'none',
       lbDisp: lbCur ? 'flex' : 'none',
       lbFrames: flatAll.map(f => ({ bg: 'url("' + f.src + '")', op: this.imgReady(f.src) ? '1' : '0', w: (100 / Math.max(flatAll.length, 1)) + '%' })),
       lbTrackW: (Math.max(flatAll.length, 1) * 100) + '%',
@@ -1543,9 +1672,11 @@ class Component extends DCLogic {
       lbDots: lbShotFrames.map((f, k) => ({
         n: pad(k + 1),
         bg: (lbCur && k === lbCur.fi) ? 'var(--fg,#9ff5e8)' : 'var(--bg,#000f0f)',
-        go: () => { this.blip(700); this.setState(st => ({ lb: { si: lbCur.si, fi: k }, frameIdx: Object.assign({}, st.frameIdx, { [sel.id + ':' + lbCur.si]: k }) })); }
+        go: () => { this.blip(700); this.setState(st => ({ lb: { si: lbCur.si, fi: k }, frameIdx: Object.assign({}, st.frameIdx, { [sel.id + (rdat ? ':' + curTab : '') + ':' + lbCur.si]: k }) })); }
       })),
       cvDisp: s.cv ? 'flex' : 'none',
+      cvHref: ru ? 'assets/cv/Veshutkin-Igor-CV-RU.pdf' : 'assets/cv/Veshutkin-Igor-CV-EN.pdf',
+      cvClick: () => this.blip(880, .05),
       openCv: () => { this.blip(880, .05); this.setState({ cv: true }); },
       cvClose: () => { this.blip(520); this.setState({ cv: false }); },
       lbClose: () => this.closeLb(),
@@ -1557,7 +1688,7 @@ class Component extends DCLogic {
       aboutLabel: ru ? 'ОПИСАНИЕ' : 'ABOUT',
       selTitle: SL ? SL.t : (ru ? 'НИЧЕГО НЕ ВЫБРАНО' : 'NOTHING SELECTED'),
       selSub: SL ? SL.sub : '',
-      selIntro: SL ? SL.intro : '',
+      selIntro: rdat ? (ru ? rdat.ru.intro : rdat.en.intro) : (SL ? SL.intro : ''),
       selMeta: sel ? sel.kind : '',
       selTools: (sel && sel.tools ? sel.tools : []).map(ab => ({
         ab, name: TOOL_NAMES[ab] || ab,
