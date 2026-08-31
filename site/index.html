@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Igor Veshutkin — Game UI/UX Portfolio</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="build-version" content="20260831b">
+<meta name="ext-resource-dependency" content="assets/portrait.jpg" data-resource-id="portrait">
+<meta name="ext-resource-dependency" content="assets/other-posters.png" data-resource-id="otherPosters">
+<meta name="ext-resource-dependency" content="assets/other-icons.png" data-resource-id="otherIcons">
+<meta name="ext-resource-dependency" content="assets/web-01-hero.png" data-resource-id="web01">
+<meta name="ext-resource-dependency" content="assets/web-02-content.png" data-resource-id="web02">
+<meta name="ext-resource-dependency" content="assets/web-03-hero.png" data-resource-id="web03">
+<meta name="ext-resource-dependency" content="assets/web-04-profile.png" data-resource-id="web04">
+<meta name="ext-resource-dependency" content="assets/farcana-01-home.jpg" data-resource-id="a_farcana_01_home_jpg">
+<meta name="ext-resource-dependency" content="assets/farcana-02-lobby.png" data-resource-id="a_farcana_02_lobby_png">
+<meta name="ext-resource-dependency" content="assets/farcana-03-heroes.jpg" data-resource-id="a_farcana_03_heroes_jpg">
+<meta name="ext-resource-dependency" content="assets/farcana-04-customize.jpg" data-resource-id="a_farcana_04_customize_jpg">
+<meta name="ext-resource-dependency" content="assets/farcana-05-weapons.jpg" data-resource-id="a_farcana_05_weapons_jpg">
+<meta name="ext-resource-dependency" content="assets/farcana-05-hud.jpg" data-resource-id="a_farcana_05_hud_jpg">
+<meta name="ext-resource-dependency" content="assets/farcana-vfx-01-silence.png" data-resource-id="a_farcana_vfx_01_silence_png">
+<meta name="ext-resource-dependency" content="assets/farcana-vfx-02-stun.png" data-resource-id="a_farcana_vfx_02_stun_png">
+<meta name="ext-resource-dependency" content="assets/farcana-vfx-03-slow.png" data-resource-id="a_farcana_vfx_03_slow_png">
+<meta name="ext-resource-dependency" content="assets/farcana-vfx-04-root.png" data-resource-id="a_farcana_vfx_04_root_png">
+<meta name="ext-resource-dependency" content="assets/farcana-vfx-05-breakdown.png" data-resource-id="a_farcana_vfx_05_breakdown_png">
+<meta name="ext-resource-dependency" content="audio/backstabbing-bastard-173hz.mp3" data-resource-id="trk1">
+<meta name="ext-resource-dependency" content="audio/monolithic-head-over-heels.mp3" data-resource-id="trk2">
+<meta name="ext-resource-dependency" content="audio/system-st91-cybernetic-fashion.mp3" data-resource-id="trk3">
+<meta name="ext-resource-dependency" content="audio/zorrovian-bios.mp3" data-resource-id="trk4">
+<meta name="ext-resource-dependency" content="assets/min/nda-concept.jpg" data-resource-id="nda_concept">
+<meta name="ext-resource-dependency" content="assets/min/nda-awakening.jpg" data-resource-id="nda_awakening">
+<meta name="ext-resource-dependency" content="assets/min/nda-resonance.jpg" data-resource-id="nda_resonance">
+<meta name="ext-resource-dependency" content="assets/min/nda-synchronization.jpg" data-resource-id="nda_synchronization">
+<meta name="ext-resource-dependency" content="assets/min/nda-loop.jpg" data-resource-id="nda_loop">
+<meta name="ext-resource-dependency" content="assets/min/nda-echo-minigames.jpg" data-resource-id="nda_echo_minigames">
+<meta name="ext-resource-dependency" content="assets/min/nda-echo-types.jpg" data-resource-id="nda_echo_types">
+<meta name="ext-resource-dependency" content="assets/min/nda-lens.jpg" data-resource-id="nda_lens">
+<meta name="ext-resource-dependency" content="assets/min/nda-artist-world.jpg" data-resource-id="nda_artist_world">
+<meta name="ext-resource-dependency" content="assets/min/nda-creation-kit.jpg" data-resource-id="nda_creation_kit">
+<meta name="ext-resource-dependency" content="assets/min/got-hud.jpg" data-resource-id="got_hud">
+<meta name="ext-resource-dependency" content="assets/min/got-sprites-01.jpg" data-resource-id="got_sprites_01">
+<meta name="ext-resource-dependency" content="assets/min/got-sprites-02.jpg" data-resource-id="got_sprites_02">
+<script src="./support.js?v=20260831b"></script>
+<template id="__bundler_thumbnail" data-bg-color="#000f0f">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#000f0f"/>
+    <rect x="120" y="120" width="960" height="560" fill="none" stroke="#1f7a72" stroke-width="6"/>
+    <rect x="160" y="160" width="880" height="70" fill="none" stroke="#1f7a72" stroke-width="4"/>
+    <text x="190" y="212" font-family="monospace" font-size="46" fill="#9ff5e8">C:\IV\SUMMARY.TXT</text>
+    <rect x="160" y="270" width="330" height="370" fill="none" stroke="#1f7a72" stroke-width="4"/>
+    <rect x="530" y="270" width="510" height="52" fill="#9ff5e8" opacity="0.85"/>
+    <rect x="530" y="346" width="510" height="52" fill="none" stroke="#1f7a72" stroke-width="4"/>
+    <rect x="530" y="422" width="510" height="52" fill="none" stroke="#1f7a72" stroke-width="4"/>
+    <rect x="530" y="498" width="510" height="52" fill="none" stroke="#1f7a72" stroke-width="4"/>
+    <rect x="530" y="574" width="330" height="52" fill="none" stroke="#1f7a72" stroke-width="4"/>
+    <rect x="190" y="300" width="270" height="310" fill="#0d3b38"/>
+  </svg>
+</template>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Igor Veshutkin — Game UI/UX Portfolio</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="build-version" content="20260831b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #05040c; }
+  body { -webkit-font-smoothing: antialiased; }
+  a { color: var(--fg, #cfcbff); text-decoration: none; }
+  a:hover { color: var(--bg, #05040c); background: var(--fg, #cfcbff); }
+  ::selection { background: var(--fg, #cfcbff); color: var(--bg, #05040c); }
+  @media (pointer: fine) and (min-width: 861px) {
+    html, body, html *, body * { cursor: none !important; }
+  }
+  @keyframes om-sweep { 0% { transform: translateY(-140%) } 100% { transform: translateY(2400%) } }
+  @keyframes om-blink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+  @keyframes om-marquee { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+  @keyframes om-pulse { 0%,100%{opacity:.35} 50%{opacity:1} }
+  @keyframes om-nudge { 0%,100%{transform:translateY(0)} 50%{transform:translateY(4px)} }
+  @keyframes om-cpulse { 0%,100%{transform:scale(1)} 50%{transform:scale(.68)} }
+  @keyframes om-glow {
+    0%,100% { opacity: .28; box-shadow: 0 0 3px rgba(74,222,128,.35); }
+    50%     { opacity: 1;   box-shadow: 0 0 14px rgba(74,222,128,.9); }
+  }
+  .om-lines { background: repeating-linear-gradient(180deg, rgba(0,0,0,0) 0 2px, rgba(0,0,0,.28) 2px 4px); }
+  @media (max-width: 860px) {
+    .om-lines { background: repeating-linear-gradient(180deg, rgba(0,0,0,0) 0 2px, rgba(0,0,0,.13) 2px 3px); }
+    .om-sweep { opacity: .35 !important; }
+  }
+  input[type="range"].om-vol { -webkit-appearance: none; appearance: none; background: transparent; color: var(--fg, #cfcbff); opacity: 1; }
+  input[type="range"].om-vol::-webkit-slider-runnable-track { height: 3px; background: var(--fg, #cfcbff); opacity: .7; }
+  input[type="range"].om-vol::-moz-range-track { height: 3px; background: var(--fg, #cfcbff); opacity: .7; }
+  input[type="range"].om-vol::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 7px; height: 11px; margin-top: -4px; border-radius: 0; background: var(--fg, #cfcbff); }
+  input[type="range"].om-vol::-moz-range-thumb { width: 7px; height: 11px; border: 0; border-radius: 0; background: var(--fg, #cfcbff); }
+</style>
+</helmet>
+
+<div style="position:relative;min-height:100vh;background:var(--bg,#05040c);color:var(--fg,#cfcbff);font:400 13px/1.5 'JetBrains Mono',ui-monospace,monospace;overflow-x:hidden">
+
+  <div style="position:fixed;inset:0;z-index:60;pointer-events:none;overflow:hidden;mix-blend-mode:multiply">
+    <div class="om-lines" style="position:absolute;left:0;right:0;top:-400px;height:calc(100% + 800px)"></div>
+  </div>
+  <div style="position:fixed;inset:0;z-index:61;pointer-events:none;opacity:.5;background:radial-gradient(120% 90% at 50% 50%,transparent 55%,rgba(0,0,0,.85) 100%)"></div>
+  <div style="position:fixed;left:0;right:0;top:0;height:22vh;z-index:62;pointer-events:none;opacity:.4;background:linear-gradient(180deg,var(--glow,rgba(140,130,255,.12)),transparent)"></div>
+  <div style="position:absolute;inset:0;z-index:63;pointer-events:none;overflow:hidden">
+    <div ref="{{ sweepRef }}" class="om-sweep" style="position:absolute;left:0;right:0;top:0;height:9vh;opacity:.11;background:linear-gradient(180deg,transparent,var(--glow,rgba(140,130,255,.12)) 55%,rgba(255,255,255,.05) 78%,transparent);animation:om-sweep 26s linear infinite"></div>
+  </div>
+
+  <div style="position:relative;opacity:{{ shellOpacity }};transform:{{ shellScale }};transition:opacity .55s ease .12s, transform .55s ease .12s">
+
+    <div style="height:{{ hdrH }}"></div>
+    <header id="om-topbar" style="position:fixed;left:0;right:0;top:0;z-index:90;background:var(--bg,#05040c);border-bottom:1px solid var(--line,#4b45a6)">
+      <div style="display:flex;flex-wrap:wrap;gap:4px 18px;align-items:center;justify-content:space-between;padding:7px 14px;font:400 10px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.06em;color:var(--dim,#7c76c8)">
+        <span>IGOR.V</span>
+        <span>GAME UI/UX &amp; GRAPHIC</span>
+        <span>MOSCOW / GMT+3</span>
+        <span style="display:{{ dWide }};gap:7px;align-items:center;min-width:0">
+          <button type="button" onClick="{{ togglePlay }}" aria-label="play" style="min-width:26px;min-height:22px;padding:0 5px;background:transparent;border:1px solid var(--line,#1f7a72);color:inherit;font:400 9px/1.3 'JetBrains Mono',monospace;cursor:pointer;white-space:nowrap" style-hover="background:var(--fg,#9ff5e8);color:var(--bg,#000f0f)">{{ playMark }}</button>
+          <button type="button" onClick="{{ skipTrack }}" aria-label="next track" style="min-width:24px;min-height:22px;padding:0 5px;background:transparent;border:1px solid var(--line,#1f7a72);color:inherit;font:400 9px/1.3 'JetBrains Mono',monospace;cursor:pointer;white-space:nowrap" style-hover="background:var(--fg,#9ff5e8);color:var(--bg,#000f0f)">▶▶</button>
+          <span data-player-label style="position:relative;display:block;overflow:hidden;white-space:nowrap;width:{{ trackBoxW }};flex:0 0 auto;line-height:1.4;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8px,#000 calc(100% - 8px),transparent);mask-image:linear-gradient(90deg,transparent,#000 8px,#000 calc(100% - 8px),transparent)">
+            <span style="display:inline-flex;width:max-content;animation:{{ marqAnim }}">
+              <span style="padding-right:{{ marqGap }}">{{ trackName }}</span>
+              <span style="display:{{ dMarq }};padding-right:{{ marqGap }}">{{ trackName }}</span>
+            </span>
+          </span>
+          <span style="display:{{ dWide }};gap:5px;align-items:center">
+            <span style="opacity:.7">VOL</span>
+            <input type="range" class="om-vol" min="0" max="100" step="1" value="{{ volume }}" onInput="{{ setVolume }}" aria-label="volume" style="width:52px;height:11px;cursor:pointer" />
+            <span style="min-width:24px;text-align:right;opacity:.7">{{ volLabel }}</span>
+          </span>
+          <span style="display:{{ dWide }};gap:2px;align-items:flex-end;height:11px">
+            <sc-for list="{{ meter }}" as="m" hint-placeholder-count="7">
+              <span style="width:2px;height:{{ m.h }};background:currentColor;opacity:{{ m.o }}"></span>
+            </sc-for>
+          </span>
+        </span>
+        <span>{{ clock }}</span>
+      </div>
+      <nav style="display:flex;flex-wrap:wrap;align-items:stretch;border-top:1px solid var(--line,#4b45a6)">
+        <button type="button" onClick="{{ goHome }}" style="flex:1 1 90px;min-height:44px;padding:10px 8px;background:{{ bgHome }};box-shadow:{{ shHome }};border:0;border-right:1px solid var(--line,#4b45a6);color:inherit;font:400 15px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.08em;cursor:pointer;opacity:{{ opHome }};white-space:nowrap;transition:opacity .18s" style-hover="background:var(--fg,#cfcbff);color:var(--bg,#05040c);opacity:1"><span style="display:{{ dRu }}">ОБО МНЕ</span><span style="display:{{ dEn }}">SUMMARY</span></button>
+        <button type="button" onClick="{{ goWorks }}" style="flex:1 1 90px;min-height:44px;padding:10px 8px;background:{{ bgWorks }};box-shadow:{{ shWorks }};border:0;border-right:1px solid var(--line,#4b45a6);color:inherit;font:400 15px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.08em;cursor:pointer;opacity:{{ opWorks }};white-space:nowrap;transition:opacity .18s" style-hover="background:var(--fg,#cfcbff);color:var(--bg,#05040c);opacity:1"><span style="display:{{ dRu }}">КЕЙСЫ</span><span style="display:{{ dEn }}">CASES</span></button>
+        <button type="button" onClick="{{ goExp }}" style="flex:1 1 90px;min-height:44px;padding:10px 8px;background:{{ bgExp }};box-shadow:{{ shExp }};border:0;border-right:1px solid var(--line,#4b45a6);color:inherit;font:400 15px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.08em;cursor:pointer;opacity:{{ opExp }};white-space:nowrap;transition:opacity .18s" style-hover="background:var(--fg,#cfcbff);color:var(--bg,#05040c);opacity:1"><span style="display:{{ dRu }}">ОПЫТ</span><span style="display:{{ dEn }}">EXPERIENCE</span></button>
+        <button type="button" onClick="{{ goContact }}" style="flex:1 1 90px;min-height:44px;padding:10px 8px;background:{{ bgContact }};box-shadow:{{ shContact }};border:0;border-right:1px solid var(--line,#4b45a6);color:inherit;font:400 15px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.08em;cursor:pointer;opacity:{{ opContact }};white-space:nowrap;transition:opacity .18s" style-hover="background:var(--fg,#cfcbff);color:var(--bg,#05040c);opacity:1"><span style="display:{{ dRu }}">КОНТАКТЫ</span><span style="display:{{ dEn }}">CONTACT</span></button>
+        <div style="display:flex;align-items:center;gap:10px;padding:6px 12px;margin-left:auto;border-left:1px solid var(--line,#4b45a6)">
+          <div style="display:flex;gap:0">
+            <button type="button" onClick="{{ setRu }}" style="min-width:34px;min-height:32px;background:transparent;border:1px solid var(--line,#4b45a6);color:inherit;font:400 10px/1.3 var(--disp,'JetBrains Mono'),monospace;cursor:pointer;opacity:{{ opRu }};white-space:nowrap" style-hover="background:var(--fg,#cfcbff);color:var(--bg,#05040c)">RU</button>
+            <button type="button" onClick="{{ setEn }}" style="min-width:34px;min-height:32px;background:transparent;border:1px solid var(--line,#4b45a6);border-left:0;color:inherit;font:400 10px/1.3 var(--disp,'JetBrains Mono'),monospace;cursor:pointer;opacity:{{ opEn }};white-space:nowrap" style-hover="background:var(--fg,#cfcbff);color:var(--bg,#05040c)">EN</button>
+          </div>
+          <div style="display:flex;gap:6px;align-items:center">
+            <sc-for list="{{ themeList }}" as="th" hint-placeholder-count="4">
+              <button type="button" title="{{ th.name }}" onClick="{{ th.pick }}" style="width:16px;height:16px;padding:0;border:1px solid var(--line,#4b45a6);background:{{ th.swatch }};cursor:pointer;outline-offset:2px;outline:{{ th.ring }};white-space:nowrap"></button>
+            </sc-for>
+          </div>
+                    <button type="button" onClick="{{ toggleSound }}" style="min-height:32px;padding:0 8px;background:transparent;border:1px solid var(--line,#4b45a6);color:inherit;font:400 10px/1.3 var(--disp,'JetBrains Mono'),monospace;cursor:pointer;white-space:nowrap" style-hover="background:var(--fg,#cfcbff);color:var(--bg,#05040c)">{{ sndLabel }}</button>
+        </div>
+      </nav>
+      <div style="position:absolute;inset:0;z-index:6;pointer-events:none;opacity:.4;background:linear-gradient(180deg,var(--glow,rgba(140,130,255,.12)),transparent)"></div>
+      <div class="om-lines" style="position:absolute;inset:0;z-index:7;pointer-events:none;mix-blend-mode:multiply"></div>
+    </header>
+
+    <div id="sec-home">
+          <section style="padding:12px 14px 14px;max-width:1100px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr);gap:8px">
+            <div style="border:1px solid var(--line,#4b45a6);padding:10px">
+              <div style="display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line,#4b45a6);padding:9px 12px;font:400 15px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.1em">
+                <span data-om-label="C:\IV" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">C:\Design\Subjects\IV\Summary.txt</span>
+                <span style="font-size:10px;color:var(--dim,#7c76c8);white-space:nowrap">{{ today }}</span>
+              </div>
+              <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:10px">
+                <div style="flex:0 1 300px;border:1px solid var(--line,#4b45a6);padding:8px;display:flex;flex-direction:column">
+                  <div style="display:flex;gap:5px;justify-content:flex-end;margin-bottom:7px">
+                    <span style="width:9px;height:9px;border:1px solid var(--line,#4b45a6);border-radius:50%"></span>
+                    <span style="width:9px;height:9px;border:1px solid var(--line,#4b45a6);border-radius:50%"></span>
+                    <span style="width:9px;height:9px;border:1px solid var(--line,#4b45a6);border-radius:50%"></span>
+                  </div>
+                  <div style="flex:1;min-height:190px;position:relative;z-index:70;border:1px solid var(--line,#4b45a6);overflow:hidden;background:var(--bg,#000f0f)">
+                    <canvas ref="{{ ditherRef }}" style="display:block;width:100%;height:100%;image-rendering:pixelated"></canvas>
+                  </div>
+                  <div style="display:{{ dWideBlock }};margin-top:8px">
+                  <div style="min-width:0;border:1px solid var(--line,#4b45a6)">
+                  <div style="padding:8px 12px 9px;display:grid;gap:5px">
+                    <div style="display:flex;gap:10px;justify-content:space-between;font:400 9px/1.3 'JetBrains Mono',monospace;color:var(--dim,#7c76c8);letter-spacing:.06em;white-space:nowrap;overflow:hidden">
+                      <span>BIO-MON/CH.01</span>
+                      <span>SIG {{ tSig }}%</span>
+                      <span style="color:var(--fg,#9ff5e8)">● {{ clock }}</span>
+                    </div>
+
+                    <div style="display:flex;gap:6px;align-items:stretch">
+                      <div style="position:relative;flex:1;min-width:0;border:1px solid var(--line,#1f7a72);padding:1px">
+                        <svg viewBox="0 0 600 130" preserveAspectRatio="none" style="width:100%;height:40px;display:block;background:repeating-linear-gradient(90deg,var(--grid,rgba(90,240,220,.14)) 0 1px,transparent 1px 25px),repeating-linear-gradient(0deg,var(--grid,rgba(90,240,220,.14)) 0 1px,transparent 1px 24px)">
+                          <polyline points="{{ waveFill }}" fill="currentColor" opacity="0.18" stroke="none"></polyline>
+                          <polyline points="{{ wave }}" fill="none" stroke="currentColor" stroke-width="2"></polyline>
+                          <polyline points="{{ waveGhost }}" fill="none" stroke="currentColor" stroke-width="1" opacity="0.35"></polyline>
+                          <line x1="{{ cursorX }}" y1="0" x2="{{ cursorX }}" y2="130" stroke="currentColor" stroke-width="1" opacity="0.75"></line>
+                        </svg>
+                        <span style="position:absolute;left:4px;top:3px;font:400 8px/1 'JetBrains Mono',monospace;color:var(--dim,#3f9c93)">WFG {{ tWfg }}</span>
+                        <span style="position:absolute;right:4px;top:3px;font:400 8px/1 'JetBrains Mono',monospace;color:var(--dim,#3f9c93)">{{ tPeak }}PK</span>
+                      </div>
+                    </div>
+
+                    <div style="display:grid;gap:2px">
+                      <sc-for list="{{ meters }}" as="m" hint-placeholder-count="3">
+                        <div style="display:grid;grid-template-columns:8ch 1fr 4ch;gap:8px;align-items:center;font:400 9px/1.45 'JetBrains Mono',monospace;white-space:nowrap">
+                          <span style="color:var(--dim,#7c76c8);overflow:hidden;text-overflow:ellipsis">{{ m.k }}</span>
+                          <span style="position:relative;min-width:0;height:8px;border:1px solid var(--line,#1f7a72);background:repeating-linear-gradient(90deg,var(--grid,rgba(90,240,220,.14)) 0 1px,transparent 1px 6px)">
+                            <span style="position:absolute;left:0;top:0;bottom:0;width:{{ m.pct }};background:var(--fg,#9ff5e8);opacity:.85"></span>
+                          </span>
+                          <span style="text-align:right">{{ m.v }}</span>
+                        </div>
+                      </sc-for>
+                    </div>
+                  </div>
+                </div>
+                  </div>
+                </div>
+                <div style="flex:1 1 340px;min-width:0;display:grid;gap:10px;align-content:start">
+                  <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px">
+                    <div style="grid-column:1/-1;border:1px solid var(--line,#4b45a6);padding:12px 14px;display:grid;gap:6px">
+                      <div style="font:400 10px/1.3 var(--disp,'JetBrains Mono'),monospace;color:var(--dim,#7c76c8);letter-spacing:.14em">// SUBJECT</div>
+                      <div style="font:700 clamp(20px,3vw,30px)/1.15 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.02em;white-space:nowrap;text-shadow:0 0 18px var(--glow,rgba(140,130,255,.5));display:{{ dRu }}">ВЕШУТКИН ИГОРЬ</div>
+                      <div style="font:700 clamp(20px,3vw,30px)/1.15 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.02em;white-space:nowrap;text-shadow:0 0 18px var(--glow,rgba(140,130,255,.5));display:{{ dEn }}">IGOR VESHUTKIN</div>
+                      <div style="font:400 12px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.16em;color:var(--dim,#7c76c8)">UI/UX DESIGN</div>
+                    </div>
+                    <div style="border:1px solid var(--line,#4b45a6);padding:11px 14px;display:grid;gap:8px;align-content:space-between">
+                      <div style="font:400 10px/1.3 var(--disp,'JetBrains Mono'),monospace;color:var(--dim,#7c76c8);letter-spacing:.1em"><span style="display:{{ dRu }}">СПЕЦИАЛИЗАЦИЯ</span><span style="display:{{ dEn }}">SPECIALIZATION</span></div>
+                      <div style="font:700 clamp(16px,2.2vw,22px)/1.15 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.01em;white-space:nowrap;text-shadow:0 0 18px var(--glow,rgba(140,130,255,.5))">GAME UI/UX</div>
+                    </div>
+                    <div style="border:1px solid var(--line,#4b45a6);padding:11px 14px;display:grid;gap:8px;align-content:space-between">
+                      <div style="font:400 10px/1.3 var(--disp,'JetBrains Mono'),monospace;color:var(--dim,#7c76c8);letter-spacing:.1em"><span style="display:{{ dRu }}">ОПЫТ</span><span style="display:{{ dEn }}">EXPERIENCE</span></div>
+                      <div style="font:700 clamp(16px,2.2vw,22px)/1.15 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.01em;white-space:nowrap;text-shadow:0 0 18px var(--glow,rgba(140,130,255,.5))"><span style="display:{{ dRu }}">2 ГОДА 2 МЕС</span><span style="display:{{ dEn }}">2 YRS 2 MOS</span></div>
+                    </div>
+                    <div style="grid-column:1/-1;border:1px solid var(--line,#4b45a6);padding:11px 14px;display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+                      <span style="flex:0 0 auto;width:14px;height:14px;border-radius:50%;background:#4ade80;box-shadow:0 0 10px rgba(74,222,128,.8);animation:om-glow 2.6s ease-in-out infinite"></span>
+                      <span style="font:400 17px/1.2 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.05em"><span style="display:{{ dRu }}">ОТКРЫТ К РАБОТЕ</span><span style="display:{{ dEn }}">OPEN TO WORK</span></span>
+                    </div>
+                    <a href="{{ cvHref }}" download onClick="{{ cvClick }}" style="border:1px solid var(--fg,#cfcbff);background:var(--fg,#cfcbff);color:var(--bg,#05040c);padding:12px 14px;min-height:48px;width:100%;display:flex;gap:12px;align-items:center;justify-content:space-between;font:700 13px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.12em;text-align:left;text-decoration:none;cursor:pointer;box-shadow:0 0 18px var(--glow,rgba(140,130,255,.35));transition:background .15s,color .15s" style-hover="background:transparent;color:var(--fg,#cfcbff);box-shadow:0 0 26px var(--glow,rgba(140,130,255,.5))">
+                      <span>CV · PDF</span><span style="font-size:20px;line-height:1">↓</span>
+                    </a>
+                    <a href="https://t.me/IVV766" target="_blank" rel="noopener" style="border:1px solid var(--fg,#cfcbff);background:var(--fg,#cfcbff);color:var(--bg,#05040c);padding:12px 14px;min-height:48px;display:flex;gap:12px;align-items:center;justify-content:space-between;font:700 13px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.12em;text-decoration:none;box-shadow:0 0 18px var(--glow,rgba(140,130,255,.35));transition:background .15s,color .15s" style-hover="background:transparent;color:var(--fg,#cfcbff);box-shadow:0 0 26px var(--glow,rgba(140,130,255,.5))">
+                      <span style="min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap"><span style="display:{{ dRu }}">НАПИСАТЬ МНЕ</span><span style="display:{{ dEn }}">GET IN TOUCH</span></span><span style="font-size:22px;line-height:1">↗</span>
+                    </a>
+                    <div style="grid-column:1/-1;border:1px solid var(--line,#4b45a6);padding:12px 14px;display:grid;gap:7px">
+                      <div style="font:400 10px/1.3 var(--disp,'JetBrains Mono'),monospace;color:var(--dim,#7c76c8);letter-spacing:.14em">// STATEMENT</div>
+                      <p style="margin:0;font-size:13px;line-height:1.7;text-wrap:pretty;display:{{ dRu }}">UI/UX дизайнер игровых интерфейсов уровня Middle. Работал над многопользовательским соревновательным шутером от третьего лица с элементами roguelike на Unreal Engine в команде более 20 человек. Самостоятельно проектировал ключевые сценарии игрока и значительную часть игрового интерфейса, участвовал в обновлении визуального стиля после реструктуризации проекта. Приношу пользу команде за счёт системного анализа конкурентов, проработки интерфейсов с нуля и контроля их реализации в движке.</p>
+                      <p style="margin:0;font-size:13px;line-height:1.7;text-wrap:pretty;display:{{ dEn }}">Middle UI/UX designer working on game interfaces. I worked on a multiplayer competitive third-person shooter with roguelike elements built in Unreal Engine, in a team of more than 20 people. I designed the key player scenarios and a large part of the game interface on my own, and took part in updating the visual style after the project was restructured. I bring value to the team through systematic competitor analysis, building interfaces from scratch and overseeing their implementation in the engine.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" onClick="{{ goWorks }}" style="display:{{ dScrollHint }};justify-self:end;align-items:center;gap:10px;padding:9px 12px;background:var(--bg,#000f0f);border:1px solid var(--line,#1f7a72);color:var(--dim,#3f9c93);font:400 10px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.22em;cursor:pointer;white-space:nowrap" style-hover="color:var(--bg,#000f0f);background:var(--fg,#9ff5e8)">
+              <span style="display:{{ dRu }}">ЛИСТАЙ ДАЛЬШЕ</span>
+              <span style="display:{{ dEn }}">SCROLL DOWN</span>
+              <span style="animation:om-nudge 1.4s ease-in-out infinite;font-size:12px">▼</span>
+            </button>
+
+          </section>
+      </div>
+
+      <div id="sec-works">
+      <div style="border-top:1px solid var(--line,#4b45a6);border-bottom:1px solid var(--line,#4b45a6);padding:13px 14px;display:flex;align-items:center;gap:16px">
+        <span style="flex:1;min-width:12px;height:1px;background:var(--line,#4b45a6)"></span>
+        <span style="font:400 13px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.34em;white-space:nowrap"><span style="display:{{ dRu }}">КЕЙСЫ</span><span style="display:{{ dEn }}">CASES</span></span>
+        <span style="flex:1;min-width:12px;height:1px;background:var(--line,#4b45a6)"></span>
+      </div>
+
+      <section style="padding:0">
+        <div style="display:{{ dCards }};gap:12px;padding:12px 14px 18px">
+          <sc-for list="{{ cards }}" as="c" hint-placeholder-count="4">
+            <button type="button" onClick="{{ c.open }}" style="display:grid;padding:0;width:100%;background:transparent;border:1px solid var(--line,#4b45a6);color:inherit;text-align:left;cursor:pointer">
+              <div style="position:relative;width:100%;aspect-ratio:{{ c.ratio }};overflow:hidden;background:var(--bg,#000f0f)">
+                <sc-for list="{{ c.frames }}" as="fr" hint-placeholder-count="1">
+                  <div style="position:absolute;inset:0;background-image:{{ fr.bg }};background-size:contain;background-position:center;background-repeat:no-repeat;opacity:{{ fr.op }};transition:opacity .7s ease"></div>
+                </sc-for>
+              </div>
+              <div style="display:flex;gap:10px;align-items:center;min-height:46px;padding:11px 12px;border-top:1px solid var(--line,#4b45a6)">
+                <span style="font:400 10px/1.3 var(--disp,'JetBrains Mono'),monospace;opacity:.7;flex:0 0 22px">{{ c.code }}</span>
+                <span style="flex:1;min-width:0;font:400 13px/1.35 'JetBrains Mono',monospace;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ c.name }}</span>
+                <span style="flex:0 0 auto;display:flex;gap:5px;align-items:center">
+                  <sc-for list="{{ c.tools }}" as="tl" hint-placeholder-count="3">
+                    <span style="width:22px;height:22px;display:grid;place-items:center;border:1px solid {{ tl.fg }};color:{{ tl.fg }};background:{{ tl.bg }};font:700 9px/1 var(--disp,'JetBrains Mono'),monospace">{{ tl.ab }}</span>
+                  </sc-for>
+                </span>
+              </div>
+            </button>
+          </sc-for>
+        </div>
+        <div style="display:{{ dPanes }};grid-template-columns:{{ worksCols }};align-items:stretch">
+          <div style="display:{{ dList }};border-right:1px solid var(--line,#4b45a6);min-width:0;max-height:{{ paneCap }};overflow-y:{{ paneOv }};position:{{ panePos }};top:{{ paneTop }}">
+            <div style="padding:10px 12px;font:400 10px/1.5 var(--disp,'JetBrains Mono'),monospace;color:var(--dim,#7c76c8);border-bottom:1px solid var(--line,#4b45a6);overflow-wrap:anywhere">{{ pathLabel }}</div>
+            <sc-for list="{{ files }}" as="f" hint-placeholder-count="4">
+              <button type="button" onClick="{{ f.open }}" style="display:flex;gap:8px;align-items:center;width:100%;min-height:46px;padding:9px 12px;background:{{ f.bg }};border:0;border-bottom:1px solid var(--line,#4b45a6);color:{{ f.fg }};font:400 12px/1.35 'JetBrains Mono',monospace;text-align:left;cursor:pointer;opacity:{{ f.op }};white-space:nowrap" style-hover="background:var(--fg,#cfcbff);color:var(--bg,#05040c)">
+                <span style="font:400 10px/1.3 var(--disp,'JetBrains Mono'),monospace;opacity:.7;flex:0 0 30px">{{ f.no }}</span>
+                <span style="flex:1;min-width:0;font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">{{ f.name }}</span>
+                <span style="font:400 10px/1.3 var(--disp,'JetBrains Mono'),monospace;opacity:.7;white-space:nowrap">{{ f.kind }}</span>
+              </button>
+            </sc-for>
+          </div>
+
+          <div style="display:flex;flex-direction:column;min-width:0;height:{{ paneH }};max-height:{{ paneCap }};position:{{ panePos }};top:{{ paneTop }};z-index:70">
+            <div class="om-lines" style="position:absolute;inset:0;z-index:5;pointer-events:none;mix-blend-mode:multiply"></div>
+            <button type="button" onClick="{{ backToList }}" style="display:{{ dBack }};align-items:center;gap:10px;width:100%;min-height:46px;padding:10px 14px;background:transparent;border:0;border-bottom:1px solid var(--line,#4b45a6);color:inherit;font:400 12px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.12em;cursor:pointer;text-align:left" style-hover="background:var(--fg,#9ff5e8);color:var(--bg,#000f0f)">
+              <span style="font-size:15px;line-height:1">←</span><span style="display:{{ dRu }}">ВСЕ КЕЙСЫ</span><span style="display:{{ dEn }}">ALL CASES</span>
+            </button>
+            <div style="padding:12px 14px;border-bottom:1px solid var(--line,#4b45a6);background:var(--bg,#000f0f)">
+              <div style="display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between;align-items:baseline;font:400 9px/1.4 'JetBrains Mono',monospace;letter-spacing:.14em;color:var(--dim,#3f9c93)">
+                <span>{{ lookingLabel }}</span>
+                <span style="white-space:nowrap">{{ selMeta }}</span>
+              </div>
+              <div style="margin-top:5px;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline">
+                <span style="font:700 clamp(19px,2.6vw,26px)/1.25 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.02em;text-shadow:0 0 14px var(--glow,rgba(90,240,220,.35))">{{ selTitle }}</span>
+                <span style="font:400 11px/1.6 'JetBrains Mono',monospace;color:var(--dim,#3f9c93);letter-spacing:.1em">{{ selSub }}</span>
+                <span style="margin-left:auto;display:flex;gap:6px;align-items:center">
+                  <sc-for list="{{ selTools }}" as="t" hint-placeholder-count="4">
+                    <span title="{{ t.name }}" style="width:24px;height:24px;display:grid;place-items:center;border:1px solid {{ t.fg }};color:{{ t.fg }};background:{{ t.bg }};font:700 10px/1 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.02em;transition:box-shadow .18s,filter .18s" style-hover="box-shadow:0 0 12px {{ t.fg }};filter:brightness(1.25)">{{ t.ab }}</span>
+                  </sc-for>
+                </span>
+              </div>
+              <div style="display:{{ dTabs }};margin-top:10px;flex-wrap:wrap;border:1px solid var(--line,#1f7a72)">
+                <sc-for list="{{ caseTabs }}" as="tb" hint-placeholder-count="3">
+                  <button type="button" onClick="{{ tb.go }}" style="flex:1 1 auto;min-height:34px;padding:8px 14px;background:{{ tb.bg }};color:{{ tb.fg }};border:0;border-right:1px solid var(--line,#1f7a72);font:400 10px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.14em;cursor:pointer;white-space:nowrap;transition:background .18s,color .18s" style-hover="background:var(--fg,#9ff5e8);color:var(--bg,#000f0f)">{{ tb.label }}</button>
+                </sc-for>
+              </div>
+            </div>
+            <div data-works-scroll style="flex:{{ paneFlex }};min-height:0;overflow-y:{{ paneOv }};overscroll-behavior:contain;padding:14px;background:repeating-linear-gradient(0deg,var(--grid,rgba(140,130,255,.16)) 0 1px,transparent 1px 32px),repeating-linear-gradient(90deg,var(--grid,rgba(140,130,255,.16)) 0 1px,transparent 1px 32px)">
+              <div style="display:{{ dEmpty }};padding:40px 0;text-align:center;font:400 10px/1.9 var(--disp,'JetBrains Mono'),monospace;color:var(--dim,#7c76c8)">
+                <span style="display:{{ dRu }}">ВЫБЕРИ ФАЙЛ СЛЕВА</span>
+                <span style="display:{{ dEn }}">PICK A FILE ON THE LEFT</span>
+              </div>
+              <div style="display:{{ dSel }};max-width:820px;margin:0 auto">
+                <div style="border:1px solid var(--line,#1f7a72);padding:12px 14px;display:grid;gap:8px;background:var(--bg,#000f0f)">
+                  <div style="font:400 9px/1.3 'JetBrains Mono',monospace;letter-spacing:.12em;color:var(--dim,#3f9c93)">{{ aboutLabel }}</div>
+                  <p style="margin:0;font-size:13px;line-height:1.85;text-wrap:pretty">{{ selIntro }}</p>
+                </div>
+                <div style="display:{{ dTabSoon }};margin-top:12px;border:1px solid var(--line,#4b45a6);padding:34px 16px;place-items:center;text-align:center;gap:8px;background:repeating-linear-gradient(45deg,rgba(255,255,255,.04) 0 6px,transparent 6px 12px)">
+                  <div style="font:400 12px/1.4 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.24em;color:var(--fg,#9ff5e8)">{{ tabSoonTitle }}</div>
+                  <div style="font:400 10px/1.7 'JetBrains Mono',monospace;letter-spacing:.1em;color:var(--dim,#3f9c93)">{{ tabSoonSub }}</div>
+                </div>
+                <p style="display:{{ dTabIntro }};margin:12px 0 0;max-width:80ch;font-size:13px;line-height:1.85;text-wrap:pretty">{{ tabIntro }}</p>
+                <div style="margin-top:12px;display:{{ dShots }};gap:14px">
+                  <sc-for list="{{ shots }}" as="sh" hint-placeholder-count="3">
+                    <div data-reveal data-shot="{{ sh.no }}" style="opacity:0;transform:translateY(14px)">
+                      <div style="display:{{ sh.dNote }};margin-bottom:8px;padding-bottom:7px;border-bottom:1px solid var(--line,#1f7a72)">
+                        <span style="font:400 9px/1.4 'JetBrains Mono',monospace;letter-spacing:.14em;color:var(--dim,#3f9c93)">{{ sh.no }}</span>
+                        <span style="margin-left:10px;font:400 14px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.1em;color:var(--fg,#9ff5e8)">{{ sh.label }}</span>
+                      </div>
+                      <p style="display:{{ sh.dNote }};margin:0 0 10px;max-width:80ch;font-size:12px;line-height:1.8;color:var(--dim,#3f9c93);text-wrap:pretty">{{ sh.note }}</p>
+                      <div onClick="{{ sh.zoom }}" onTouchStart="{{ sh.tStart }}" onTouchEnd="{{ sh.tEnd }}" data-zoom style="display:{{ sh.dImg }};position:relative;z-index:6;width:100%;aspect-ratio:{{ sh.ratio }};border:1px solid var(--line,#4b45a6);cursor:pointer;touch-action:pan-y">
+                        <div style="position:absolute;inset:0;overflow:hidden">
+                          <div style="position:absolute;top:0;bottom:0;left:0;width:{{ sh.trackW }};display:flex;transform:{{ sh.trackX }};transition:transform .5s cubic-bezier(.22,.61,.36,1)">
+                            <sc-for list="{{ sh.frames }}" as="fr" hint-placeholder-count="1">
+                              <div role="img" aria-label="{{ sh.label }}" style="flex:0 0 {{ fr.w }};height:100%;background-image:{{ fr.bg }};background-size:contain;background-position:center;background-repeat:no-repeat;opacity:{{ fr.op }};transition:opacity .45s ease"></div>
+                            </sc-for>
+                          </div>
+                        </div>
+                        <div style="display:{{ sh.dSpin }};position:absolute;inset:0;place-items:center;font:400 20px/1 var(--disp,'JetBrains Mono'),monospace;color:var(--dim,#3f9c93)"><span style="display:inline-block;width:1ch;text-align:center">{{ spinner }}</span></div>
+                        <div style="display:{{ sh.dNav }};position:absolute;left:8px;top:8px;z-index:3;gap:4px;align-items:center">
+                          <sc-for list="{{ sh.dots }}" as="dt" hint-placeholder-count="3">
+                            <button type="button" onClick="{{ dt.go }}" aria-label="frame {{ dt.n }}" style="width:9px;height:9px;padding:0;border:1px solid var(--line,#1f7a72);background:{{ dt.bg }};cursor:pointer;transition:background .2s ease"></button>
+                          </sc-for>
+                        </div>
+                        <div style="display:{{ sh.dNav }};position:absolute;right:8px;bottom:8px;z-index:2;gap:0;border:1px solid var(--line,#1f7a72);background:var(--bg,#000f0f)">
+                          <button type="button" onClick="{{ sh.prev }}" aria-label="previous" style="min-width:26px;height:24px;padding:0;background:transparent;border:0;border-right:1px solid var(--line,#1f7a72);color:inherit;font:400 9px/1.3 'JetBrains Mono',monospace;cursor:pointer" style-hover="background:var(--fg,#9ff5e8);color:var(--bg,#000f0f)">◀</button>
+                          <span style="display:grid;place-items:center;padding:0 8px;font:400 9px/1.3 'JetBrains Mono',monospace;letter-spacing:.08em;color:var(--dim,#3f9c93);white-space:nowrap">{{ sh.counter }}</span>
+                          <button type="button" onClick="{{ sh.next }}" aria-label="next" style="min-width:26px;height:24px;padding:0;background:transparent;border:0;border-left:1px solid var(--line,#1f7a72);color:inherit;font:400 9px/1.3 'JetBrains Mono',monospace;cursor:pointer" style-hover="background:var(--fg,#9ff5e8);color:var(--bg,#000f0f)">▶</button>
+                        </div>
+                      </div>
+                      <div style="display:{{ sh.dSlot }};position:relative;aspect-ratio:{{ sh.ratio }};border:1px solid var(--line,#4b45a6);place-items:center;text-align:center;padding:12px;background:repeating-linear-gradient(45deg,rgba(255,255,255,.05) 0 5px,transparent 5px 10px);font:400 10px/1.7 var(--disp,'JetBrains Mono'),monospace;color:var(--dim,#7c76c8)">{{ sh.slot }}
+                        <div style="display:{{ sh.dNav }};position:absolute;left:8px;top:8px;z-index:3;gap:4px;align-items:center">
+                          <sc-for list="{{ sh.dots }}" as="dt" hint-placeholder-count="3">
+                            <button type="button" onClick="{{ dt.go }}" aria-label="frame {{ dt.n }}" style="width:9px;height:9px;padding:0;border:1px solid var(--line,#1f7a72);background:{{ dt.bg }};cursor:pointer;transition:background .2s ease"></button>
+                          </sc-for>
+                        </div>
+                        <div style="display:{{ sh.dNav }};position:absolute;right:8px;bottom:8px;z-index:2;gap:0;border:1px solid var(--line,#1f7a72);background:var(--bg,#000f0f)">
+                          <button type="button" onClick="{{ sh.prev }}" aria-label="previous" style="min-width:26px;height:24px;padding:0;background:transparent;border:0;border-right:1px solid var(--line,#1f7a72);color:inherit;font:400 9px/1.3 'JetBrains Mono',monospace;cursor:pointer" style-hover="background:var(--fg,#9ff5e8);color:var(--bg,#000f0f)">◀</button>
+                          <span style="display:grid;place-items:center;padding:0 8px;font:400 9px/1.3 'JetBrains Mono',monospace;letter-spacing:.08em;color:var(--dim,#3f9c93);white-space:nowrap">{{ sh.counter }}</span>
+                          <button type="button" onClick="{{ sh.next }}" aria-label="next" style="min-width:26px;height:24px;padding:0;background:transparent;border:0;border-left:1px solid var(--line,#1f7a72);color:inherit;font:400 9px/1.3 'JetBrains Mono',monospace;cursor:pointer" style-hover="background:var(--fg,#9ff5e8);color:var(--bg,#000f0f)">▶</button>
+                        </div>
+                      </div>
+                      <div style="margin-top:5px;display:{{ sh.dCap }};gap:8px;align-items:baseline;padding:4px 9px;border:1px solid var(--line,#1f7a72);font:400 9px/1.4 'JetBrains Mono',monospace;letter-spacing:.08em;color:var(--dim,#3f9c93)">
+                        <span style="color:var(--fg,#9ff5e8)">{{ sh.no }}</span>
+                        <span>{{ sh.label }}</span>
+                      </div>
+                    </div>
+                  </sc-for>
+                </div>
+                <div style="display:{{ dWip }};margin-top:14px;position:relative;overflow:hidden;border:1px solid var(--line,#4b45a6);min-height:74px;place-items:center;background:repeating-linear-gradient(135deg,#0b0b0b 0 22px,#1d1d1d 22px 44px)">
+                  <span style="position:relative;font:400 15px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.3em;color:var(--fg,#9ff5e8);text-shadow:0 0 14px var(--glow,rgba(140,130,255,.6));padding:10px 16px;background:rgba(0,0,0,.55)">WIP · COME BACK LATER</span>
+                </div>
+                <div style="margin-top:14px;display:grid;gap:8px">
+                  <sc-for list="{{ sections }}" as="sec" hint-placeholder-count="3">
+                    <div style="border:1px solid var(--line,#4b45a6);background:var(--bg,#05040c)">
+                      <button type="button" onClick="{{ sec.toggle }}" style="display:flex;gap:10px;align-items:center;justify-content:space-between;width:100%;min-height:46px;padding:12px 14px;background:transparent;border:0;color:inherit;font:400 12px/1.4 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.06em;text-align:left;cursor:pointer;white-space:nowrap" style-hover="background:var(--fg,#cfcbff);color:var(--bg,#05040c)">
+                        <span>{{ sec.label }}</span>
+                        <span style="opacity:.7">{{ sec.mark }}</span>
+                      </button>
+                      <div style="display:{{ sec.disp }};padding:0 14px 14px;font-size:13px;line-height:1.85;text-wrap:pretty">{{ sec.body }}</div>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div>
+
+      <div id="sec-exp">
+      <div style="border-top:1px solid var(--line,#4b45a6);border-bottom:1px solid var(--line,#4b45a6);padding:13px 14px;display:flex;align-items:center;gap:16px">
+        <span style="flex:1;min-width:12px;height:1px;background:var(--line,#4b45a6)"></span>
+        <span style="font:400 13px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.34em;white-space:nowrap"><span style="display:{{ dRu }}">ОПЫТ</span><span style="display:{{ dEn }}">EXPERIENCE</span></span>
+        <span style="flex:1;min-width:12px;height:1px;background:var(--line,#4b45a6)"></span>
+      </div>
+
+      <section style="padding:0 0 40px">
+        <div style="padding:10px 14px;border-bottom:1px solid var(--line,#4b45a6);font:400 10px/1.5 'JetBrains Mono',monospace;color:var(--dim,#3f9c93);overflow-wrap:anywhere">C:\Design\Subjects\IV\Experience.log</div>
+        <div style="padding:18px 14px;max-width:900px;margin:0 auto;display:grid;gap:12px">
+          <sc-for list="{{ jobs }}" as="j" hint-placeholder-count="2">
+            <div data-reveal style="opacity:0;transform:translateY(14px);border:1px solid var(--line,#1f7a72);padding:14px;display:grid;gap:12px">
+              <div style="display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:space-between;align-items:baseline">
+                <a href="{{ j.url }}" target="_blank" rel="noopener" style="display:{{ j.dLink }};gap:6px;align-items:baseline;font:700 clamp(16px,2.2vw,21px)/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.02em;text-transform:uppercase;text-decoration:underline;text-underline-offset:4px">{{ j.place }} <span style="font-size:.75em">↗</span></a>
+                <span style="display:{{ j.dPlain }};font:700 clamp(16px,2.2vw,21px)/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.02em;text-transform:uppercase">{{ j.place }}</span>
+                <span style="font:400 10px/1.4 'JetBrains Mono',monospace;letter-spacing:.1em;color:var(--dim,#3f9c93);white-space:nowrap">{{ j.dates }}</span>
+              </div>
+              <div style="display:inline-flex;justify-self:start;width:max-content;padding:4px 9px;border:1px solid var(--line,#1f7a72);font:400 10px/1.4 'JetBrains Mono',monospace;letter-spacing:.08em;color:var(--fg,#9ff5e8)">{{ j.role }}</div>
+              <p style="margin:0;max-width:76ch;font-size:13px;line-height:1.85;text-wrap:pretty;display:{{ j.dDesc }}">{{ j.desc }}</p>
+              <div style="border:1px solid var(--line,#1f7a72)">
+                <button type="button" onClick="{{ j.toggle }}" style="display:flex;gap:10px;align-items:center;justify-content:space-between;width:100%;min-height:44px;padding:11px 12px;background:transparent;border:0;color:inherit;font:400 11px/1.4 'JetBrains Mono',monospace;letter-spacing:.1em;text-align:left;cursor:pointer;white-space:nowrap" style-hover="background:var(--fg,#9ff5e8);color:var(--bg,#000f0f)">
+                  <span>{{ j.dutiesLabel }}</span>
+                  <span style="opacity:.75">{{ j.mark }}</span>
+                </button>
+                <div style="display:{{ j.dOpen }};padding:0 12px 12px;gap:5px">
+                  <sc-for list="{{ j.duties }}" as="d" hint-placeholder-count="4">
+                    <div style="display:grid;grid-template-columns:14px 1fr;gap:8px;align-items:baseline;font-size:13px;line-height:1.8;margin-top:6px">
+                      <span style="color:var(--dim,#3f9c93)">▸</span>
+                      <span style="text-wrap:pretty">{{ d.v }}</span>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </section>
+      </div>
+
+      <div id="sec-contact">
+      <div style="border-top:1px solid var(--line,#4b45a6);border-bottom:1px solid var(--line,#4b45a6);padding:13px 14px;display:flex;align-items:center;gap:16px">
+        <span style="flex:1;min-width:12px;height:1px;background:var(--line,#4b45a6)"></span>
+        <span style="font:400 13px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.34em;white-space:nowrap"><span style="display:{{ dRu }}">КОНТАКТЫ</span><span style="display:{{ dEn }}">CONTACT</span></span>
+        <span style="flex:1;min-width:12px;height:1px;background:var(--line,#4b45a6)"></span>
+      </div>
+
+      <section style="padding:26px 14px 50px;max-width:820px;margin:0 auto">
+        <div style="margin-bottom:16px;font:400 11px/1.9 'JetBrains Mono',monospace;color:var(--dim,#7c76c8);overflow-wrap:anywhere">
+          <div>C:\Design\Subjects\IV&gt; connect --host IGOR.V --via TELEGRAM</div>
+          <div>RESOLVING @IVV766 ... OK</div>
+          <div>HANDSHAKE ... OK  LATENCY &lt;24H</div>
+          <div style="color:var(--fg,#9ff5e8)">SESSION OPEN — READY TO RECEIVE BRIEF_</div>
+        </div>
+        <div style="font:700 clamp(28px,6vw,54px)/1.3 var(--disp,'JetBrains Mono'),monospace;text-shadow:0 0 18px var(--glow,rgba(140,130,255,.5))">
+          <span style="display:{{ dRu }}">СВЯЗЬ<br>УСТАНОВЛЕНА...<span style="display:inline-block;width:1ch;text-align:center">{{ spinner }}</span></span>
+          <span style="display:{{ dEn }}">CONNECTION<br>ESTABLISHED...<span style="display:inline-block;width:1ch;text-align:center">{{ spinner }}</span></span>
+        </div>
+        <div style="margin-top:18px;border:1px solid var(--line,#4b45a6)">
+          <a href="https://t.me/IVV766" target="_blank" rel="noopener" style="display:flex;gap:12px;justify-content:space-between;align-items:center;padding:16px 14px;border-bottom:1px solid var(--line,#4b45a6);min-height:56px;font:400 15px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.05em">
+            <span>TELEGRAM</span><span>@IVV766 ↗</span>
+          </a>
+          <a href="mailto:design@veshutkin-igor.ru" style="display:flex;gap:12px;justify-content:space-between;align-items:center;flex-wrap:wrap;padding:16px 14px;min-height:56px;font:400 14px/1.4 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.03em">
+            <span>EMAIL</span><span style="word-break:break-all">design@veshutkin-igor.ru ↗</span>
+          </a>
+        </div>
+        <p style="margin:18px 0 0;font-size:14px;line-height:1.9;max-width:56ch;text-wrap:pretty;display:{{ dRu }}">Всегда открыт к новым идеям и предложениям, оперативно отвечу на любые вопросы!</p>
+        <p style="margin:18px 0 0;font-size:14px;line-height:1.9;max-width:56ch;text-wrap:pretty;display:{{ dEn }}">Always open to new ideas and offers — I will reply to any question promptly!</p>
+        <div style="margin-top:26px;font:400 10px/1.9 var(--disp,'JetBrains Mono'),monospace;color:var(--dim,#7c76c8)">PING -N 1 127.0.0.1 &gt; NUL<br>REPLY FROM IGOR.V: TIME&lt;24H TTL=∞</div>
+      </section>
+      </div>
+
+    <footer style="border-top:1px solid var(--line,#4b45a6);padding:10px 14px;display:flex;flex-wrap:wrap;gap:4px 18px;justify-content:space-between;font:400 10px/1.6 var(--disp,'JetBrains Mono'),monospace;color:var(--dim,#7c76c8)">
+      <span>© IGOR.V 2026 — PORTFOLIO OS</span>
+      <span>NO COOKIES / NO TRACKERS</span>
+      <span>END OF LINE_</span>
+    </footer>
+  </div>
+
+  <div style="display:{{ cvDisp }};position:fixed;inset:0;z-index:190;background:rgba(0,0,0,.94)">
+    <div onClick="{{ cvClose }}" style="position:absolute;inset:0"></div>
+    <div data-cv-scroll style="position:absolute;left:12px;right:12px;top:54px;bottom:12px;z-index:2;overflow:auto;overscroll-behavior:contain">
+      <img src="assets/cv/cv-ru-01.png" alt="CV" style="display:{{ dRu }};width:min(1190px,100%);height:auto;margin:0 auto;border:1px solid var(--line,#1f7a72);box-shadow:0 0 40px var(--glow,rgba(90,240,220,.25))" />
+      <img src="assets/cv/cv-en-01.png" alt="CV" style="display:{{ dEn }};width:min(1190px,100%);height:auto;margin:0 auto;border:1px solid var(--line,#1f7a72);box-shadow:0 0 40px var(--glow,rgba(90,240,220,.25))" />
+    </div>
+    <div style="position:absolute;left:20px;top:16px;z-index:4;display:flex;border:1px solid var(--line,#1f7a72);background:var(--bg,#000f0f);font:400 10px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.16em">
+      <span style="padding:9px 11px;border-right:1px solid var(--line,#1f7a72);color:var(--fg,#9ff5e8)">CV</span>
+      <span style="padding:9px 11px;color:var(--dim,#3f9c93);white-space:nowrap">01 / 01</span>
+    </div>
+    <button type="button" onClick="{{ cvClose }}" aria-label="close" style="position:absolute;right:16px;top:12px;z-index:4;width:{{ tapSize }};height:{{ tapSize }};padding:0;background:var(--bg,#000f0f);border:1px solid var(--line,#1f7a72);color:var(--fg,#9ff5e8);font:400 15px/1 var(--disp,'JetBrains Mono'),monospace;cursor:pointer" style-hover="background:var(--fg,#9ff5e8);color:var(--bg,#000f0f)">✕</button>
+  </div>
+
+  <div style="display:{{ lbDisp }};position:fixed;inset:0;z-index:180;background:rgba(0,0,0,.92);align-items:center;justify-content:center;padding:{{ lbPad }}">
+    <div onClick="{{ lbClose }}" style="position:absolute;inset:0"></div>
+    <div onTouchStart="{{ lbTStart }}" onTouchEnd="{{ lbTEnd }}" style="position:relative;z-index:2;width:100%;height:100%;overflow:hidden;touch-action:pan-y">
+      <div style="position:absolute;top:0;bottom:0;left:0;width:{{ lbTrackW }};display:flex;transform:{{ lbTrackX }};transition:transform .5s cubic-bezier(.22,.61,.36,1)">
+        <sc-for list="{{ lbFrames }}" as="lf" hint-placeholder-count="1">
+          <div role="img" aria-label="{{ lbLabel }}" style="flex:0 0 {{ lf.w }};height:100%;background-image:{{ lf.bg }};background-size:contain;background-position:center;background-repeat:no-repeat;opacity:{{ lf.op }};transition:opacity .45s ease"></div>
+        </sc-for>
+      </div>
+      <div style="display:{{ lbSpin }};position:absolute;inset:0;place-items:center;font:400 26px/1 var(--disp,'JetBrains Mono'),monospace;color:var(--dim,#3f9c93)"><span style="display:inline-block;width:1ch;text-align:center">{{ spinner }}</span></div>
+    </div>
+    <div style="position:absolute;right:62px;top:20px;z-index:4;display:flex;border:1px solid var(--line,#1f7a72);background:var(--bg,#000f0f);font:400 10px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.16em">
+      <span style="padding:9px 11px;color:var(--fg,#9ff5e8)">{{ lbCase }}</span>
+    </div>
+    <div style="position:absolute;left:20px;top:20px;z-index:4;display:grid;gap:8px;justify-items:start">
+      <div style="display:flex;border:1px solid var(--line,#1f7a72);background:var(--bg,#000f0f);font:400 10px/1.3 var(--disp,'JetBrains Mono'),monospace;letter-spacing:.16em">
+        <span style="padding:9px 11px;border-right:1px solid var(--line,#1f7a72);color:var(--fg,#9ff5e8)">{{ lbLabel }}</span>
+        <span style="padding:9px 11px;color:var(--dim,#3f9c93)">{{ lbCounter }}</span>
+      </div>
+      <div style="display:{{ lbDotsDisp }};gap:4px;align-items:center">
+        <sc-for list="{{ lbDots }}" as="ld" hint-placeholder-count="3">
+          <button type="button" onClick="{{ ld.go }}" aria-label="frame {{ ld.n }}" style="width:9px;height:9px;padding:0;border:1px solid var(--line,#1f7a72);background:{{ ld.bg }};cursor:pointer;transition:background .2s ease"></button>
+        </sc-for>
+      </div>
+    </div>
+    <button type="button" onClick="{{ lbClose }}" aria-label="close" style="position:absolute;right:{{ lbBtnOff }};top:{{ lbBtnOff }};z-index:4;width:{{ tapSize }};height:{{ tapSize }};padding:0;background:var(--bg,#000f0f);border:1px solid var(--line,#1f7a72);color:var(--fg,#9ff5e8);font:400 12px/1 var(--disp,'JetBrains Mono'),monospace;cursor:pointer" style-hover="background:var(--fg,#9ff5e8);color:var(--bg,#000f0f)">✕</button>
+    <button type="button" onClick="{{ lbPrev }}" aria-label="previous" style="position:absolute;left:16px;top:50%;transform:translateY(-50%);z-index:4;width:38px;height:60px;display:{{ dWideGrid }};place-items:center;background:var(--bg,#000f0f);border:1px solid var(--line,#1f7a72);color:var(--fg,#9ff5e8);font:400 13px/1 var(--disp,'JetBrains Mono'),monospace;cursor:pointer" style-hover="background:var(--fg,#9ff5e8);color:var(--bg,#000f0f)">◀</button>
+    <button type="button" onClick="{{ lbNext }}" aria-label="next" style="position:absolute;right:16px;top:50%;transform:translateY(-50%);z-index:4;width:38px;height:60px;display:{{ dWideGrid }};place-items:center;background:var(--bg,#000f0f);border:1px solid var(--line,#1f7a72);color:var(--fg,#9ff5e8);font:400 13px/1 var(--disp,'JetBrains Mono'),monospace;cursor:pointer" style-hover="background:var(--fg,#9ff5e8);color:var(--bg,#000f0f)">▶</button>
+  </div>
+
+  {{ bootLayer }}
+  {{ cursorLayer }}
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;snap&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Навигация&quot;}}">
+const THEMES = {
+  violet: { bg:'#05040c', fg:'#cfcbff', dim:'#7c76c8', line:'#4b45a6', glow:'rgba(140,130,255,.45)', grid:'rgba(140,130,255,.16)' },
+  cyan:   { bg:'#000f0f', fg:'#9ff5e8', dim:'#3f9c93', line:'#1f7a72', glow:'rgba(90,240,220,.35)', grid:'rgba(90,240,220,.14)' },
+  lime:   { bg:'#0a1004', fg:'#cbff5e', dim:'#7b9a35', line:'#4a6520', glow:'rgba(190,255,90,.3)',  grid:'rgba(190,255,90,.13)' },
+  amber:  { bg:'#0f0a02', fg:'#ffc46b', dim:'#a97a33', line:'#6f4c19', glow:'rgba(255,190,110,.3)', grid:'rgba(255,190,110,.13)' }
+};
+
+const TOOL_NAMES = { Ps:'Adobe Photoshop', Ai:'Adobe Illustrator', Ae:'Adobe After Effects', Fg:'Figma', As:'Aseprite' };
+const TOOL_COLORS = {
+  Ps: { fg:'#31a8ff', bg:'rgba(0,30,54,.9)' },
+  Ai: { fg:'#ff9a00', bg:'rgba(51,25,0,.9)' },
+  Ae: { fg:'#9999ff', bg:'rgba(25,20,54,.9)' },
+  Fg: { fg:'#ff7262', bg:'rgba(48,16,12,.9)' },
+  As: { fg:'#7d929e', bg:'rgba(18,26,31,.9)' }
+};
+
+const R = 'assets/research/';
+const RESEARCH = {
+  p01: {
+    frames: [
+      [R+'rf-01-boards-fortnite-apex.png', R+'rf-02-boards-ow-finals.png', R+'rf-03-boards-finals-deadlock-arc.png'],
+      [R+'rf-04-screens-detail.png', R+'rf-05-screens-overview.png'],
+      [R+'rf-06-table-full.png', R+'rf-07-table-zoom.png'],
+      [R+'rf-08-maps-finals-ow.png', R+'rf-09-maps-fortnite-deadlock.png', R+'rf-10-maps-arc-apex.png'],
+      [R+'rf-11-feature-cards.png'],
+      [R+'rf-12-pages-references.png']
+    ],
+    carousel: [true, true, true, true, false, false],
+    ratios: ['1920/980','1920/980','1920/980','1920/980','1920/980','1920/980'],
+    ratioSets: [[],[],[],[],[],[]],
+    ru: {
+      intro: 'Провёл анализ 6 конкурентных игр и более 500 экранов в процессе работы, выделил эффективные подходы к структуре базовых экранов и использовал выводы при проектировании интерфейса, что положительно сказалось на скорости выполнения сценариев и общем удобстве интерфейса.',
+      names: ['РЕФЕРЕНС-БОРДЫ','РАЗБОР ЭКРАНОВ','СВОДНАЯ ТАБЛИЦА ФИЧ','UX-КАРТЫ КОНКУРЕНТОВ','ПРЕДЛОЖЕНИЯ К ВНЕДРЕНИЮ','РЕФЕРЕНСЫ ПО ЭКРАНАМ'],
+      notes: [
+        'Экраны шести шутеров — Fortnite, Apex Legends, Overwatch, The Finals, Deadlock, Arc Raiders — разложены по разделам: главный экран, кастомизация, магазин, БП, настройки, профиль. База для всех дальнейших сравнений.',
+        'По каждому экрану — как решение работает, недостатки и что можно взять в работу.',
+        'Матрица фич по всем шести играм: есть, нет, есть с оговоркой. Показывает пробелы, которые можно закрыть.',
+        'Полные карты навигации конкурентов: хоткеи, действия, ветки разделов. Видно глубину переходов и дублирующийся функционал.',
+        'Итог исследования — карточки фич с описанием механики, пользы для игрока и потенциала.',
+        'Референсы, собранные под конкретные экраны проекта, рядом со списком фич раздела.'
+      ]
+    },
+    en: {
+      intro: 'I analysed 6 competitor games and over 500 screens, identified the effective approaches to the structure of the core screens and applied those findings while designing the interface, which improved task completion speed and the overall usability of the interface.',
+      names: ['REFERENCE BOARDS','SCREEN BREAKDOWN','FEATURE MATRIX','COMPETITOR UX MAPS','PROPOSED FEATURES','PER-SCREEN REFERENCES'],
+      notes: [
+        'Screens from six shooters — Fortnite, Apex Legends, Overwatch, The Finals, Deadlock, Arc Raiders — sorted by section: main screen, customization, shop, battle pass, settings, profile. The base for every comparison that follows.',
+        'For each screen: how the solution works, where it fails, and what is worth taking into our own product.',
+        'A feature matrix across all six games: present, missing, present with caveats. It exposes the gaps we can close.',
+        'Full competitor navigation maps: hotkeys, actions, section branches. They show navigation depth and duplicated functionality.',
+        'The output of the research — feature cards describing the mechanic, the player benefit and the potential.',
+        'References collected for specific screens of the project, next to the feature list for that section.'
+      ]
+    }
+  }
+};
+
+const MAPS = {
+  p01: {
+    frames: [
+      [R+'mp-02-lobby-flow.png'],
+      [R+'mp-01-heroes-weapons-flow.png'],
+      [R+'mp-03-ability-progress-flow.png'],
+      [R+'mp-04-vitality-tracker.png']
+    ],
+    carousel: [false, false, false, false],
+    ratios: ['1920/980','1920/980','1920/980','1920/980'],
+    ratioSets: [[],[],[],[]],
+    ru: {
+      intro: 'UX-карты собирались после вайрфреймов — как документация для команды разработки. Полный путь игрока по разделу со всеми состояниями, ветками и условиями переходов, чтобы разработчики понимали, как логика экранов работает целиком, а не по отдельным макетам.',
+      names: ['ЛОББИ','ГЕРОИ И ОРУЖИЕ','ПРОГРЕССИЯ АБИЛОК','ЖИЗНЕННЫЕ ПОКАЗАТЕЛИ'],
+      notes: [
+        'Два параллельных потока — лидера группы и участника: сбор пати, готовность, смена режима и запуск матча. Показывает, что видит каждая роль на одном и том же экране.',
+        'Переходы между выбором героя, абилками и оружием, включая кастомизацию и примерку скинов. Комментарии поясняют каждый элемент на экране и условия переходов.',
+        'Получение и распределение абилок: состояния слотов (пусто, пассив, актив), доступные скилл-поинты, анимации хоткеев и пропуск получения абилки.',
+        'Реакция HUD на урон и лечение: рейндж и мили урон, урон по щиту, пороги половины и четверти запаса. Схема на вайрфреймах — без визуала, только логика состояний.'
+      ]
+    },
+    en: {
+      intro: 'The UX maps were built after the wireframes, as documentation for the development team. They lay out the full player path through a section with every state, branch and transition condition, so developers can see how the screen logic works as a whole rather than layout by layout.',
+      names: ['LOBBY','HEROES & WEAPONS','ABILITY PROGRESSION','VITALITY & TRACKER'],
+      notes: [
+        'Two parallel flows — party leader and party member: assembling the group, readiness, mode change and match start. It shows what each role sees on the very same screen.',
+        'Transitions between hero selection, abilities and weapons, including customization and trying skins on. The notes explain every element on the screen and the transition conditions.',
+        'Unlocking and assigning abilities: slot states (empty, passive, active), available skill points, hotkey animations and skipping an ability unlock.',
+        'How the HUD reacts to damage and healing: ranged and melee damage, shield damage, the half and quarter thresholds. Wireframes only — pure state logic, no visuals.'
+      ]
+    }
+  }
+};
+
+const PROJECTS = [
+  { id:'p01', code:'01', kind:'GAME UI', file:'FARCANA.UI', tools:['Ps','Ai','Fg'], tabs:true,
+    shots:['ГЛАВНАЯ','ЛОББИ','ПЕРСОНАЖИ','КАСТОМИЗАЦИЯ ПЕРСОНАЖА','КАСТОМИЗАЦИЯ ОРУЖИЯ','HUD','VFX'],
+    shotsEn:['HOME','LOBBY','HEROES','HERO CUSTOMIZATION','WEAPON CUSTOMIZATION','HUD','VFX'],
+    frames:[['assets/farcana-01-home.jpg'], ['assets/farcana-02-lobby.png'], ['assets/farcana-03-heroes.jpg'], ['assets/farcana-04-customize.jpg'], ['assets/farcana-05-weapons.jpg'], ['assets/farcana-05-hud.jpg'], ['assets/farcana-vfx-01-silence.png','assets/farcana-vfx-02-stun.png','assets/farcana-vfx-03-slow.png','assets/farcana-vfx-04-root.png','assets/farcana-vfx-05-breakdown.png']],
+    carousel:[false, false, false, false, false, false, true],
+    ratios:['1920/1080','1928/1088','1920/1080','1920/1080','3840/2160','1920/1080','1920/1080'],
+    ratioSets:[[],[],[],[],[],[],['1920/1080','1920/1080','1920/1080','1920/1080','1833/912']],
+    ru:{ t:'Farcana', sub:'HERO SHOOTER', intro:'Многопользовательский соревновательный hero-shooter с элементами roguelike. Участвовал в полном редизайне игрового интерфейса с legacy-версии; часть моих решений вошла в финальный продукт. Провёл конкурентный ресёрч и фичевые анализы, строил UX-карты собственных и конкурентных экранов, спроектировал экраны арсенала, главного меню, HUD и другие ключевые разделы. Создавал интерактивные и анимационные эффекты, включая VFX статусов в голографическом визуальном языке, и участвовал в построении дизайн-системы проекта.', task:'—', proc:'—', res:'—' },
+    en:{ t:'Farcana', sub:'HERO SHOOTER', intro:'A multiplayer competitive hero-shooter with roguelike elements. I took part in the full redesign of the game interface from the legacy version; some of my solutions shipped in the final product. I ran competitor and feature research, built UX maps of our own and competitors\' screens, and designed the arsenal and main menu screens, the HUD and other key sections. I also created interactive and animation effects, including status VFX in the holographic visual language, and helped build the project\'s design system.', task:'—', proc:'—', res:'—' } },
+  { id:'p02', code:'02', kind:'GAME UI', file:'NDA.AR', tools:['Ps','Fg'],
+    shots:['КОНЦЕПТ','«ПРОБУЖДЕНИЕ»','«РЕЗОНАНС»','«СИНХРОНИЗАЦИЯ»','ИГРОВОЙ ЦИКЛ','СТАБИЛИЗАЦИЯ ЭХО','ЛИНЗА АВТОРА','МИР АВТОРА','ARTIST CREATION KIT'],
+    shotsEn:['CONCEPT','"AWAKENING"','"RESONANCE"','"SYNCHRONIZATION"','GAME LOOP','ECHO STABILIZATION','ARTIST LENS','SIGHT OF ARTIST WORLD','ARTIST CREATION KIT'],
+    frames:[['assets/min/nda-concept.jpg'], ['assets/min/nda-awakening.jpg'], ['assets/min/nda-resonance.jpg'], ['assets/min/nda-synchronization.jpg'], ['assets/min/nda-loop.jpg'], ['assets/min/nda-echo-minigames.jpg', 'assets/min/nda-echo-types.jpg'], ['assets/min/nda-lens.jpg'], ['assets/min/nda-artist-world.jpg'], ['assets/min/nda-creation-kit.jpg']],
+    carousel:[false, false, false, false, false, true, false, false, false],
+    ratios:['16/9','16/9','16/9','16/9','16/9','16/9','16/9','16/9','16/9'],
+    ratioSets:[[],[],[],[],[],['16/9','16/9'],[],[],[]],
+    ru:{ t:'NDA', sub:'AR GAME', intro:'Концепт AR-игры для музея современного искусства, создан в рамках участия в тендере. Моей зоной ответственности был визуал, но также успел принять участие и в обсуждении некоторых геймплейных решений.', task:'—', proc:'—', res:'—' },
+    en:{ t:'NDA', sub:'AR GAME', intro:'A concept for an AR game for a museum of contemporary art, made as part of a tender bid. Visuals were my area of responsibility, and I also took part in discussing some of the gameplay decisions.', task:'—', proc:'—', res:'—' } },
+  { id:'p03', code:'03', kind:'GAME UI', file:'GOT.UI', tools:['As','Fg'],
+    shots:['HUD','СПРАЙТЫ'], shotsEn:['HUD','SPRITES'],
+    frames:[['assets/min/got-hud.jpg'], ['assets/min/got-sprites-01.jpg', 'assets/min/got-sprites-02.jpg']],
+    carousel:[false, true],
+    ratios:['1600/900','1600/645'],
+    ratioSets:[[], ['1600/645', '1600/759']],
+    wip:true,
+    ru:{ t:'GoT', sub:'VAMPIRE-LIKE', intro:'"Vampire-like" в пиксельной стилистике, проект пока что на стадии зарождения, работа все еще продолжается. Все спрайты отрисовал от руки в Aseprite, для поддержания стилистики проекта.', task:'—', proc:'—', res:'—' },
+    en:{ t:'GoT', sub:'VAMPIRE-LIKE', intro:'A pixel-art "vampire-like" — the project is still at an early stage and work continues. All sprites are hand-drawn in Aseprite to keep the project\'s style consistent.', task:'—', proc:'—', res:'—' } },
+  { id:'p04', code:'04', kind:'GRAPHIC', file:'OTHER.SET', tools:['Ps','Ai','Fg'], shots:['ПОСТЕРЫ','ВЕБ-СТРАНИЦЫ','ГРАФИКА И ИКОНКИ'], shotsEn:['POSTERS','WEB PAGES','GRAPHICS & ICONS'],
+    frames:[['assets/other-posters.png'], ['assets/web-01-hero.png', 'assets/web-02-content.png', 'assets/web-03-hero.png', 'assets/web-04-profile.png'], ['assets/other-icons.png']], carousel:[false, true, false],
+    ratios:['3037/1755', '1600/1049'], ratioSets:[[], ['1600/1049', '1600/970', '1600/943', '1366/822'], ['1720/688']],
+    ru:{ t:'Other', sub:'GRAPHICS & WEB', intro:'Сборный раздел: постеры, веб-страницы, иконки и прочая графика.', task:'—', proc:'—', res:'—' },
+    en:{ t:'Other', sub:'GRAPHICS & WEB', intro:'Mixed bag: posters, web pages, icons and other graphic work.', task:'—', proc:'—', res:'—' } }
+];
+
+const JOBS_RU = [
+  { place: 'Dizzaract', url: 'https://www.dizzaract.com/', dates: '2 ГОДА 2 МЕС · ИЮЛ 2024 — Н.В.', role: 'UI/UX Дизайнер · Middle',
+    desc: 'UI/UX дизайн многопользовательского соревновательного шутера от третьего лица с элементами roguelike на Unreal Engine. Работа над интерфейсами с нуля и обновлением визуального стиля в команде из 4-х дизайнеров.',
+    duties: [
+      'Самостоятельно переработал экраны ключевых сценариев игрока: вход в матч — повторный запуск сокращён с 3 кликов до 1, возврат после матча в лобби с сохранённым режимом; герои и арсенал — спроектировал раздел на 17 экранов и состояний в 3 подразделах, задокументировал флоу для передачи в разработку; лобби и социальные функции — приглашение в группу сокращено с 3 кликов до 1.',
+      'Разработал значительную часть игрового интерфейса после реструктуризации проекта.',
+      'Совместно с Head of Design разработал новый визуальный стиль и применил его к интерфейсам и игровым экранам.',
+      'Провёл анализ 6 конкурентных игр и более 500 экранов в процессе работы, выделил эффективные подходы к структуре базовых экранов и использовал выводы при проектировании интерфейса, что положительно сказалось на скорости выполнения сценариев и общем удобстве интерфейса.',
+      'Создал часть визуальных эффектов для интерфейса и игровых экранов в рамках согласованного визуального стиля.',
+      'Передавал макеты игровых экранов разработчикам через Figma, проверял реализацию после внедрения и вносил мелкие правки в Unreal Engine.',
+      'Генерировал концепты изображений и иконок для игровых экранов с помощью Midjourney, Stable Diffusion и Nano Banana, использовал результаты для проверки визуальных гипотез.'
+    ] }
+];
+
+const JOBS_EN = [
+  { place: 'Dizzaract', url: 'https://www.dizzaract.com/', dates: '2 YRS 2 MOS · JUL 2024 — PRESENT', role: 'UI/UX Designer · Middle',
+    desc: 'UI/UX design for a multiplayer competitive third-person shooter with roguelike elements built in Unreal Engine. Interfaces from scratch and a visual style update, in a team of four designers.',
+    duties: [
+      'Reworked the screens of the key player scenarios on my own: match entry — a repeat launch cut from 3 clicks to 1, returning to the lobby after a match with the mode preserved; heroes and arsenal — designed a section of 17 screens and states across 3 subsections and documented the flow for handoff to development; lobby and social features — party invites cut from 3 clicks to 1.',
+      'Designed a large part of the game interface after the project was restructured.',
+      'Developed a new visual style together with the Head of Design and applied it to the interfaces and in-game screens.',
+      'Analysed 6 competitor games and over 500 screens, identified the effective approaches to the structure of the core screens and applied those findings while designing the interface, which improved task completion speed and the overall usability of the interface.',
+      'Created part of the visual effects for the interface and in-game screens within the agreed visual style.',
+      'Handed game screens over to developers through Figma, checked the implementation after integration and made small fixes in Unreal Engine.',
+      'Generated image and icon concepts for in-game screens with Midjourney, Stable Diffusion and Nano Banana, using the results to test visual hypotheses.'
+    ] }
+];
+
+function resPath(p) {
+  if (typeof document === 'undefined') return p;
+  if (!window.__rmap) {
+    const m = {};
+    document.querySelectorAll('meta[data-resource-id]').forEach(el => { m[el.getAttribute('content')] = el.getAttribute('data-resource-id'); });
+    window.__rmap = m;
+  }
+  const id = window.__rmap[p];
+  return id ? res(id, p) : p;
+}
+function res(key, path) {
+  const r = (typeof window !== 'undefined' && window.__resources) || {};
+  return r[key] || path;
+}
+const TRACKS = [
+  { key: 'trk1', src: 'audio/backstabbing-bastard-173hz.mp3', name: '173HZ — BACKSTABBING BASTARD' },
+  { key: 'trk2', src: 'audio/monolithic-head-over-heels.mp3', name: 'HEAD OVER HEELS — MONOLITHIC' },
+  { key: 'trk3', src: 'audio/system-st91-cybernetic-fashion.mp3', name: 'CYBERNETIC FASHION — SYSTEM ST91' },
+  { key: 'trk4', src: 'audio/zorrovian-bios.mp3', name: 'BIOS — ZORROVIAN' }
+];
+
+const BOOT = [
+  'IGOR.V PORTFOLIO BIOS v1.03',
+  'COPYRIGHT (C) 2026 IGOR.V  ALL RIGHTS RESERVED',
+  '',
+  'CPU     : CORTEX-D 3.4GHZ  ....... OK',
+  'MEMORY  : 65536K  ............... OK',
+  'DISPLAY : CRT PHOSPHOR  ......... OK',
+  'INPUT   : KEYBOARD / POINTER  ... OK',
+  '',
+  'MOUNTING C:\\WORKS ............... 04 FILES',
+  'INDEXING HUD / MENUS / KEY ART .. OK',
+  'LOADING SUBJECT IV-766 .......... DONE',
+  'FUNCTION: GAME UI/UX DESIGNER',
+  'LOCATION: MOSCOW  EXPERIENCE: 2Y 2M',
+  'STATUS  : OPEN TO WORK',
+  '',
+  'ALL SYSTEMS NOMINAL.'
+];
+
+class Component extends DCLogic {
+  state = {
+    booting: true, bootStep: 0, bootDone: false, closing: false,
+    screen: 'home', lang: 'ru', theme: 'cyan',
+    filter: 'all', sound: true,
+    playing: false, track: 0, volume: 50, marquee: false, marqDur: 12, meter: [2,2,2,2,2,2,2], selected: null, caseTab: 'visual', openSec: { task: true, proc: false, res: false }, openJobs: {}, frameIdx: {}, narrow: false,
+    cursor: { x: -100, y: -100, on: false, hot: false, zoom: false }, lb: null, cv: false,
+    tick: 0, spin: 0, clock: '--:--:--', pvTick: 0,
+    hasShot: false
+  };
+
+  componentDidMount() {
+    this.applyTheme();
+    this._dither = React.createRef();
+    this._sweep = React.createRef();
+    this.loadPortrait((window.__resources && window.__resources.portrait) || 'assets/portrait.jpg');
+    this.setState({ narrow: window.innerWidth < 860 });
+    this._onResize = () => this.setState({ narrow: window.innerWidth < 860 });
+    window.addEventListener('resize', this._onResize);
+
+    this._boot = setInterval(() => {
+      this.setState(s => {
+        if (s.bootStep >= BOOT.length) {
+          clearInterval(this._boot);
+          this._exit = setTimeout(() => this.enter(), 850);
+          return { bootDone: true };
+        }
+        return { bootStep: s.bootStep + 1 };
+      });
+      this.blip(520, 0.012);
+    }, 165);
+
+    this._pv = setInterval(() => {
+      const s = this.state;
+      if (s.narrow && !s.selected && !s.booting && !s.lb && !s.cv) this.setState(st => ({ pvTick: (st.pvTick || 0) + 1 }));
+    }, 2200);
+
+    this._clock = setInterval(() => {
+      const d = new Date();
+      const p = n => String(n).padStart(2, '0');
+      this.setState({ clock: p(d.getHours()) + ':' + p(d.getMinutes()) + ':' + p(d.getSeconds()) });
+    }, 1000);
+
+    const tel = ts => {
+      this._telRaf = requestAnimationFrame(tel);
+      if (this.state.screen !== 'home' || this.state.booting) return;
+      if (ts - (this._telLast || 0) < 66) return;          // ~30fps is plenty, half the cost of 60
+      this._telLast = ts;
+      this.setState({ tick: ts / 1000 });
+    };
+    this._telRaf = requestAnimationFrame(tel);
+
+    this._spin = setInterval(() => {
+      if ((this.state.screen === 'contact' || (this._pendingImgs || 0) > 0) && !this.state.booting) this.setState(st => ({ spin: st.spin + 1 }));
+    }, 140);
+
+    const hdrEl = document.getElementById('om-topbar');
+    const measure = () => { const el = document.getElementById('om-topbar'); if (el) { const px = el.offsetHeight + 'px'; if (px !== this.state.hdrH) this.setState({ hdrH: px }); } };
+    measure();
+    if (window.ResizeObserver && hdrEl) { this._hdrRO = new ResizeObserver(measure); this._hdrRO.observe(hdrEl); }
+    this._measureHdr = measure;
+
+    this._onScroll = () => {
+      if (this._scrollRaf) return;
+      this._scrollRaf = requestAnimationFrame(() => { this._scrollRaf = null; this.syncScreenToScroll(); this.reveal(); });
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true, capture: true });
+
+    setTimeout(() => this.reveal(), 60);
+
+    this._skip = () => { if (this.state.booting && this.state.bootDone) this.enter(); };
+    window.addEventListener('keydown', this._skip);
+
+    this._onWheel = e => {
+      if (this.state.cv) { if (!this.innerScrollable(e.target, e.deltaY)) e.preventDefault(); return; }
+      if (this.state.lb) { e.preventDefault(); return; }
+      if (this.state.booting || this.props.snap === false) return;
+      if (this.innerScrollable(e.target, e.deltaY)) return;
+      if (Math.abs(e.deltaY) < 4) return;
+      e.preventDefault();
+      if (this.snapLocked()) return;
+      this.snapGo(e.deltaY > 0 ? 1 : -1);
+    };
+    window.addEventListener('wheel', this._onWheel, { passive: false });
+
+    this._onTouchStart = e => {
+      const t = e.touches[0];
+      this._tY = t.clientY; this._tX = t.clientX; this._tEl = e.target; this._tLive = true;
+    };
+    this._onTouchMove = e => {
+      if (!this._tLive || this.state.booting || this.props.snap === false) return;
+      const t = e.touches[0], dy = this._tY - t.clientY, dx = this._tX - t.clientX;
+      if (Math.abs(dx) > Math.abs(dy)) return;
+      if (this.innerScrollable(this._tEl, dy)) return;
+      if (e.cancelable) e.preventDefault();
+      if (Math.abs(dy) < 34 || this.snapLocked()) return;
+      this._tLive = false;
+      this.snapGo(dy > 0 ? 1 : -1);
+    };
+    window.addEventListener('touchstart', this._onTouchStart, { passive: true });
+    window.addEventListener('touchmove', this._onTouchMove, { passive: false });
+
+    this._onKeyNav = e => {
+      if (this.state.cv) {
+        if (e.key === 'Escape') { e.preventDefault(); this.blip(520); this.setState({ cv: false }); }
+        return;
+      }
+      if (this.state.lb) {
+        if (e.key === 'Escape') { e.preventDefault(); this.closeLb(); }
+        else if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') { e.preventDefault(); this.lbStep(1); }
+        else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') { e.preventDefault(); this.lbStep(-1); }
+        return;
+      }
+      if (this.state.booting || this.props.snap === false) return;
+      const tag = (e.target && e.target.tagName || '').toLowerCase();
+      if (tag === 'input' || tag === 'textarea') return;
+      const k = e.key;
+      let dir = 0;
+      if (k === 'ArrowDown' || k === 'PageDown' || k === ' ') dir = 1;
+      else if (k === 'ArrowUp' || k === 'PageUp') dir = -1;
+      if (!dir) return;
+      if (this.snapLocked()) { e.preventDefault(); return; }
+      if (this.snapGo(dir)) e.preventDefault();
+    };
+    window.addEventListener('keydown', this._onKeyNav);
+
+    this._move = e => {
+      const p = e.touches ? e.touches[0] : e;
+      const t = e.target;
+      const zoom = !!(t && t.closest && t.closest('[data-zoom]'));
+      const hot = !zoom && !!(t && t.closest && t.closest('a,button,input,select,textarea,[role="button"],[onclick]'));
+      const c = this.state.cursor;
+      if (c.x === p.clientX && c.y === p.clientY && c.on && c.hot === hot && c.zoom === zoom) return;
+      this.setState({ cursor: { x: p.clientX, y: p.clientY, on: true, hot, zoom } });
+    };
+    this._up = () => {};
+    window.addEventListener('mousemove', this._move);
+    window.addEventListener('touchmove', this._move, { passive: false });
+    window.addEventListener('mouseup', this._up);
+    window.addEventListener('touchend', this._up);
+  }
+
+  componentDidUpdate() {
+    if (this._appliedTheme !== this.state.theme) this.applyTheme();
+    this.measureMarquee();
+  }
+
+  measureMarquee() {
+    const key = this.state.track + ':' + this.state.narrow;
+    if (this._marqKey === key) return;
+    this._marqKey = key;
+    const box = document.querySelector('[data-player-label]');
+    if (!box) return;
+    const copy = box.querySelector('span > span');
+    if (!copy) return;
+    const w = copy.getBoundingClientRect().width;
+    const over = w > box.clientWidth + 2;
+    if (over !== this.state.marquee) {
+      this.setState({ marquee: over, marqDur: Math.max(7, Math.round((w + 30) / 16)) });
+    }
+  }
+
+  componentDidUpdate() { this.reveal(); }
+
+  reveal() {
+    const list = document.querySelectorAll('[data-reveal]');
+    if (!list.length) return;
+    const vh = window.innerHeight || 800;
+    list.forEach(el => {
+      const r = el.getBoundingClientRect();
+      const shown = r.top < vh * 0.9 && r.bottom > 0;
+      if (shown === el._shown) return;
+      el._shown = shown;
+      el.style.transition = 'opacity .5s ease, transform .5s cubic-bezier(.22,.61,.36,1)';
+      el.style.opacity = shown ? '1' : '0';
+      el.style.transform = shown ? 'none' : 'translateY(14px)';
+    });
+  }
+
+  componentWillUnmount() {
+    if (this._audio) { this._audio.pause(); this._audio.src = ''; }
+    clearInterval(this._boot); clearInterval(this._clock); clearInterval(this._spin); clearInterval(this._seq); clearInterval(this._pv); clearTimeout(this._exit);
+    if (this._telRaf) cancelAnimationFrame(this._telRaf);
+    if (this._tearRaf) cancelAnimationFrame(this._tearRaf);
+    window.removeEventListener('resize', this._onResize);
+    window.removeEventListener('scroll', this._onScroll, { capture: true });
+    window.removeEventListener('wheel', this._onWheel);
+    window.removeEventListener('touchstart', this._onTouchStart);
+    window.removeEventListener('touchmove', this._onTouchMove);
+    window.removeEventListener('keydown', this._onKeyNav);
+    if (this._snapTimer) clearTimeout(this._snapTimer);
+    if (this._hdrRO) this._hdrRO.disconnect();
+    window.removeEventListener('keydown', this._skip);
+    window.removeEventListener('mousemove', this._move);
+    window.removeEventListener('touchmove', this._move);
+    window.removeEventListener('mouseup', this._up);
+    window.removeEventListener('touchend', this._up);
+  }
+
+  bayer(n) {
+    if (n === 2) return [[0.25, 0.75], [1.0, 0.5]];
+    const b4 = [[0, 8, 2, 10], [12, 4, 14, 6], [3, 11, 1, 9], [15, 7, 13, 5]].map(r => r.slice());
+    if (n === 4) return b4.map(r => r.map(v => (v + 0.5) / 16));
+    const m = [];
+    for (let y = 0; y < 8; y++) {
+      m.push([]);
+      for (let x = 0; x < 8; x++) {
+        const v = 4 * b4[y % 4][x % 4] + [[0, 2], [3, 1]][Math.floor(y / 4)][Math.floor(x / 4)];
+        m[y][x] = (v + 0.5) / 64;
+      }
+    }
+    return m;
+  }
+
+  hexRgb(h) {
+    const c = getComputedStyle(document.documentElement).getPropertyValue(h).trim() || h;
+    const d = document.createElement('canvas').getContext('2d');
+    d.fillStyle = c; const hex = d.fillStyle;
+    return [parseInt(hex.slice(1, 3), 16), parseInt(hex.slice(3, 5), 16), parseInt(hex.slice(5, 7), 16)];
+  }
+
+  imgReady(src) {
+    if (!src) return true;
+    this._imgCache = this._imgCache || {};
+    const st = this._imgCache[src];
+    if (st === 'ok') return true;
+    if (st === 'loading') return false;
+    this._imgCache[src] = 'loading';
+    this._pendingImgs = (this._pendingImgs || 0) + 1;
+    const im = new Image();
+    im.onload = im.onerror = () => {
+      this._imgCache[src] = 'ok';
+      this._pendingImgs = Math.max(0, (this._pendingImgs || 1) - 1);
+      this.forceUpdate();
+    };
+    im.src = src;
+    return false;
+  }
+
+  loadPortrait(src) {
+    const im = new Image();
+    im.onload = () => {
+      this._img = im;
+      this.setState({ hasShot: true }, () => { this.renderDither(); this.startTear(); });
+    };
+    im.src = src;
+  }
+
+  gridLum(gw, gh) {
+    if (this._lum && this._lw === gw && this._lh === gh) return true;
+    const im = this._img;
+    if (!im || !im.width) return false;
+    const CON = 2.9, BRI = -15;
+    const c = this._srcC || (this._srcC = document.createElement('canvas'));
+    c.width = gw; c.height = gh;
+    const cx = c.getContext('2d');
+    cx.imageSmoothingEnabled = true;
+    cx.imageSmoothingQuality = 'high';
+    const s = Math.max(gw / im.width, gh / im.height);
+    const dw = im.width * s, dh = im.height * s;
+    cx.drawImage(im, (gw - dw) / 2, (gh - dh) * 0.35, dw, dh);
+    const px = cx.getImageData(0, 0, gw, gh).data;
+    const lum = new Float32Array(gw * gh);
+    for (let i = 0, p = 0; p < lum.length; p++, i += 4) {
+      let g = 0.299 * px[i] + 0.587 * px[i + 1] + 0.114 * px[i + 2];
+      g = (g - 128) * CON + 128 + BRI;
+      lum[p] = Math.max(0, Math.min(255, g)) / 255;
+    }
+    this._lum = lum; this._lw = gw; this._lh = gh;
+    return true;
+  }
+
+  startTear() {
+    if (this._tearRaf) return;
+    const loop = ts => {
+      this._tearRaf = requestAnimationFrame(loop);
+      if (this.state.screen !== 'home' || this.state.booting || !this._img) return;
+      if (ts - (this._tearLast || 0) < 50) return;
+      this._tearLast = ts;
+      this._tearT = ts / 1000;
+      this.syncSweep();
+      this.renderDither();
+    };
+    this._tearRaf = requestAnimationFrame(loop);
+  }
+
+  syncSweep() {
+    const out = this._dither && this._dither.current;
+    const sw = this._sweep && this._sweep.current;
+    if (!out || !sw || !this._lh) { this._headY = null; return; }
+    const c = out.getBoundingClientRect();
+    const b = sw.getBoundingClientRect();
+    if (!c.height) { this._headY = null; return; }
+    const edge = b.top + b.height * 0.78;                 // the bright leading edge of the band
+    const rel = (edge - c.top) / c.height;
+    this._headY = (rel > -0.35 && rel < 1.35) ? rel * this._lh : null;
+    this._sweepDir = (this._prevEdge != null && edge < this._prevEdge) ? -1 : 1;
+    this._prevEdge = edge;
+  }
+
+  renderDither() {
+    const out = this._dither && this._dither.current;
+    if (!out || !this._img) return;
+    const cssW = out.clientWidth, cssH = out.clientHeight;
+    if (cssW < 8 || cssH < 8) return;
+    const dpr = Math.min(Math.max(window.devicePixelRatio || 1, 1), 3);
+    const CELL = 1;
+    const w = Math.max(60, Math.round(cssW * dpr / CELL));
+    const h = Math.max(60, Math.round(cssH * dpr / CELL));
+    if (!this.gridLum(w, h)) return;
+    const SCALE = CELL, lum = this._lum;
+
+    const small = this._small || (this._small = document.createElement('canvas'));
+    small.width = w; small.height = h;
+    const sc = small.getContext('2d');
+    const d = sc.createImageData(w, h);
+    const px = d.data;
+    const M8 = this.bayer(8), M2 = this.bayer(2);
+    const ink = this.hexRgb('--fg'), bg = this.hexRgb('--bg');
+
+    const t = this._tearT || 0;
+    const headY = this._headY == null ? -1e5 : this._headY;   // locked to the page scan band
+    const BAND = h * 0.1;
+    const drift = Math.sin(t * 0.7) * 0.5;
+
+    for (let y = 0; y < h; y++) {
+      let shift = 0, lift = 0, strong = 0;
+      const dy = Math.abs(y - headY);
+      if (dy < BAND) {
+        const f = 1 - dy / BAND;
+        strong = f;
+        shift = Math.round(f * f * drift * 52 + Math.sin(y * 0.85 + t * 6) * f * 6);
+        lift = f * f * 0.24;
+      }
+      for (let x = 0; x < w; x++) {
+        let sx = x + shift;
+        if (sx < 0) sx = 0; else if (sx >= w) sx = w - 1;
+        let g = lum[y * w + sx] + lift;
+        if (g > 1) g = 1; else if (g < 0) g = 0;
+        const t2 = strong > 0.66 ? M2[y % 2][x % 2] : M8[y % 8][x % 8];
+        const c = g > t2 ? ink : bg;
+        const i = (y * w + x) * 4;
+        px[i] = c[0]; px[i + 1] = c[1]; px[i + 2] = c[2]; px[i + 3] = 255;
+      }
+    }
+    sc.putImageData(d, 0, 0);
+
+    out.width = w * SCALE; out.height = h * SCALE;
+    const oc = out.getContext('2d');
+    oc.imageSmoothingEnabled = false;
+    oc.fillStyle = getComputedStyle(document.documentElement).getPropertyValue('--bg').trim() || '#000f0f';
+    oc.fillRect(0, 0, out.width, out.height);
+    oc.save();
+    oc.filter = 'blur(' + Math.max(2, SCALE) + 'px)';
+    oc.globalAlpha = 0.55;
+    oc.globalCompositeOperation = 'lighter';
+    oc.drawImage(small, 0, 0, out.width, out.height);
+    oc.restore();
+    oc.imageSmoothingEnabled = false;
+    oc.drawImage(small, 0, 0, out.width, out.height);
+  }
+
+  applyTheme() {
+    this._appliedTheme = this.state.theme;
+    document.documentElement.style.setProperty('--disp', "'JetBrains Mono'");
+    if (this._img) setTimeout(() => this.renderDither(), 0);
+    const t = THEMES[this.state.theme] || THEMES.violet;
+    const r = document.documentElement;
+    Object.keys(t).forEach(k => r.style.setProperty('--' + k, t[k]));
+    r.style.background = t.bg;
+  }
+
+  audioCtx() {
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if (!AC) return null;
+    this._ac = this._ac || new AC();
+    if (this._ac.state === 'suspended') this._ac.resume();
+    return this._ac;
+  }
+
+  togglePlay() {
+    if (this.state.playing) {
+      if (this._audio) this._audio.pause();
+      return this.setState({ playing: false, meter: [2,2,2,2,2,2,2] });
+    }
+    if (!this._audio) {
+      this._audio = new Audio();
+      this._audio.volume = this.state.volume / 100;
+      this._audio.addEventListener('ended', () => this.nextTrack());
+      this._audio.addEventListener('error', () => this.setState({ playing: false }));
+    }
+    if (!this._audio.src) {
+      this.loadTrack(Math.floor(Math.random() * TRACKS.length), false);
+    }
+    const p = this._audio.play();
+    if (p && p.catch) p.catch(() => this.setState({ playing: false }));
+    this.startMeter();
+    this.setState({ playing: true });
+  }
+
+  loadTrack(i, autoplay) {
+    const t = TRACKS[((i % TRACKS.length) + TRACKS.length) % TRACKS.length];
+    if (!this._audio) return;
+    this._audio.src = res(t.key, t.src);
+    this.setState({ track: TRACKS.indexOf(t) });
+    if (autoplay) {
+      const p = this._audio.play();
+      if (p && p.catch) p.catch(() => this.setState({ playing: false }));
+      this.startMeter();
+      this.setState({ playing: true });
+    }
+  }
+
+  nextTrack() {
+    let n = this.state.track;
+    if (TRACKS.length > 1) { while (n === this.state.track) n = Math.floor(Math.random() * TRACKS.length); }
+    this.loadTrack(n, true);
+  }
+
+  startMeter() {
+    clearInterval(this._seq);
+    this._seq = setInterval(() => {
+      if (!this.state.playing) return;
+      this.setState({ meter: this.state.meter.map(() => 2 + Math.round(Math.random() * 8)) });
+    }, 180);
+  }
+
+  blip(freq, gain) {
+    if (!this.state.sound) return;
+    try {
+      const AC = window.AudioContext || window.webkitAudioContext;
+      if (!AC) return;
+      this._ac = this._ac || new AC();
+      const ac = this._ac;
+      if (ac.state === 'suspended') ac.resume();
+      const o = ac.createOscillator(), g = ac.createGain();
+      o.type = 'square'; o.frequency.value = freq;
+      g.gain.value = gain == null ? 0.03 : gain;
+      o.connect(g); g.connect(ac.destination);
+      o.start();
+      g.gain.exponentialRampToValueAtTime(0.0001, ac.currentTime + 0.07);
+      o.stop(ac.currentTime + 0.08);
+    } catch (e) {}
+  }
+
+  enter() {
+    if (this.state.closing || !this.state.booting) return;
+    clearTimeout(this._exit);
+    this.blip(880, 0.05);
+    this.setState({ closing: true });
+    setTimeout(() => this.setState({ booting: false, closing: false }), 620);
+  }
+
+  nav(screen) {
+    this.blip(660);
+    const el = document.getElementById('sec-' + screen);
+    if (!el) { this.setState({ screen }); return; }
+    const hdr = document.getElementById('om-topbar');
+    this.scrollAnim(Math.max(0, el.getBoundingClientRect().top + window.scrollY - (hdr ? hdr.offsetHeight : 84) + 1), 450);
+  }
+
+  scrollAnim(top, dur) {
+    const max = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+    const to = Math.min(max, Math.max(0, top));
+    const from = window.scrollY, dist = to - from, t0 = performance.now(), D = dur || 520;
+    if (this._navRaf) cancelAnimationFrame(this._navRaf);
+    this._snapUntil = performance.now() + D + 80;
+    const step = now => {
+      const k = Math.min(1, (now - t0) / D);
+      const e = k < 0.5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2;
+      window.scrollTo(0, from + dist * e);
+      if (k < 1) this._navRaf = requestAnimationFrame(step);
+      else { this._navRaf = null; this._snapUntil = performance.now() + 80; }
+    };
+    this._navRaf = requestAnimationFrame(step);
+  }
+
+  snapLocked() { return performance.now() < (this._snapUntil || 0); }
+
+  innerScrollable(el, dy) {
+    let n = el;
+    while (n && n !== document.body && n.nodeType === 1) {
+      const st = getComputedStyle(n), ov = st.overflowY;
+      if ((ov === 'auto' || ov === 'scroll') && n.scrollHeight - n.clientHeight > 4) {
+        if (dy > 0 && n.scrollTop < n.scrollHeight - n.clientHeight - 1) return true;
+        if (dy < 0 && n.scrollTop > 1) return true;
+      }
+      n = n.parentNode;
+    }
+    return false;
+  }
+
+  snapStops() {
+    const hdr = document.getElementById('om-topbar');
+    const off = (hdr ? hdr.offsetHeight : 84) - 1;
+    const vh = window.innerHeight - off - 10;
+    const max = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+    const stops = [];
+    const ids = ['home', 'works', 'exp', 'contact'];
+    for (let i = 0; i < ids.length; i++) {
+      const el = document.getElementById('sec-' + ids[i]);
+      if (!el) continue;
+      const r = el.getBoundingClientRect();
+      const start = Math.max(0, r.top + window.scrollY - off);
+      stops.push(start);
+      let p = start + vh;
+      const secEnd = r.top + window.scrollY + r.height - off;
+      while (p < secEnd - 28 && p < max) { stops.push(Math.min(p, Math.max(start, secEnd - vh))); p += vh; }
+    }
+    stops.push(max);
+    return stops.filter((v, i, a) => i === 0 || v - a[i - 1] > 24).sort((a, b) => a - b);
+  }
+
+  snapGo(dir) {
+    const stops = this.snapStops(), y = window.scrollY;
+    let target = null;
+    if (dir > 0) { for (const s of stops) if (s > y + 12) { target = s; break; } }
+    else { for (let i = stops.length - 1; i >= 0; i--) if (stops[i] < y - 12) { target = stops[i]; break; } }
+    if (target == null) return false;
+    this.blip(dir > 0 ? 620 : 540, 0.035);
+    this.scrollAnim(target, 520);
+    return true;
+  }
+
+  syncScreenToScroll() {
+    const hdr = document.getElementById('om-topbar');
+    const off = (hdr ? hdr.offsetHeight : 84) + 20;
+    const ids = ['home', 'works', 'exp', 'contact'];
+    let cur = 'home';
+    for (const id of ids) {
+      const el = document.getElementById('sec-' + id);
+      if (el && el.getBoundingClientRect().top <= off) cur = id;
+    }
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) cur = 'contact';
+    if (cur !== this.state.screen) this.setState({ screen: cur });
+  }
+
+  openProject(id) {
+    this.blip(740);
+    this.setState({ selected: id, caseTab: 'visual', openSec: { task: true, proc: false, res: false } });
+    requestAnimationFrame(() => {
+      const pane = document.querySelector('[data-works-scroll]');
+      if (pane) pane.scrollTop = 0;
+      const sec = document.getElementById('sec-works'), hdr = document.getElementById('om-topbar');
+      if (sec) this.scrollAnim(Math.max(0, sec.getBoundingClientRect().top + window.scrollY - (hdr ? hdr.offsetHeight : 84) + 1), 380);
+    });
+  }
+
+  openLb(si, fi) { this.blip(920, .05); this.setState({ lb: { si, fi } }); }
+
+  closeLb() { this.blip(520); this.setState({ lb: null }); }
+
+  syncCaseScroll(si) {
+    const pane = document.querySelector('[data-works-scroll]');
+    const el = pane && pane.querySelector('[data-shot="' + String(si + 1).padStart(2, '0') + '"]');
+    if (!pane || !el) return;
+    const max = Math.max(0, pane.scrollHeight - pane.clientHeight);
+    const to = Math.min(max, Math.max(0, pane.scrollTop + el.getBoundingClientRect().top - pane.getBoundingClientRect().top - 10));
+    const from = pane.scrollTop, dist = to - from, t0 = performance.now(), D = 420;
+    if (Math.abs(dist) < 2) return;
+    if (this._paneRaf) cancelAnimationFrame(this._paneRaf);
+    const step = now => {
+      const k = Math.min(1, (now - t0) / D);
+      const e = k < 0.5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2;
+      pane.scrollTop = from + dist * e;
+      if (k < 1) this._paneRaf = requestAnimationFrame(step); else this._paneRaf = null;
+    };
+    this._paneRaf = requestAnimationFrame(step);
+  }
+
+  lbStep(d) {
+    const flat = this._flat || [];
+    if (!flat.length || !this.state.lb) return;
+    const cur = flat.findIndex(f => f.si === this.state.lb.si && f.fi === this.state.lb.fi);
+    const nx = flat[((cur + d) % flat.length + flat.length) % flat.length];
+    const sid = this.state.selected;
+    this.blip(d > 0 ? 720 : 640, .035);
+    this.setState(st => ({
+      lb: { si: nx.si, fi: nx.fi },
+      frameIdx: Object.assign({}, st.frameIdx, { [sid + ':' + nx.si]: nx.fi })
+    }));
+    requestAnimationFrame(() => this.syncCaseScroll(nx.si));
+  }
+
+  toggleSec(key) {
+    this.blip(600);
+    this.setState(st => ({ openSec: Object.assign({}, st.openSec, { [key]: !st.openSec[key] }) }));
+  }
+
+  el(tag, props, children) { return React.createElement(tag, props, children); }
+
+  renderVals() {
+    if (this._appliedTheme !== this.state.theme) this.applyTheme();
+    const s = this.state;
+    const ru = s.lang === 'ru';
+    const dRu = ru ? 'block' : 'none';
+    const dEn = ru ? 'none' : 'block';
+    const on = 1, off = 0.42;
+    const navBg = a => a ? 'color-mix(in srgb, var(--fg,#9ff5e8) 16%, transparent)' : 'transparent';
+    const navSh = a => a ? 'inset 0 -2px 0 0 var(--fg,#9ff5e8)' : 'none';
+
+
+    const capabilities = ru ? [
+      { no: '[1]', t: 'HUD И БОЙ', d: 'Читаемость в динамике, состояния, фидбек попаданий и урона.' },
+      { no: '[2]', t: 'МЕНЮ И ПОТОКИ', d: 'Инвентарь, крафт, настройки, онбординг, навигация геймпадом.' },
+      { no: '[3]', t: 'ГРАФИКА', d: 'Key art, постеры, иконки, стор-ассеты, стрим-графика.' },
+      { no: '[4]', t: 'В ДВИЖОК', d: 'Спрайты, спеки, UI-кит и правки вместе с разработкой.' }
+    ] : [
+      { no: '[1]', t: 'HUD & COMBAT', d: 'Readability in motion, states, hit and damage feedback.' },
+      { no: '[2]', t: 'MENUS & FLOWS', d: 'Inventory, crafting, settings, onboarding, gamepad navigation.' },
+      { no: '[3]', t: 'GRAPHIC', d: 'Key art, posters, icons, store assets, stream graphics.' },
+      { no: '[4]', t: 'TO ENGINE', d: 'Sprites, specs, UI kits and iteration alongside engineers.' }
+    ];
+
+    const T = s.tick * 1.15;
+    const amp = i => Math.sin(i / 3.1 + T) * 30 + Math.sin(i / 1.27 + T * 1.7) * 11 + Math.sin(i / 0.61 + T * 3.3) * 4;
+    let wave = '', waveGhost = '', waveFill = '0,130 ';
+    for (let i = 0; i <= 60; i++) {
+      const x = i * 10;
+      wave += x + ',' + (65 + amp(i)).toFixed(1) + ' ';
+      waveGhost += x + ',' + (65 + amp(i + 6) * 0.55).toFixed(1) + ' ';
+      waveFill += x + ',' + (65 + amp(i)).toFixed(1) + ' ';
+    }
+    waveFill += '600,130';
+
+    const hexBytes = [];
+    for (let i = 0; i < 16; i++) {
+      hexBytes.push({ v: ('0' + Math.floor(Math.abs(Math.sin(i * 9.7 + T * 0.012)) * 255).toString(16)).slice(-2).toUpperCase() });
+    }
+
+    const meterDefs = ru
+      ? [{ k: 'ФОКУС', base: 0.86 }, { k: 'ПАМЯТЬ', base: 0.62 }, { k: 'КОФЕИН', base: 0.94 }]
+      : [{ k: 'FOCUS', base: 0.86 }, { k: 'MEMORY', base: 0.62 }, { k: 'CAFFEINE', base: 0.94 }];
+    const meters = meterDefs.map((m, i) => {
+      const v = Math.max(0.08, Math.min(1, m.base + Math.sin(T * (0.35 + i * 0.12) + i) * 0.09));
+      return { k: m.k, pct: (v * 100).toFixed(1) + '%', v: Math.round(v * 100) + '%' };
+    });
+
+    const blocks = [];
+    for (let i = 0; i < 24; i++) {
+      const on = Math.sin(i * 1.7 + T * 0.9) > 0.15;
+      blocks.push({ bg: on ? 'var(--fg,#9ff5e8)' : 'transparent' });
+    }
+
+    const shown = PROJECTS.filter(p => s.filter === 'all' || (s.filter === 'ui' ? p.kind === 'GAME UI' : p.kind !== 'GAME UI'));
+    const files = PROJECTS.map(p => ({
+      no: (s.selected === p.id ? '▸ ' : '') + p.code,
+      name: (ru ? p.ru.t : p.en.t) + ' — ' + (ru ? p.ru.sub : p.en.sub),
+      kind: p.kind,
+      op: shown.indexOf(p) === -1 ? 0.3 : 1,
+      bg: s.selected === p.id ? 'var(--fg,#9ff5e8)' : 'transparent',
+      fg: s.selected === p.id ? 'var(--bg,#000f0f)' : 'inherit',
+      open: () => this.openProject(p.id)
+    }));
+
+    const sel = PROJECTS.find(p => p.id === s.selected) || null;
+    const SL = sel ? (ru ? sel.ru : sel.en) : null;
+    const base = sel ? sel.file.replace(/\.[^.]*$/, '') : '';
+    const d = new Date();
+    const pad = n => String(n).padStart(2, '0');
+
+    const TABDEFS = [
+      { key: 'visual', ru: 'ВИЗУАЛ', en: 'VISUALS' },
+      { key: 'research', ru: 'ИССЛЕДОВАНИЯ', en: 'RESEARCH' },
+      { key: 'maps', ru: 'UX-КАРТЫ', en: 'UX MAPS' }
+    ];
+    const hasTabs = !!(sel && sel.tabs);
+    const curTab = hasTabs ? (s.caseTab || 'visual') : 'visual';
+
+    const TABSETS = { research: RESEARCH, maps: MAPS };
+    const rdat = (sel && TABSETS[curTab] && TABSETS[curTab][sel.id]) || null;
+    const dat = rdat ? Object.assign({}, sel, {
+      shots: rdat.ru.names, shotsEn: rdat.en.names,
+      frames: rdat.frames, carousel: rdat.carousel, ratios: rdat.ratios, ratioSets: rdat.ratioSets
+    }) : sel;
+    const notes = rdat ? (ru ? rdat.ru.notes : rdat.en.notes) : [];
+
+    const shotNames = dat ? (ru ? dat.shots : dat.shotsEn) : [];
+    const flatAll = [];
+    const shots = shotNames.map((n, i) => {
+      const RESMAP = { 'assets/farcana-01-home.jpg':'a_farcana_01_home_jpg', 'assets/farcana-02-lobby.png':'a_farcana_02_lobby_png', 'assets/farcana-03-heroes.jpg':'a_farcana_03_heroes_jpg', 'assets/farcana-04-customize.jpg':'a_farcana_04_customize_jpg', 'assets/farcana-05-weapons.jpg':'a_farcana_05_weapons_jpg', 'assets/farcana-05-hud.jpg':'a_farcana_05_hud_jpg', 'assets/farcana-vfx-01-silence.png':'a_farcana_vfx_01_silence_png', 'assets/farcana-vfx-02-stun.png':'a_farcana_vfx_02_stun_png', 'assets/farcana-vfx-03-slow.png':'a_farcana_vfx_03_slow_png', 'assets/farcana-vfx-04-root.png':'a_farcana_vfx_04_root_png', 'assets/farcana-vfx-05-breakdown.png':'a_farcana_vfx_05_breakdown_png', 'assets/other-posters.png':'otherPosters', 'assets/other-icons.png':'otherIcons', 'assets/web-01-hero.png':'web01', 'assets/web-02-content.png':'web02', 'assets/web-03-hero.png':'web03', 'assets/web-04-profile.png':'web04', 'assets/min/nda-concept.jpg':'nda_concept', 'assets/min/nda-awakening.jpg':'nda_awakening', 'assets/min/nda-resonance.jpg':'nda_resonance', 'assets/min/nda-synchronization.jpg':'nda_synchronization', 'assets/min/nda-loop.jpg':'nda_loop', 'assets/min/nda-echo-minigames.jpg':'nda_echo_minigames', 'assets/min/nda-echo-types.jpg':'nda_echo_types', 'assets/min/nda-lens.jpg':'nda_lens', 'assets/min/nda-artist-world.jpg':'nda_artist_world', 'assets/min/nda-creation-kit.jpg':'nda_creation_kit', 'assets/min/got-hud.jpg':'got_hud', 'assets/min/got-sprites-01.jpg':'got_sprites_01', 'assets/min/got-sprites-02.jpg':'got_sprites_02' };
+      const frames = ((dat.frames && dat.frames[i]) || []).map(p => RESMAP[p] ? res(RESMAP[p], p) : p);
+      const isCarousel = !!(dat.carousel && dat.carousel[i]);
+      const total = Math.max(frames.length, 1);
+      const IK = sel.id + (rdat ? ':' + curTab : '') + ':' + i;
+      const idx = ((s.frameIdx[IK] || 0) % total + total) % total;
+      const src = frames[idx] || '';
+      const step = d => e => {
+        if (e && e.stopPropagation) e.stopPropagation();
+        this.blip(700);
+        this.setState(st => ({ frameIdx: Object.assign({}, st.frameIdx, { [IK]: idx + d }) }));
+      };
+      const ready = this.imgReady(src);
+      const rset0 = (dat.ratioSets && dat.ratioSets[i]) || [];
+      frames.forEach((u, fi) => flatAll.push({ si: i, fi, src: u, label: n, ratio: rset0[fi] || (dat.ratios && dat.ratios[i]) || '16/9' }));
+      const fw = (100 / total) + '%';
+      const frameVals = frames.map(u => ({ bg: u ? 'url("' + u + '")' : 'none', op: this.imgReady(u) ? '1' : '0', w: fw }));
+      return {
+        frames: frameVals,
+        trackW: (total * 100) + '%',
+        trackX: 'translateX(-' + (idx * (100 / total)).toFixed(4) + '%)',
+        no: pad(i + 1),
+        label: n,
+        imgOp: ready ? '1' : '0',
+        dSpin: ready ? 'none' : 'grid',
+        bg: src ? 'url("' + src + '")' : 'none',
+        src: src,
+        note: notes[i] || '',
+        dNote: notes[i] ? 'block' : 'none',
+        dCap: notes[i] ? 'none' : 'inline-flex',
+        ratio: (() => {
+          const set = (dat.ratioSets && dat.ratioSets[i]) || [];
+          if (!set.length) return (dat.ratios && dat.ratios[i]) || '16/9';
+          let tallest = set[0], min = Infinity;
+          set.forEach(r => {
+            const p = String(r).split('/');
+            const v = Number(p[0]) / Number(p[1] || 1);
+            if (v < min) { min = v; tallest = r; }
+          });
+          return tallest;
+        })(),
+        dImg: src ? 'block' : 'none',
+        dSlot: src ? 'none' : 'grid',
+        dNav: isCarousel ? 'flex' : 'none',
+        dots: frames.map((u, fi) => ({
+          n: pad(fi + 1),
+          bg: fi === idx ? 'var(--fg,#9ff5e8)' : 'var(--bg,#000f0f)',
+          go: e => { if (e && e.stopPropagation) e.stopPropagation(); this.blip(700); this.setState(st => ({ frameIdx: Object.assign({}, st.frameIdx, { [IK]: fi }) })); }
+        })),
+        counter: pad(idx + 1) + ' / ' + pad(total),
+        prev: step(-1),
+        next: step(1),
+        zoom: () => { if (this._swipeGuard) return; this.openLb(i, idx); },
+        tStart: e => { const p = e.touches && e.touches[0]; if (p) this._sw = { x: p.clientX, y: p.clientY }; },
+        tEnd: e => {
+          const a = this._sw; this._sw = null;
+          const p = e.changedTouches && e.changedTouches[0];
+          if (!a || !p) return;
+          const dx = p.clientX - a.x, dy = p.clientY - a.y;
+          if (Math.abs(dx) < 36 || Math.abs(dx) < Math.abs(dy) * 1.2) return;
+          this._swipeGuard = true;
+          clearTimeout(this._swTo);
+          this._swTo = setTimeout(() => { this._swipeGuard = false; }, 500);
+          if (total > 1) step(dx < 0 ? 1 : -1)(e);
+        },
+        slot: (ru ? 'МЕСТО ПОД КАРТИНКУ' : 'IMAGE SLOT') + ' — ' + n + ' · ' + pad(idx + 1)
+      };
+    });
+
+    const secDefs = [
+      { key: 'task', label: ru ? 'ЗАДАЧИ' : 'TASK', body: SL ? SL.task : '' },
+      { key: 'proc', label: ru ? 'ПРОЦЕСС' : 'PROCESS', body: SL ? SL.proc : '' },
+      { key: 'res', label: ru ? 'РЕЗУЛЬТАТ' : 'RESULT', body: SL ? SL.res : '' }
+    ];
+    const sections = [];
+
+    this._flat = flatAll;
+    const lbPos = s.lb ? flatAll.findIndex(f => f.si === s.lb.si && f.fi === s.lb.fi) : -1;
+    const lbCur = lbPos >= 0 ? flatAll[lbPos] : null;
+    const lbShotFrames = lbCur ? flatAll.filter(f => f.si === lbCur.si) : [];
+    const lbShotN = lbShotFrames.length;
+
+    const themeList = Object.keys(THEMES).map(k => ({
+      name: k, swatch: THEMES[k].fg,
+      ring: s.theme === k ? '1px solid ' + THEMES[k].fg : 'none',
+      pick: () => { this.blip(1040); this.setState({ theme: k }); }
+    }));
+
+    let bootLayer = null;
+    if (s.booting) {
+      const lines = BOOT.slice(0, s.bootStep).map((l, i) => this.el('div', { key: i, style: { minHeight: '1.55em' } }, l));
+      const pct = Math.min(100, Math.round(s.bootStep / BOOT.length * 100));
+      const cells = 24, filled = Math.round(cells * pct / 100);
+      if (!s.bootDone) {
+        lines.push(this.el('span', { key: 'cr', style: { display: 'inline-block', width: '.6em', height: '1em', background: 'var(--fg,#cfcbff)', animation: 'om-blink .8s steps(1,end) infinite' } }));
+      }
+      lines.push(this.el('div', { key: 'pg', style: { marginTop: '20px', display: 'flex', gap: '10px', alignItems: 'baseline', flexWrap: 'wrap', font: "400 12px/1.5 'JetBrains Mono', monospace" } }, [
+        this.el('span', { key: 'b', style: { letterSpacing: '.08em' } }, '[' + '█'.repeat(filled) + '·'.repeat(cells - filled) + ']'),
+        this.el('span', { key: 'p' }, pct + '%'),
+        this.el('span', { key: 'l', style: { color: 'var(--dim,#7c76c8)' } }, s.bootDone ? (ru ? 'ЗАГРУЗКА ЗАВЕРШЕНА' : 'LOAD COMPLETE') : (ru ? 'ЗАГРУЗКА…' : 'LOADING…'))
+      ]));
+      lines.push(this.el('div', { key: 'sk', style: { marginTop: '10px', font: "400 10px/1.6 'JetBrains Mono', monospace", color: 'var(--dim,#7c76c8)', opacity: s.closing ? 0 : 1 } }, ru ? 'КЛИК ИЛИ ЛЮБАЯ КЛАВИША — ПРОПУСТИТЬ' : 'CLICK OR ANY KEY TO SKIP'));
+      bootLayer = this.el('div', {
+        onClick: () => this.enter(),
+        style: {
+          position: 'fixed', inset: 0, zIndex: 100, background: 'var(--bg,#05040c)', color: 'var(--fg,#cfcbff)',
+          padding: 'clamp(16px,5vw,56px)', font: "400 clamp(11px,1.6vw,14px)/1.55 'JetBrains Mono', monospace",
+          overflow: 'hidden', cursor: 'pointer',
+          opacity: s.closing ? 0 : 1,
+          transform: s.closing ? 'scaleY(.006)' : 'none',
+          filter: s.closing ? 'brightness(2.6)' : 'none',
+          transition: 'opacity .5s ease .1s, transform .5s cubic-bezier(.7,0,.2,1), filter .3s ease'
+        }
+      }, [
+        this.el('div', { key: 'l' }, lines),
+        this.el('div', { key: 'sc', style: { position: 'absolute', inset: 0, pointerEvents: 'none', overflow: 'hidden' } },
+          this.el('div', { className: 'om-lines', style: { position: 'absolute', left: 0, right: 0, top: '-400px', height: 'calc(100% + 800px)' } })),
+        this.el('div', { key: 'sw', className: 'om-sweep', style: { position: 'absolute', left: 0, right: 0, top: 0, height: '14vh', pointerEvents: 'none', opacity: .1, background: 'linear-gradient(180deg, transparent, var(--glow,rgba(140,130,255,.12)) 55%, rgba(255,255,255,.06) 78%, transparent)', animation: 'om-sweep 4s linear infinite' } })
+      ]);
+    }
+
+    const cursorLayer = (s.cursor.on && !s.narrow) ? this.el('div', {
+      style: {
+        position: 'fixed', left: s.cursor.x + 'px', top: s.cursor.y + 'px',
+        width: '0', height: '0', zIndex: 200, pointerEvents: 'none',
+        mixBlendMode: s.cursor.zoom ? 'normal' : 'difference',
+        filter: s.cursor.zoom ? 'drop-shadow(0 0 2px rgba(0,0,0,.9)) drop-shadow(0 0 7px rgba(0,0,0,.45))' : 'none'
+      }
+    }, [this.el('div', {
+      key: 'grp',
+      style: {
+        position: 'absolute', left: 0, top: 0, width: 0, height: 0,
+        animation: s.cursor.zoom ? 'om-cpulse 1.1s ease-in-out infinite' : 'none'
+      }
+    }, [-1, 1].flatMap(sy => [-1, 1].map(sx => {
+      const hot = s.cursor.hot;
+      const arm = 11, th = 3, off = 13;
+      return this.el('div', {
+        key: sx + '_' + sy,
+        style: {
+          position: 'absolute',
+          left: (sx < 0 ? -off : off - arm) + 'px',
+          top: (sy < 0 ? -off : off - arm) + 'px',
+          width: arm + 'px', height: arm + 'px',
+          borderTop: sy < 0 ? th + 'px solid #fff' : 'none',
+          borderBottom: sy > 0 ? th + 'px solid #fff' : 'none',
+          borderLeft: sx < 0 ? th + 'px solid #fff' : 'none',
+          borderRight: sx > 0 ? th + 'px solid #fff' : 'none',
+          transform: hot
+            ? 'translate(' + (-sx * (off - arm + th / 2)) + 'px,' + (-sy * (off - arm + th / 2)) + 'px) rotate(' + (-sx * sy * 180) + 'deg)'
+            : 'translate(0,0) rotate(0deg)',
+          transition: 'transform .3s cubic-bezier(.4,0,.2,1)'
+        }
+      });
+    }))),
+    this.el('div', {
+      key: 'mag',
+      style: {
+        position: 'absolute', left: '-8px', top: '-8px', width: '16px', height: '16px',
+        display: 'grid', placeItems: 'center',
+        font: "400 15px/1 var(--disp,'JetBrains Mono'),monospace", color: '#fff',
+        opacity: s.cursor.zoom ? 1 : 0,
+        transform: s.cursor.zoom ? 'scale(1)' : 'scale(.5)',
+        transition: 'opacity .22s ease, transform .22s ease'
+      }
+    }, '\u2315')
+    ]) : null;
+
+    return {
+      clock: s.clock, dRu, dEn,
+      playMark: s.playing ? '❙❙' : '▶',
+      trackName: TRACKS[s.track].name,
+      trackBoxW: s.narrow ? '64px' : '96px',
+      marqAnim: s.marquee ? 'om-marquee ' + s.marqDur + 's linear infinite' : 'none',
+      dMarq: s.marquee ? 'inline' : 'none',
+      marqGap: s.marquee ? '30px' : '0',
+      volume: s.volume,
+      volLabel: s.volume + '%',
+      setVolume: e => {
+        const v = Number(e.target.value);
+        if (this._audio) this._audio.volume = v / 100;
+        this.setState({ volume: v });
+      },
+      skipTrack: () => { this.blip(760); if (!this._audio) { this.togglePlay(); } this.nextTrack(); },
+      meter: s.meter.map(h => ({ h: h + 'px', o: s.playing ? 0.9 : 0.35 })),
+      togglePlay: () => this.togglePlay(),
+      ditherRef: this._dither, sweepRef: this._sweep,
+      spinner: ['|', '/', '—', '\\'][s.spin % 4],
+      hdrH: s.hdrH || '84px',
+      shellOpacity: s.booting && !s.closing ? 0 : 1,
+      shellScale: s.booting && !s.closing ? 'scale(1.012)' : 'none',
+      isHome: s.screen === 'home', isWorks: s.screen === 'works', isExp: s.screen === 'exp', isContact: s.screen === 'contact',
+      opHome: s.screen === 'home' ? on : off, opWorks: s.screen === 'works' ? on : off, opExp: s.screen === 'exp' ? on : off, opContact: s.screen === 'contact' ? on : off,
+      bgHome: navBg(s.screen === 'home'), bgWorks: navBg(s.screen === 'works'), bgExp: navBg(s.screen === 'exp'), bgContact: navBg(s.screen === 'contact'),
+      shHome: navSh(s.screen === 'home'), shWorks: navSh(s.screen === 'works'), shExp: navSh(s.screen === 'exp'), shContact: navSh(s.screen === 'contact'),
+      goHome: () => this.nav('home'), goWorks: () => this.nav('works'), goExp: () => this.nav('exp'), goContact: () => this.nav('contact'),
+      jobs: (ru ? JOBS_RU : JOBS_EN).map((j, i) => ({
+        place: j.place, dates: j.dates, role: j.role, desc: j.desc || '',
+        url: j.url || '#', dLink: j.url ? 'inline-flex' : 'none', dPlain: j.url ? 'none' : 'inline',
+        dDesc: j.desc ? 'block' : 'none',
+        duties: j.duties.map(v => ({ v: v })),
+        dutiesLabel: (ru ? 'ОБЯЗАННОСТИ' : 'RESPONSIBILITIES') + ' (' + j.duties.length + ')',
+        mark: s.openJobs[i] ? '[ − ]' : '[ + ]',
+        dOpen: s.openJobs[i] ? 'grid' : 'none',
+        toggle: () => {
+          this.blip(600);
+          this.setState(st => ({ openJobs: Object.assign({}, st.openJobs, { [i]: !st.openJobs[i] }) }));
+        }
+      })),
+      setRu: () => { this.blip(900); this.setState({ lang: 'ru' }); },
+      setEn: () => { this.blip(900); this.setState({ lang: 'en' }); },
+      opRu: ru ? on : off, opEn: ru ? off : on,
+      dScrollHint: (s.screen === 'home' && !s.booting) ? 'inline-flex' : 'none',
+      themeList, sndLabel: s.sound ? 'SND·ON' : 'SND·OFF',
+      toggleSound: () => this.setState(st => ({ sound: !st.sound })),
+      capabilities, wave: wave.trim(), waveGhost: waveGhost.trim(), waveFill, hexBytes, meters, blocks,
+      cursorX: (30 + (s.tick * 46) % 545).toFixed(1),
+      tGain: (1.2 + Math.abs(Math.sin(T * 0.16)) * 0.9).toFixed(2),
+      tSig: 92 + Math.round(Math.abs(Math.sin(T * 0.24)) * 7),
+      tWfg: 20000 + Math.round(Math.abs(Math.sin(T * 0.11)) * 9999),
+      tPeak: (0.6 + Math.abs(Math.sin(T * 0.4)) * 0.39).toFixed(2),
+      files, shots, sections,
+      dTabs: hasTabs ? 'flex' : 'none',
+      caseTabs: TABDEFS.map(t => ({
+        label: ru ? t.ru : t.en,
+        bg: t.key === curTab ? 'var(--fg,#9ff5e8)' : 'transparent',
+        fg: t.key === curTab ? 'var(--bg,#000f0f)' : 'inherit',
+        go: () => {
+          this.blip(760);
+          this.setState({ caseTab: t.key }, () => requestAnimationFrame(() => {
+            const pane = document.querySelector('[data-works-scroll]');
+            if (pane) pane.scrollTop = 0;
+          }));
+        }
+      })),
+      dTabIntro: 'none',
+      tabIntro: '',
+      dShots: (!hasTabs || curTab === 'visual' || !!rdat) ? 'grid' : 'none',
+      dTabSoon: (hasTabs && curTab !== 'visual' && !rdat) ? 'grid' : 'none',
+      tabSoonTitle: ru ? 'РАЗДЕЛ В РАБОТЕ' : 'SECTION IN PROGRESS',
+      tabSoonSub: (() => {
+        const t = TABDEFS.find(x => x.key === curTab);
+        const nm = t ? (ru ? t.ru : t.en) : '';
+        return ru ? nm + ' — материалы готовятся' : nm + ' — materials coming soon';
+      })(),
+      dWip: (sel && sel.wip && (!hasTabs || curTab === 'visual')) ? 'grid' : 'none',
+      lbDisp: lbCur ? 'flex' : 'none',
+      lbFrames: flatAll.map(f => ({ bg: 'url("' + f.src + '")', op: this.imgReady(f.src) ? '1' : '0', w: (100 / Math.max(flatAll.length, 1)) + '%' })),
+      lbTrackW: (Math.max(flatAll.length, 1) * 100) + '%',
+      lbTrackX: 'translateX(-' + ((lbPos < 0 ? 0 : lbPos) * (100 / Math.max(flatAll.length, 1))).toFixed(4) + '%)',
+      lbSpin: (lbCur && !this.imgReady(lbCur.src)) ? 'grid' : 'none',
+      lbCase: sel ? String(SL ? SL.t : '').toUpperCase() : '',
+      lbLabel: lbCur ? lbCur.label : '',
+      lbCounter: lbCur ? pad(lbPos + 1) + ' / ' + pad(flatAll.length) : '',
+      lbDotsDisp: (lbCur && lbShotN > 1) ? 'flex' : 'none',
+      lbDots: lbShotFrames.map((f, k) => ({
+        n: pad(k + 1),
+        bg: (lbCur && k === lbCur.fi) ? 'var(--fg,#9ff5e8)' : 'var(--bg,#000f0f)',
+        go: () => { this.blip(700); this.setState(st => ({ lb: { si: lbCur.si, fi: k }, frameIdx: Object.assign({}, st.frameIdx, { [sel.id + (rdat ? ':' + curTab : '') + ':' + lbCur.si]: k }) })); }
+      })),
+      cvDisp: s.cv ? 'flex' : 'none',
+      cvHref: ru ? 'assets/cv/Veshutkin-Igor-CV-RU.pdf' : 'assets/cv/Veshutkin-Igor-CV-EN.pdf',
+      cvClick: () => this.blip(880, .05),
+      openCv: () => { this.blip(880, .05); this.setState({ cv: true }); },
+      cvClose: () => { this.blip(520); this.setState({ cv: false }); },
+      lbClose: () => this.closeLb(),
+      lbPrev: () => this.lbStep(-1),
+      lbNext: () => this.lbStep(1),
+      today: pad(d.getDate()) + '.' + pad(d.getMonth() + 1) + '.' + d.getFullYear(),
+      pathLabel: 'C:\\Design\\Subjects\\IV\\Works' + (sel ? '\\' + base + '.txt' : ''),
+      lookingLabel: ru ? 'СМОТРИМ' : 'NOW LOOKING AT',
+      aboutLabel: ru ? 'ОПИСАНИЕ' : 'ABOUT',
+      selTitle: SL ? SL.t : (ru ? 'НИЧЕГО НЕ ВЫБРАНО' : 'NOTHING SELECTED'),
+      selSub: SL ? SL.sub : '',
+      selIntro: rdat ? (ru ? rdat.ru.intro : rdat.en.intro) : (SL ? SL.intro : ''),
+      selMeta: sel ? sel.kind : '',
+      selTools: (sel && sel.tools ? sel.tools : []).map(ab => ({
+        ab, name: TOOL_NAMES[ab] || ab,
+        fg: (TOOL_COLORS[ab] || {}).fg || '#8ef7e6',
+        bg: (TOOL_COLORS[ab] || {}).bg || 'transparent'
+      })),
+      cards: PROJECTS.map((p, pi) => {
+        const flat = (p.frames || []).reduce((a, b) => a.concat(b), []).slice(0, 8).map(resPath);
+        const n = Math.max(1, flat.length);
+        const cur = (((s.pvTick || 0) + pi) % n + n) % n;
+        return {
+          code: p.code,
+          name: (ru ? p.ru.t : p.en.t) + ' — ' + (ru ? p.ru.sub : p.en.sub),
+          kind: p.kind,
+          tools: (p.tools || []).map(ab => ({ ab, fg: (TOOL_COLORS[ab] || {}).fg || '#8ef7e6', bg: (TOOL_COLORS[ab] || {}).bg || 'transparent' })),
+          ratio: (p.ratios && p.ratios[0]) || '16/9',
+          frames: flat.map((u, fi) => ({ bg: 'url("' + u + '")', op: fi === cur ? '1' : '0' })),
+          open: () => this.openProject(p.id)
+        };
+      }),
+      dCards: s.narrow && !sel ? 'grid' : 'none',
+      dPanes: s.narrow && !sel ? 'none' : 'grid',
+      dList: s.narrow ? 'none' : 'block',
+      dBack: s.narrow && sel ? 'flex' : 'none',
+      dWideBlock: s.narrow ? 'none' : 'block',
+      dWideGrid: s.narrow ? 'none' : 'grid',
+      lbPad: s.narrow ? '52px 8px 44px' : '64px 74px',
+      lbBtnOff: s.narrow ? '10px' : '20px',
+      tapSize: s.narrow ? '44px' : '32px',
+      backToList: () => {
+        this.blip(520);
+        this.setState({ selected: null });
+        requestAnimationFrame(() => {
+          const sec = document.getElementById('sec-works'), hdr = document.getElementById('om-topbar');
+          if (sec) this.scrollAnim(Math.max(0, sec.getBoundingClientRect().top + window.scrollY - (hdr ? hdr.offsetHeight : 84) + 1), 380);
+        });
+      },
+      lbTStart: e => { const p = e.touches && e.touches[0]; if (p) this._lbsw = { x: p.clientX, y: p.clientY }; },
+      lbTEnd: e => {
+        const a = this._lbsw; this._lbsw = null;
+        const p = e.changedTouches && e.changedTouches[0];
+        if (!a || !p) return;
+        const dx = p.clientX - a.x, dy = p.clientY - a.y;
+        if (Math.abs(dx) < 36 || Math.abs(dx) < Math.abs(dy) * 1.2) return;
+        this.lbStep(dx < 0 ? 1 : -1);
+      },
+      dSel: sel ? 'block' : 'none',
+      worksCols: s.narrow ? '1fr' : 'minmax(240px, 320px) 1fr',
+      paneCap: s.narrow ? 'none' : 'calc(100vh - ' + (parseFloat(s.hdrH) || 84) + 'px - 45px)',
+      paneH: s.narrow ? 'auto' : 'calc(100vh - ' + (parseFloat(s.hdrH) || 84) + 'px - 45px)',
+      paneFlex: s.narrow ? '0 0 auto' : '1',
+      dWide: s.narrow ? 'none' : 'flex',
+      paneTop: (parseFloat(s.hdrH) || 84) + 'px',
+      panePos: s.narrow ? 'static' : 'sticky',
+      paneOv: s.narrow ? 'visible' : 'auto',
+      dEmpty: sel ? 'none' : 'block',
+      filterAll: () => { this.blip(560); this.setState({ filter: 'all' }); },
+      filterUi: () => { this.blip(560); this.setState({ filter: 'ui' }); },
+      filterGr: () => { this.blip(560); this.setState({ filter: 'gr' }); },
+      opFilterAll: s.filter === 'all' ? on : off, opFilterUi: s.filter === 'ui' ? on : off, opFilterGr: s.filter === 'gr' ? on : off,
+      bootLayer, cursorLayer
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #05040c; }
+  body { -webkit-font-smoothing: antialiased; }
+  a { color: #cfcbff; text-decoration: none; }
+  a:hover { color: #05040c; background: #cfcbff; }
+  ::selection { background: #cfcbff; color: #05040c; }
+</style>
+</helmet>
+
+<div style="background:#05040c;color:#cfcbff;font:400 13px/1.5 'JetBrains Mono',ui-monospace,monospace;padding:48px 40px 90px;display:grid;gap:56px;justify-items:stretch">
+
+  <div style="display:grid;gap:14px;max-width:1240px;width:100%;margin:0 auto">
+    <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.28em;color:#7c76c8">C:\Design\Subjects\IV\UI-KIT.LIB</div>
+    <div style="font:700 34px/1.2 'JetBrains Mono',monospace;letter-spacing:.02em">PORTFOLIO OS — ЭЛЕМЕНТЫ</div>
+    <div style="font-size:13px;line-height:1.8;color:#7c76c8;max-width:80ch;text-wrap:pretty">Десктопные элементы по разделам сайта. Тема violet (базовая). Значения цветов и типографики зафиксированы литералами — импортируется в Figma плагином html.to.design как слои.</div>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:4px">
+      <div style="display:flex;align-items:center;gap:9px;border:1px solid #4b45a6;padding:8px 11px;font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.1em"><span style="width:13px;height:13px;background:#cfcbff"></span>FG #CFCBFF</div>
+      <div style="display:flex;align-items:center;gap:9px;border:1px solid #4b45a6;padding:8px 11px;font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.1em"><span style="width:13px;height:13px;background:#7c76c8"></span>DIM #7C76C8</div>
+      <div style="display:flex;align-items:center;gap:9px;border:1px solid #4b45a6;padding:8px 11px;font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.1em"><span style="width:13px;height:13px;background:#4b45a6"></span>LINE #4B45A6</div>
+      <div style="display:flex;align-items:center;gap:9px;border:1px solid #4b45a6;padding:8px 11px;font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.1em"><span style="width:13px;height:13px;background:#05040c;border:1px solid #4b45a6"></span>BG #05040C</div>
+      <div style="display:flex;align-items:center;gap:9px;border:1px solid #4b45a6;padding:8px 11px;font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.1em"><span style="width:13px;height:13px;background:#4ade80"></span>OK #4ADE80</div>
+    </div>
+  </div>
+
+  <div style="display:grid;gap:22px;max-width:1240px;width:100%;margin:0 auto">
+    <div style="display:flex;align-items:center;gap:16px;border-top:1px solid #4b45a6;border-bottom:1px solid #4b45a6;padding:13px 0">
+      <span style="font:400 13px/1.3 'JetBrains Mono',monospace;letter-spacing:.34em;white-space:nowrap">01 · НАВБАР</span>
+      <span style="flex:1;height:1px;background:#4b45a6"></span>
+    </div>
+
+    <div style="display:grid;gap:9px">
+      <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">NAV.FULL — шапка целиком, 134px, fixed</div>
+      <div style="border:1px solid #4b45a6;background:#05040c">
+        <div style="display:flex;flex-wrap:wrap;gap:4px 18px;align-items:center;justify-content:space-between;padding:7px 14px;font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.06em;color:#7c76c8">
+          <span>IGOR.V</span>
+          <span>GAME UI/UX &amp; GRAPHIC</span>
+          <span>MOSCOW / GMT+3</span>
+          <span style="display:flex;gap:7px;align-items:center">
+            <span style="min-width:26px;min-height:22px;display:grid;place-items:center;padding:0 5px;border:1px solid #4b45a6;font:400 9px/1.3 'JetBrains Mono',monospace">❚❚</span>
+            <span style="min-width:24px;min-height:22px;display:grid;place-items:center;padding:0 5px;border:1px solid #4b45a6;font:400 9px/1.3 'JetBrains Mono',monospace">▶▶</span>
+            <span style="width:150px;overflow:hidden;white-space:nowrap">SYSTEM ST91 — CYBERNETIC FASHION</span>
+          </span>
+          <span style="display:flex;gap:5px;align-items:center">
+            <span style="opacity:.7">VOL</span>
+            <span style="position:relative;width:52px;height:11px;display:grid;align-items:center"><span style="height:3px;background:#cfcbff;opacity:.7"></span><span style="position:absolute;left:32px;top:0;width:7px;height:11px;background:#cfcbff"></span></span>
+            <span style="min-width:24px;text-align:right;opacity:.7">62</span>
+          </span>
+          <span style="display:flex;gap:2px;align-items:flex-end;height:11px">
+            <span style="width:2px;height:4px;background:#cfcbff;opacity:.4"></span>
+            <span style="width:2px;height:8px;background:#cfcbff;opacity:.7"></span>
+            <span style="width:2px;height:11px;background:#cfcbff"></span>
+            <span style="width:2px;height:6px;background:#cfcbff;opacity:.55"></span>
+            <span style="width:2px;height:9px;background:#cfcbff;opacity:.8"></span>
+            <span style="width:2px;height:3px;background:#cfcbff;opacity:.35"></span>
+            <span style="width:2px;height:7px;background:#cfcbff;opacity:.6"></span>
+          </span>
+          <span>21:04:37</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;align-items:stretch;border-top:1px solid #4b45a6">
+          <div style="flex:1 1 90px;min-height:44px;display:grid;place-items:center;padding:10px 8px;background:rgba(207,203,255,.16);box-shadow:inset 0 -2px 0 #cfcbff;border-right:1px solid #4b45a6;font:400 15px/1.3 'JetBrains Mono',monospace;letter-spacing:.08em;white-space:nowrap">ОБО МНЕ</div>
+          <div style="flex:1 1 90px;min-height:44px;display:grid;place-items:center;padding:10px 8px;border-right:1px solid #4b45a6;font:400 15px/1.3 'JetBrains Mono',monospace;letter-spacing:.08em;white-space:nowrap;opacity:.62">КЕЙСЫ</div>
+          <div style="flex:1 1 90px;min-height:44px;display:grid;place-items:center;padding:10px 8px;border-right:1px solid #4b45a6;font:400 15px/1.3 'JetBrains Mono',monospace;letter-spacing:.08em;white-space:nowrap;opacity:.62">ОПЫТ</div>
+          <div style="flex:1 1 90px;min-height:44px;display:grid;place-items:center;padding:10px 8px;border-right:1px solid #4b45a6;font:400 15px/1.3 'JetBrains Mono',monospace;letter-spacing:.08em;white-space:nowrap;opacity:.62">КОНТАКТЫ</div>
+          <div style="display:flex;align-items:center;gap:10px;padding:6px 12px;margin-left:auto;border-left:1px solid #4b45a6">
+            <div style="display:flex;gap:0">
+              <div style="min-width:34px;min-height:32px;display:grid;place-items:center;border:1px solid #4b45a6;font:400 10px/1.3 'JetBrains Mono',monospace">RU</div>
+              <div style="min-width:34px;min-height:32px;display:grid;place-items:center;border:1px solid #4b45a6;border-left:0;font:400 10px/1.3 'JetBrains Mono',monospace;opacity:.45">EN</div>
+            </div>
+            <div style="display:flex;gap:6px;align-items:center">
+              <span style="width:16px;height:16px;border:1px solid #4b45a6;background:#cfcbff;outline:1px solid #cfcbff;outline-offset:2px"></span>
+              <span style="width:16px;height:16px;border:1px solid #4b45a6;background:#9ff5e8"></span>
+              <span style="width:16px;height:16px;border:1px solid #4b45a6;background:#cbff5e"></span>
+              <span style="width:16px;height:16px;border:1px solid #4b45a6;background:#ffc46b"></span>
+            </div>
+            <div style="min-height:32px;display:grid;place-items:center;padding:0 8px;border:1px solid #4b45a6;font:400 10px/1.3 'JetBrains Mono',monospace">SND ON</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px">
+      <div style="display:grid;gap:9px">
+        <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">TAB / ACTIVE</div>
+        <div style="min-height:44px;display:grid;place-items:center;padding:10px 8px;background:rgba(207,203,255,.16);box-shadow:inset 0 -2px 0 #cfcbff;border:1px solid #4b45a6;font:400 15px/1.3 'JetBrains Mono',monospace;letter-spacing:.08em">КЕЙСЫ</div>
+      </div>
+      <div style="display:grid;gap:9px">
+        <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">TAB / IDLE 62%</div>
+        <div style="min-height:44px;display:grid;place-items:center;padding:10px 8px;border:1px solid #4b45a6;font:400 15px/1.3 'JetBrains Mono',monospace;letter-spacing:.08em;opacity:.62">КЕЙСЫ</div>
+      </div>
+      <div style="display:grid;gap:9px">
+        <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">TAB / HOVER — инверт</div>
+        <div style="min-height:44px;display:grid;place-items:center;padding:10px 8px;background:#cfcbff;color:#05040c;border:1px solid #4b45a6;font:400 15px/1.3 'JetBrains Mono',monospace;letter-spacing:.08em">КЕЙСЫ</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:grid;gap:22px;max-width:1240px;width:100%;margin:0 auto">
+    <div style="display:flex;align-items:center;gap:16px;border-top:1px solid #4b45a6;border-bottom:1px solid #4b45a6;padding:13px 0">
+      <span style="font:400 13px/1.3 'JetBrains Mono',monospace;letter-spacing:.34em;white-space:nowrap">02 · ДОСЬЕ / ОБО МНЕ</span>
+      <span style="flex:1;height:1px;background:#4b45a6"></span>
+    </div>
+
+    <div style="display:grid;gap:9px">
+      <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">DOSSIER.SHELL — рамка с путём файла</div>
+      <div style="border:1px solid #4b45a6;padding:10px">
+        <div style="display:flex;justify-content:space-between;align-items:center;border:1px solid #4b45a6;padding:9px 12px;font:400 15px/1.3 'JetBrains Mono',monospace;letter-spacing:.1em">
+          <span>C:\Design\Subjects\IV\Summary.txt</span>
+          <span style="font-size:10px;color:#7c76c8">27.08.2026</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:10px">
+          <div style="flex:0 1 300px;border:1px solid #4b45a6;padding:8px;display:flex;flex-direction:column">
+            <div style="display:flex;gap:5px;justify-content:flex-end;margin-bottom:7px">
+              <span style="width:9px;height:9px;border:1px solid #4b45a6;border-radius:50%"></span>
+              <span style="width:9px;height:9px;border:1px solid #4b45a6;border-radius:50%"></span>
+              <span style="width:9px;height:9px;border:1px solid #4b45a6;border-radius:50%"></span>
+            </div>
+            <div style="min-height:190px;border:1px solid #4b45a6;overflow:hidden;background:#05040c">
+              <img src="assets/portrait.jpg" alt="portrait" style="display:block;width:100%;height:190px;object-fit:cover;filter:grayscale(1) contrast(1.35);opacity:.85" />
+            </div>
+            <div style="margin-top:8px;border:1px solid #4b45a6;padding:8px 12px 9px;display:grid;gap:5px">
+              <div style="display:flex;gap:10px;justify-content:space-between;font:400 9px/1.3 'JetBrains Mono',monospace;color:#7c76c8;letter-spacing:.06em;white-space:nowrap">
+                <span>BIO-MON/CH.01</span>
+                <span>SIG 87%</span>
+                <span style="color:#cfcbff">● 21:04:37</span>
+              </div>
+              <div style="position:relative;border:1px solid #4b45a6;padding:1px">
+                <svg viewBox="0 0 600 130" preserveAspectRatio="none" style="width:100%;height:40px;display:block;background:repeating-linear-gradient(90deg,rgba(140,130,255,.16) 0 1px,transparent 1px 25px),repeating-linear-gradient(0deg,rgba(140,130,255,.16) 0 1px,transparent 1px 24px)">
+                  <polyline points="0,96 50,74 100,88 150,44 200,70 250,30 300,62 350,40 400,84 450,52 500,78 550,58 600,90" fill="#cfcbff" opacity="0.18" stroke="none"></polyline>
+                  <polyline points="0,96 50,74 100,88 150,44 200,70 250,30 300,62 350,40 400,84 450,52 500,78 550,58 600,90" fill="none" stroke="#cfcbff" stroke-width="2"></polyline>
+                  <line x1="392" y1="0" x2="392" y2="130" stroke="#cfcbff" stroke-width="1" opacity="0.75"></line>
+                </svg>
+                <span style="position:absolute;left:4px;top:3px;font:400 8px/1 'JetBrains Mono',monospace;color:#7c76c8">WFG 04</span>
+                <span style="position:absolute;right:4px;top:3px;font:400 8px/1 'JetBrains Mono',monospace;color:#7c76c8">71PK</span>
+              </div>
+              <div style="display:grid;gap:2px">
+                <div style="display:grid;grid-template-columns:8ch 1fr 4ch;gap:8px;align-items:center;font:400 9px/1.45 'JetBrains Mono',monospace;white-space:nowrap">
+                  <span style="color:#7c76c8">FOCUS</span>
+                  <span style="position:relative;height:8px;border:1px solid #4b45a6;background:repeating-linear-gradient(90deg,rgba(140,130,255,.16) 0 1px,transparent 1px 6px)"><span style="position:absolute;left:0;top:0;bottom:0;width:78%;background:#cfcbff;opacity:.85"></span></span>
+                  <span style="text-align:right">78</span>
+                </div>
+                <div style="display:grid;grid-template-columns:8ch 1fr 4ch;gap:8px;align-items:center;font:400 9px/1.45 'JetBrains Mono',monospace;white-space:nowrap">
+                  <span style="color:#7c76c8">PIXELS</span>
+                  <span style="position:relative;height:8px;border:1px solid #4b45a6;background:repeating-linear-gradient(90deg,rgba(140,130,255,.16) 0 1px,transparent 1px 6px)"><span style="position:absolute;left:0;top:0;bottom:0;width:64%;background:#cfcbff;opacity:.85"></span></span>
+                  <span style="text-align:right">64</span>
+                </div>
+                <div style="display:grid;grid-template-columns:8ch 1fr 4ch;gap:8px;align-items:center;font:400 9px/1.45 'JetBrains Mono',monospace;white-space:nowrap">
+                  <span style="color:#7c76c8">COFFEE</span>
+                  <span style="position:relative;height:8px;border:1px solid #4b45a6;background:repeating-linear-gradient(90deg,rgba(140,130,255,.16) 0 1px,transparent 1px 6px)"><span style="position:absolute;left:0;top:0;bottom:0;width:92%;background:#cfcbff;opacity:.85"></span></span>
+                  <span style="text-align:right">92</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="flex:1 1 340px;min-width:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-content:start">
+            <div style="grid-column:1/-1;border:1px solid #4b45a6;padding:12px 14px;display:grid;gap:6px">
+              <div style="font:400 10px/1.3 'JetBrains Mono',monospace;color:#7c76c8;letter-spacing:.14em">// SUBJECT</div>
+              <div style="font:700 30px/1.15 'JetBrains Mono',monospace;letter-spacing:.02em;text-shadow:0 0 18px rgba(140,130,255,.5)">ВЕШУТКИН ИГОРЬ</div>
+              <div style="font:400 12px/1.3 'JetBrains Mono',monospace;letter-spacing:.16em;color:#7c76c8">UI/UX DESIGN</div>
+            </div>
+            <div style="border:1px solid #4b45a6;padding:11px 14px;display:grid;gap:8px;align-content:space-between">
+              <div style="font:400 10px/1.3 'JetBrains Mono',monospace;color:#7c76c8;letter-spacing:.1em">СПЕЦИАЛИЗАЦИЯ</div>
+              <div style="font:700 22px/1.15 'JetBrains Mono',monospace;text-shadow:0 0 18px rgba(140,130,255,.5)">GAME UI/UX</div>
+            </div>
+            <div style="border:1px solid #4b45a6;padding:11px 14px;display:grid;gap:8px;align-content:space-between">
+              <div style="font:400 10px/1.3 'JetBrains Mono',monospace;color:#7c76c8;letter-spacing:.1em">ОПЫТ</div>
+              <div style="font:700 22px/1.15 'JetBrains Mono',monospace;text-shadow:0 0 18px rgba(140,130,255,.5)">3 ГОДА</div>
+            </div>
+            <div style="grid-column:1/-1;border:1px solid #4b45a6;padding:11px 14px;display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+              <span style="flex:0 0 auto;width:14px;height:14px;border-radius:50%;background:#4ade80;box-shadow:0 0 10px rgba(74,222,128,.8)"></span>
+              <span style="font:400 17px/1.2 'JetBrains Mono',monospace;letter-spacing:.05em">ОТКРЫТ К РАБОТЕ</span>
+            </div>
+            <div style="border:1px solid #cfcbff;background:#cfcbff;color:#05040c;padding:12px 14px;min-height:48px;display:flex;gap:12px;align-items:center;justify-content:space-between;font:700 13px/1.3 'JetBrains Mono',monospace;letter-spacing:.12em;box-shadow:0 0 18px rgba(140,130,255,.35)">
+              <span>CV</span><span style="font-size:22px;line-height:1">↗</span>
+            </div>
+            <div style="border:1px solid #cfcbff;background:#cfcbff;color:#05040c;padding:12px 14px;min-height:48px;display:flex;gap:12px;align-items:center;justify-content:space-between;font:700 13px/1.3 'JetBrains Mono',monospace;letter-spacing:.12em;box-shadow:0 0 18px rgba(140,130,255,.35)">
+              <span>НАПИСАТЬ МНЕ</span><span style="font-size:22px;line-height:1">↗</span>
+            </div>
+            <div style="grid-column:1/-1;border:1px solid #4b45a6;padding:12px 14px;display:grid;gap:7px">
+              <div style="font:400 10px/1.3 'JetBrains Mono',monospace;color:#7c76c8;letter-spacing:.14em">// STATEMENT</div>
+              <p style="margin:0;font-size:13px;line-height:1.7;text-wrap:pretty">3 года создаю удобные и красивые интерфейсы. Стараюсь рассмотреть каждый кейс с разных сторон, сочетая продуманность и визуал. Люблю создавать и играть в игры.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px">
+      <div style="display:grid;gap:9px">
+        <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">BTN / PRIMARY</div>
+        <div style="border:1px solid #cfcbff;background:#cfcbff;color:#05040c;padding:12px 14px;min-height:48px;display:flex;gap:12px;align-items:center;justify-content:space-between;font:700 13px/1.3 'JetBrains Mono',monospace;letter-spacing:.12em;box-shadow:0 0 18px rgba(140,130,255,.35)"><span>CV</span><span style="font-size:22px;line-height:1">↗</span></div>
+      </div>
+      <div style="display:grid;gap:9px">
+        <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">BTN / PRIMARY HOVER</div>
+        <div style="border:1px solid #cfcbff;background:transparent;color:#cfcbff;padding:12px 14px;min-height:48px;display:flex;gap:12px;align-items:center;justify-content:space-between;font:700 13px/1.3 'JetBrains Mono',monospace;letter-spacing:.12em;box-shadow:0 0 26px rgba(140,130,255,.5)"><span>CV</span><span style="font-size:22px;line-height:1">↗</span></div>
+      </div>
+      <div style="display:grid;gap:9px">
+        <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">HINT / SCROLL DOWN</div>
+        <div style="justify-self:start;display:flex;align-items:center;gap:10px;padding:9px 12px;background:#05040c;border:1px solid #4b45a6;color:#7c76c8;font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.22em"><span>ЛИСТАЙ ДАЛЬШЕ</span><span style="font-size:12px">▼</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:grid;gap:22px;max-width:1240px;width:100%;margin:0 auto">
+    <div style="display:flex;align-items:center;gap:16px;border-top:1px solid #4b45a6;border-bottom:1px solid #4b45a6;padding:13px 0">
+      <span style="font:400 13px/1.3 'JetBrains Mono',monospace;letter-spacing:.34em;white-space:nowrap">03 · РАЗДЕЛИТЕЛИ</span>
+      <span style="flex:1;height:1px;background:#4b45a6"></span>
+    </div>
+    <div style="display:grid;gap:9px">
+      <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">DIVIDER.SECTION — 1px рамки сверху и снизу, letter-spacing .34em</div>
+      <div style="display:grid;gap:14px">
+        <div style="border-top:1px solid #4b45a6;border-bottom:1px solid #4b45a6;padding:13px 14px;display:flex;align-items:center;gap:16px">
+          <span style="flex:1;min-width:12px;height:1px;background:#4b45a6"></span>
+          <span style="font:400 13px/1.3 'JetBrains Mono',monospace;letter-spacing:.34em;white-space:nowrap">КЕЙСЫ</span>
+          <span style="flex:1;min-width:12px;height:1px;background:#4b45a6"></span>
+        </div>
+        <div style="border-top:1px solid #4b45a6;border-bottom:1px solid #4b45a6;padding:13px 14px;display:flex;align-items:center;gap:16px">
+          <span style="flex:1;min-width:12px;height:1px;background:#4b45a6"></span>
+          <span style="font:400 13px/1.3 'JetBrains Mono',monospace;letter-spacing:.34em;white-space:nowrap">ОПЫТ</span>
+          <span style="flex:1;min-width:12px;height:1px;background:#4b45a6"></span>
+        </div>
+        <div style="border-top:1px solid #4b45a6;border-bottom:1px solid #4b45a6;padding:13px 14px;display:flex;align-items:center;gap:16px">
+          <span style="flex:1;min-width:12px;height:1px;background:#4b45a6"></span>
+          <span style="font:400 13px/1.3 'JetBrains Mono',monospace;letter-spacing:.34em;white-space:nowrap">КОНТАКТЫ</span>
+          <span style="flex:1;min-width:12px;height:1px;background:#4b45a6"></span>
+        </div>
+        <div style="display:flex;gap:14px;align-items:center">
+          <div style="padding:10px 14px;border:1px solid #4b45a6;font:400 10px/1.5 'JetBrains Mono',monospace;color:#7c76c8">C:\Design\Subjects\IV\Experience.log</div>
+          <div style="flex:1;height:1px;background:#4b45a6"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:grid;gap:22px;max-width:1240px;width:100%;margin:0 auto">
+    <div style="display:flex;align-items:center;gap:16px;border-top:1px solid #4b45a6;border-bottom:1px solid #4b45a6;padding:13px 0">
+      <span style="font:400 13px/1.3 'JetBrains Mono',monospace;letter-spacing:.34em;white-space:nowrap">04 · КЕЙСЫ</span>
+      <span style="flex:1;height:1px;background:#4b45a6"></span>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px">
+      <div style="display:grid;gap:9px">
+        <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">CASE.CARD — превью + мета-строка</div>
+        <div style="border:1px solid #4b45a6;display:grid">
+          <div style="width:100%;aspect-ratio:1920/1080;overflow:hidden;background:#05040c">
+            <img src="assets/farcana-01-home.jpg" alt="Farcana" style="display:block;width:100%;height:100%;object-fit:contain" />
+          </div>
+          <div style="display:flex;gap:10px;align-items:center;min-height:46px;padding:11px 12px;border-top:1px solid #4b45a6">
+            <span style="font:400 10px/1.3 'JetBrains Mono',monospace;opacity:.7;flex:0 0 22px">01</span>
+            <span style="flex:1;min-width:0;font:400 13px/1.35 'JetBrains Mono',monospace;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">FARCANA.UI</span>
+            <span style="flex:0 0 auto;display:flex;gap:5px;align-items:center">
+              <span style="width:22px;height:22px;display:grid;place-items:center;border:1px solid #31a8ff;color:#31a8ff;background:rgba(0,30,54,.9);font:700 9px/1 'JetBrains Mono',monospace">Ps</span>
+              <span style="width:22px;height:22px;display:grid;place-items:center;border:1px solid #ff9a00;color:#ff9a00;background:rgba(51,25,0,.9);font:700 9px/1 'JetBrains Mono',monospace">Ai</span>
+              <span style="width:22px;height:22px;display:grid;place-items:center;border:1px solid #ff7262;color:#ff7262;background:rgba(48,16,12,.9);font:700 9px/1 'JetBrains Mono',monospace">Fg</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:grid;gap:9px;align-content:start">
+        <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">CASE.LIST — файловый список, 3 состояния</div>
+        <div style="border:1px solid #4b45a6">
+          <div style="padding:10px 12px;font:400 10px/1.5 'JetBrains Mono',monospace;color:#7c76c8;border-bottom:1px solid #4b45a6">C:\Design\Subjects\IV\Works&gt;dir</div>
+          <div style="display:flex;gap:8px;align-items:center;min-height:46px;padding:9px 12px;background:rgba(207,203,255,.16);border-bottom:1px solid #4b45a6;font:400 12px/1.35 'JetBrains Mono',monospace">
+            <span style="font-size:10px;opacity:.7;flex:0 0 30px">01</span>
+            <span style="flex:1">FARCANA.UI</span>
+            <span style="font-size:10px;opacity:.7">GAME UI</span>
+          </div>
+          <div style="display:flex;gap:8px;align-items:center;min-height:46px;padding:9px 12px;border-bottom:1px solid #4b45a6;font:400 12px/1.35 'JetBrains Mono',monospace;opacity:.72">
+            <span style="font-size:10px;opacity:.7;flex:0 0 30px">02</span>
+            <span style="flex:1">NDA.AR</span>
+            <span style="font-size:10px;opacity:.7">GAME UI</span>
+          </div>
+          <div style="display:flex;gap:8px;align-items:center;min-height:46px;padding:9px 12px;background:#cfcbff;color:#05040c;border-bottom:1px solid #4b45a6;font:400 12px/1.35 'JetBrains Mono',monospace">
+            <span style="font-size:10px;opacity:.7;flex:0 0 30px">03</span>
+            <span style="flex:1">GOT.UI</span>
+            <span style="font-size:10px;opacity:.7">GAME UI</span>
+          </div>
+          <div style="display:flex;gap:8px;align-items:center;min-height:46px;padding:9px 12px;font:400 12px/1.35 'JetBrains Mono',monospace;opacity:.72">
+            <span style="font-size:10px;opacity:.7;flex:0 0 30px">04</span>
+            <span style="flex:1">OTHER.SET</span>
+            <span style="font-size:10px;opacity:.7">GRAPHIC</span>
+          </div>
+        </div>
+        <div style="margin-top:6px;font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">TOOL.BADGE — 22px / 24px</div>
+        <div style="display:flex;gap:6px;align-items:center">
+          <span style="width:24px;height:24px;display:grid;place-items:center;border:1px solid #31a8ff;color:#31a8ff;background:rgba(0,30,54,.9);font:700 10px/1 'JetBrains Mono',monospace">Ps</span>
+          <span style="width:24px;height:24px;display:grid;place-items:center;border:1px solid #ff9a00;color:#ff9a00;background:rgba(51,25,0,.9);font:700 10px/1 'JetBrains Mono',monospace">Ai</span>
+          <span style="width:24px;height:24px;display:grid;place-items:center;border:1px solid #9999ff;color:#9999ff;background:rgba(25,20,54,.9);font:700 10px/1 'JetBrains Mono',monospace">Ae</span>
+          <span style="width:24px;height:24px;display:grid;place-items:center;border:1px solid #ff7262;color:#ff7262;background:rgba(48,16,12,.9);font:700 10px/1 'JetBrains Mono',monospace">Fg</span>
+          <span style="width:24px;height:24px;display:grid;place-items:center;border:1px solid #7d929e;color:#7d929e;background:rgba(18,26,31,.9);font:700 10px/1 'JetBrains Mono',monospace">As</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;gap:9px">
+      <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">CASE.HEADER — заголовок кейса с инструментами</div>
+      <div style="border:1px solid #4b45a6;padding:12px 14px;background:#05040c">
+        <div style="display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between;align-items:baseline;font:400 9px/1.4 'JetBrains Mono',monospace;letter-spacing:.14em;color:#7c76c8">
+          <span>СМОТРИМ: FARCANA.UI</span>
+          <span>GAME UI</span>
+        </div>
+        <div style="margin-top:5px;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline">
+          <span style="font:700 26px/1.25 'JetBrains Mono',monospace;letter-spacing:.02em;text-shadow:0 0 14px rgba(140,130,255,.45)">Farcana</span>
+          <span style="font:400 11px/1.6 'JetBrains Mono',monospace;color:#7c76c8;letter-spacing:.1em">HERO SHOOTER</span>
+          <span style="margin-left:auto;display:flex;gap:6px;align-items:center">
+            <span style="width:24px;height:24px;display:grid;place-items:center;border:1px solid #31a8ff;color:#31a8ff;background:rgba(0,30,54,.9);font:700 10px/1 'JetBrains Mono',monospace">Ps</span>
+            <span style="width:24px;height:24px;display:grid;place-items:center;border:1px solid #ff9a00;color:#ff9a00;background:rgba(51,25,0,.9);font:700 10px/1 'JetBrains Mono',monospace">Ai</span>
+            <span style="width:24px;height:24px;display:grid;place-items:center;border:1px solid #ff7262;color:#ff7262;background:rgba(48,16,12,.9);font:700 10px/1 'JetBrains Mono',monospace">Fg</span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:16px;align-items:start">
+      <div style="display:grid;gap:9px">
+        <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">SHOT.FRAME — кадр с каруселью, точками и счётчиком</div>
+        <div>
+          <div style="position:relative;width:100%;aspect-ratio:1920/1080;border:1px solid #4b45a6;overflow:hidden">
+            <img src="assets/farcana-02-lobby.png" alt="Лобби" style="display:block;width:100%;height:100%;object-fit:contain" />
+            <div style="position:absolute;left:8px;top:8px;display:flex;gap:4px;align-items:center">
+              <span style="width:9px;height:9px;border:1px solid #4b45a6;background:#cfcbff"></span>
+              <span style="width:9px;height:9px;border:1px solid #4b45a6;background:transparent"></span>
+              <span style="width:9px;height:9px;border:1px solid #4b45a6;background:transparent"></span>
+            </div>
+            <div style="position:absolute;right:8px;bottom:8px;display:flex;border:1px solid #4b45a6;background:#05040c">
+              <span style="min-width:26px;height:24px;display:grid;place-items:center;border-right:1px solid #4b45a6;font:400 9px/1.3 'JetBrains Mono',monospace">◀</span>
+              <span style="display:grid;place-items:center;padding:0 8px;font:400 9px/1.3 'JetBrains Mono',monospace;letter-spacing:.08em;color:#7c76c8">01 / 03</span>
+              <span style="min-width:26px;height:24px;display:grid;place-items:center;border-left:1px solid #4b45a6;font:400 9px/1.3 'JetBrains Mono',monospace">▶</span>
+            </div>
+          </div>
+          <div style="margin-top:5px;display:inline-flex;gap:8px;align-items:baseline;padding:4px 9px;border:1px solid #4b45a6;font:400 9px/1.4 'JetBrains Mono',monospace;letter-spacing:.08em;color:#7c76c8">
+            <span style="color:#cfcbff">02</span>
+            <span>ЛОББИ</span>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:grid;gap:16px;align-content:start">
+        <div style="display:grid;gap:9px">
+          <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">SHOT.SLOT — плейсхолдер кадра</div>
+          <div style="position:relative;aspect-ratio:16/9;border:1px solid #4b45a6;display:grid;place-items:center;text-align:center;padding:12px;background:repeating-linear-gradient(45deg,rgba(255,255,255,.05) 0 5px,transparent 5px 10px);font:400 10px/1.7 'JetBrains Mono',monospace;color:#7c76c8">SLOT · 1920×1080</div>
+        </div>
+        <div style="display:grid;gap:9px">
+          <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">CASE.WIP — заглушка раздела</div>
+          <div style="position:relative;overflow:hidden;border:1px solid #4b45a6;min-height:74px;display:grid;place-items:center;background:repeating-linear-gradient(135deg,#0b0b0b 0 22px,#1d1d1d 22px 44px)">
+            <span style="font:400 15px/1.3 'JetBrains Mono',monospace;letter-spacing:.3em;color:#cfcbff;text-shadow:0 0 14px rgba(140,130,255,.6);padding:10px 16px;background:rgba(0,0,0,.55)">WIP · COME BACK LATER</span>
+          </div>
+        </div>
+        <div style="display:grid;gap:9px">
+          <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">CASE.EMPTY — состояние без выбора</div>
+          <div style="border:1px solid #4b45a6;padding:40px 0;text-align:center;font:400 10px/1.9 'JetBrains Mono',monospace;color:#7c76c8">ВЫБЕРИ ФАЙЛ СЛЕВА</div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px">
+      <div style="display:grid;gap:9px">
+        <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">CASE.ABOUT + ACCORDION / CLOSED</div>
+        <div style="display:grid;gap:12px">
+          <div style="border:1px solid #4b45a6;padding:12px 14px;display:grid;gap:8px;background:#05040c">
+            <div style="font:400 9px/1.3 'JetBrains Mono',monospace;letter-spacing:.12em;color:#7c76c8">О ПРОЕКТЕ</div>
+            <p style="margin:0;font-size:13px;line-height:1.85;text-wrap:pretty">Многопользовательский соревновательный hero-shooter с элементами roguelike.</p>
+          </div>
+          <div style="border:1px solid #4b45a6">
+            <div style="display:flex;gap:10px;align-items:center;justify-content:space-between;min-height:46px;padding:12px 14px;font:400 12px/1.4 'JetBrains Mono',monospace;letter-spacing:.06em">
+              <span>ЗАДАЧА</span><span style="opacity:.7">+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="display:grid;gap:9px">
+        <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">ACCORDION / OPEN + HOVER</div>
+        <div style="display:grid;gap:12px">
+          <div style="border:1px solid #4b45a6">
+            <div style="display:flex;gap:10px;align-items:center;justify-content:space-between;min-height:46px;padding:12px 14px;background:#cfcbff;color:#05040c;font:400 12px/1.4 'JetBrains Mono',monospace;letter-spacing:.06em">
+              <span>ЗАДАЧА</span><span style="opacity:.7">−</span>
+            </div>
+            <div style="padding:0 14px 14px;font-size:13px;line-height:1.85;text-wrap:pretty;padding-top:12px">Переработать интерфейс legacy-версии, не сломав привычные игроку сценарии.</div>
+          </div>
+          <div style="border:1px solid #4b45a6">
+            <div style="display:flex;gap:10px;align-items:center;justify-content:space-between;min-height:46px;padding:12px 14px;font:400 12px/1.4 'JetBrains Mono',monospace;letter-spacing:.06em">
+              <span>РЕШЕНИЕ</span><span style="opacity:.7">+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;gap:9px">
+      <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">LIGHTBOX.CHROME — бейджи, стрелки, закрытие</div>
+      <div style="position:relative;border:1px solid #4b45a6;min-height:220px;background:rgba(0,0,0,.92);display:grid;place-items:center">
+        <span style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">IMAGE AREA — object-fit: contain</span>
+        <div style="position:absolute;left:20px;top:20px;display:grid;gap:8px;justify-items:start">
+          <div style="display:flex;border:1px solid #4b45a6;background:#05040c;font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.16em">
+            <span style="padding:9px 11px;border-right:1px solid #4b45a6;color:#cfcbff">ЛОББИ</span>
+            <span style="padding:9px 11px;color:#7c76c8">02 / 07</span>
+          </div>
+          <div style="display:flex;gap:4px;align-items:center">
+            <span style="width:9px;height:9px;border:1px solid #4b45a6;background:#cfcbff"></span>
+            <span style="width:9px;height:9px;border:1px solid #4b45a6"></span>
+            <span style="width:9px;height:9px;border:1px solid #4b45a6"></span>
+          </div>
+        </div>
+        <div style="position:absolute;right:62px;top:20px;display:flex;border:1px solid #4b45a6;background:#05040c;font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.16em">
+          <span style="padding:9px 11px;color:#cfcbff">FARCANA.UI</span>
+        </div>
+        <div style="position:absolute;right:16px;top:16px;width:38px;height:38px;display:grid;place-items:center;background:#05040c;border:1px solid #4b45a6;color:#cfcbff;font:400 12px/1 'JetBrains Mono',monospace">✕</div>
+        <div style="position:absolute;left:16px;top:50%;transform:translateY(-50%);width:38px;height:60px;display:grid;place-items:center;background:#05040c;border:1px solid #4b45a6;color:#cfcbff;font:400 13px/1 'JetBrains Mono',monospace">◀</div>
+        <div style="position:absolute;right:16px;top:50%;transform:translateY(-50%);width:38px;height:60px;display:grid;place-items:center;background:#05040c;border:1px solid #4b45a6;color:#cfcbff;font:400 13px/1 'JetBrains Mono',monospace">▶</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:grid;gap:22px;max-width:1240px;width:100%;margin:0 auto">
+    <div style="display:flex;align-items:center;gap:16px;border-top:1px solid #4b45a6;border-bottom:1px solid #4b45a6;padding:13px 0">
+      <span style="font:400 13px/1.3 'JetBrains Mono',monospace;letter-spacing:.34em;white-space:nowrap">05 · КАРТОЧКИ ОПЫТА</span>
+      <span style="flex:1;height:1px;background:#4b45a6"></span>
+    </div>
+
+    <div style="display:grid;gap:9px">
+      <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">JOB.CARD / CLOSED — ссылка на компанию, чип роли</div>
+      <div style="border:1px solid #4b45a6;padding:14px;display:grid;gap:12px;max-width:900px">
+        <div style="display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:space-between;align-items:baseline">
+          <span style="display:flex;gap:6px;align-items:baseline;font:700 21px/1.3 'JetBrains Mono',monospace;letter-spacing:.02em;text-transform:uppercase;text-decoration:underline;text-underline-offset:4px">Dizzaract <span style="font-size:.75em">↗</span></span>
+          <span style="font:400 10px/1.4 'JetBrains Mono',monospace;letter-spacing:.1em;color:#7c76c8;white-space:nowrap">1,5 ГОДА · ФЕВ 2025 — ИЮН 2026</span>
+        </div>
+        <div style="display:inline-flex;justify-self:start;width:max-content;padding:4px 9px;border:1px solid #4b45a6;font:400 10px/1.4 'JetBrains Mono',monospace;letter-spacing:.08em;color:#cfcbff">Game Interface Designer</div>
+        <p style="margin:0;max-width:76ch;font-size:13px;line-height:1.85;text-wrap:pretty">Работал UI/UX дизайнером над интерфейсом игры Farcana в период, когда он переживал полную переработку.</p>
+        <div style="border:1px solid #4b45a6">
+          <div style="display:flex;gap:10px;align-items:center;justify-content:space-between;min-height:44px;padding:11px 12px;font:400 11px/1.4 'JetBrains Mono',monospace;letter-spacing:.1em">
+            <span>ОБЯЗАННОСТИ</span><span style="opacity:.75">+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;gap:9px">
+      <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">JOB.CARD / OPEN — раскрытые обязанности, маркер ▸</div>
+      <div style="border:1px solid #4b45a6;padding:14px;display:grid;gap:12px;max-width:900px">
+        <div style="display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:space-between;align-items:baseline">
+          <span style="font:700 21px/1.3 'JetBrains Mono',monospace;letter-spacing:.02em;text-transform:uppercase">Фриланс</span>
+          <span style="font:400 10px/1.4 'JetBrains Mono',monospace;letter-spacing:.1em;color:#7c76c8;white-space:nowrap">1,5 ГОДА · 2023 — 2024</span>
+        </div>
+        <div style="display:inline-flex;justify-self:start;width:max-content;padding:4px 9px;border:1px solid #4b45a6;font:400 10px/1.4 'JetBrains Mono',monospace;letter-spacing:.08em;color:#cfcbff">Graphic / UI Designer</div>
+        <div style="border:1px solid #4b45a6">
+          <div style="display:flex;gap:10px;align-items:center;justify-content:space-between;min-height:44px;padding:11px 12px;background:#cfcbff;color:#05040c;font:400 11px/1.4 'JetBrains Mono',monospace;letter-spacing:.1em">
+            <span>ОБЯЗАННОСТИ</span><span style="opacity:.75">−</span>
+          </div>
+          <div style="padding:6px 12px 12px;display:grid;gap:5px">
+            <div style="display:grid;grid-template-columns:14px 1fr;gap:8px;align-items:baseline;font-size:13px;line-height:1.8;margin-top:6px">
+              <span style="color:#7c76c8">▸</span>
+              <span style="text-wrap:pretty">Исследования конкурентов: разбирал удачные и неудачные решения, собирал UX-карты.</span>
+            </div>
+            <div style="display:grid;grid-template-columns:14px 1fr;gap:8px;align-items:baseline;font-size:13px;line-height:1.8;margin-top:6px">
+              <span style="color:#7c76c8">▸</span>
+              <span style="text-wrap:pretty">Интерфейсы: проектировал и отрисовывал экраны игрового интерфейса.</span>
+            </div>
+            <div style="display:grid;grid-template-columns:14px 1fr;gap:8px;align-items:baseline;font-size:13px;line-height:1.8;margin-top:6px">
+              <span style="color:#7c76c8">▸</span>
+              <span style="text-wrap:pretty">Анимации: прелоадеры, анимации главного меню, работа с VFX.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:grid;gap:22px;max-width:1240px;width:100%;margin:0 auto">
+    <div style="display:flex;align-items:center;gap:16px;border-top:1px solid #4b45a6;border-bottom:1px solid #4b45a6;padding:13px 0">
+      <span style="font:400 13px/1.3 'JetBrains Mono',monospace;letter-spacing:.34em;white-space:nowrap">06 · СВЯЗЬ</span>
+      <span style="flex:1;height:1px;background:#4b45a6"></span>
+    </div>
+
+    <div style="display:grid;gap:9px">
+      <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">CONTACT.PAGE — лог, заголовок, ссылки, пинг</div>
+      <div style="border:1px solid #4b45a6;padding:26px 20px;max-width:860px">
+        <div style="margin-bottom:16px;font:400 11px/1.9 'JetBrains Mono',monospace;color:#7c76c8">
+          <div>C:\Design\Subjects\IV&gt; connect --host IGOR.V --via TELEGRAM</div>
+          <div>RESOLVING @IVV766 ... OK</div>
+          <div>HANDSHAKE ... OK  LATENCY &lt;24H</div>
+          <div style="color:#cfcbff">SESSION OPEN — READY TO RECEIVE BRIEF_</div>
+        </div>
+        <div style="font:700 44px/1.3 'JetBrains Mono',monospace;text-shadow:0 0 18px rgba(140,130,255,.5)">СВЯЗЬ<br>УСТАНОВЛЕНА...|</div>
+        <div style="margin-top:18px;border:1px solid #4b45a6">
+          <div style="display:flex;gap:12px;justify-content:space-between;align-items:center;padding:16px 14px;border-bottom:1px solid #4b45a6;min-height:56px;font:400 15px/1.3 'JetBrains Mono',monospace;letter-spacing:.05em">
+            <span>TELEGRAM</span><span>@IVV766 ↗</span>
+          </div>
+          <div style="display:flex;gap:12px;justify-content:space-between;align-items:center;padding:16px 14px;min-height:56px;font:400 14px/1.4 'JetBrains Mono',monospace;letter-spacing:.03em">
+            <span>EMAIL</span><span>design@veshutkin-igor.ru ↗</span>
+          </div>
+        </div>
+        <p style="margin:18px 0 0;font-size:14px;line-height:1.9;max-width:56ch;text-wrap:pretty">Всегда открыт к новым идеям и предложениям, оперативно отвечу на любые вопросы!</p>
+        <div style="margin-top:26px;font:400 10px/1.9 'JetBrains Mono',monospace;color:#7c76c8">PING -N 1 127.0.0.1 &gt; NUL<br>REPLY FROM IGOR.V: TIME&lt;24H TTL=∞</div>
+      </div>
+    </div>
+
+    <div style="display:grid;gap:9px">
+      <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">CONTACT.ROW / HOVER — инверт</div>
+      <div style="display:flex;gap:12px;justify-content:space-between;align-items:center;padding:16px 14px;min-height:56px;border:1px solid #4b45a6;background:#cfcbff;color:#05040c;font:400 15px/1.3 'JetBrains Mono',monospace;letter-spacing:.05em;max-width:860px">
+        <span>TELEGRAM</span><span>@IVV766 ↗</span>
+      </div>
+    </div>
+
+    <div style="display:grid;gap:9px">
+      <div style="font:400 10px/1.3 'JetBrains Mono',monospace;letter-spacing:.2em;color:#7c76c8">FOOTER</div>
+      <div style="border-top:1px solid #4b45a6;padding:10px 14px;display:flex;flex-wrap:wrap;gap:4px 18px;justify-content:space-between;font:400 10px/1.6 'JetBrains Mono',monospace;color:#7c76c8">
+        <span>© IGOR.V 2026 — PORTFOLIO OS</span>
+        <span>NO COOKIES / NO TRACKERS</span>
+        <span>END OF LINE_</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>
